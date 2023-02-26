@@ -1,1 +1,0 @@
-export { default } from "file:///var/www/freeeco/landing/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
