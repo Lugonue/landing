@@ -1,0 +1,9 @@
+{
+  "_hash": "wzlagdqiMX",
+  "project": {
+    "rootDir": "/var/www/freeeco/landing"
+  },
+  "versions": {
+    "nuxt": "3.0.0-rc.13"
+  }
+}
