@@ -1,13 +1,13 @@
 <template>
-  <div class="position-absolute top-0 w-25 h-100 d-flex" id="containerForChats">
+  <div class="position-absolute top-0 w-25 d-flex" id="containerForChats" style="height: 100%;">
     <template v-for="chat in chats">
-      <div class="push-notification chat-style">
-        <div class="push-notification__avatar">
-          <img :src=chat.img alt="User Avatar">
+      <div class="push-notification chat-style mb-10 p-2">
+        <div class="push-notification__avatar w-25 me-2">
+          <img class="me-5 w-100" :src=chat.img alt="User Avatar">
         </div>
         <div class="push-notification__content">
-          <p class="push-notification__text">{{ chat.header }}</p>
-          <p class="push-notification__message">{{ chat.body }}</p>
+          <p class="push-notification__text fs-4">{{ chat.header }}</p>
+          <p class="push-notification__message fs-6">{{ chat.body }}</p>
         </div>
       </div>
     </template>
@@ -19,9 +19,9 @@ const employer = 'Павел основатель «ПромСтрой»';
 const chats = [
   { img: 'media/avatars/chat-face-2.jpg', header: freeco, body: 'Здравствуйте. Это фриланс-биржа экологических проектов для бизнеса' },
   { img: 'media/avatars/chat-face.jpg', header: employer, body: 'Здравствуйте. Вы делаете проекты НДВ? СЗЗ?' },
-  { img: 'media/avatars/chat-face.jpg', header: freeco, body: 'На freeeco зарегистрированы инженеры-экологи, которые решат все Ваши задачи' },
-  { img: 'media/avatars/chat-face-2.jpg', header: employer, body: 'А эти документы точно нам нужны? Что мне необходимо сделать?' },
-  { img: 'media/avatars/chat-face.jpg', header: freeco, body: 'Войдите в веб-сервис и оформите заказ. Мы проведём анализ, составим договор, назначим специалиста и он приступит к работе.' },
+  { img: 'media/avatars/chat-face-2.jpg', header: freeco, body: 'На freeeco зарегистрированы инженеры-экологи, которые решат все Ваши задачи' },
+  { img: 'media/avatars/chat-face.jpg', header: employer, body: 'А эти документы точно нам нужны? Что мне необходимо сделать?' },
+  { img: 'media/avatars/chat-face-2.jpg', header: freeco, body: 'Войдите в веб-сервис и оформите заказ. Мы проведём анализ, составим договор, назначим специалиста и он приступит к работе.' },
   { img: 'media/avatars/150-14.jpg', header: 'Ирина инженер-эколог', body: 'Добрый день. Чем могу Вам помочь?' },
 ]
 </script>
@@ -33,13 +33,9 @@ const chats = [
   align-items: center;
   background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  margin-bottom: 10px;
   transition: transform 0.3s ease-in-out;
 
-  font-size: 14px;
 
   animation: ani 1s forwards;
   opacity: 0;
@@ -49,13 +45,8 @@ const chats = [
   transform: translateY(-5px);
 }
 
-.push-notification__avatar {
-  margin-right: 10px;
-}
 
 .push-notification__avatar img {
-  width: 100px;
-  height: 100px;
   border-radius: 50%;
 }
 
@@ -80,14 +71,14 @@ const chats = [
 }
 
 .chat-style:nth-child(1) {
-  margin-right: auto;
+  margin-left: auto;
   animation-delay: 1s;
 
 
 }
 
 .chat-style:nth-child(2) {
-  margin-left: auto;
+  margin-right: auto;
   animation-delay: 2s;
 }
 
@@ -107,6 +98,7 @@ const chats = [
 
 .chat-style:nth-child(6) {
   animation-delay: 6s;
+  margin-left: auto;
 }
 
 

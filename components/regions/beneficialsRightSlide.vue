@@ -1,9 +1,9 @@
 <template>
     <div class="row justify-content-center align-items-center h-100">
       <div class="col-2"></div>
-      <div class="col-4"><img class="w-100" src="media/header-component-img/statik-slider/Background-img-right-slide.jpg" alt=""></div>
+      <div class="col-4"><img src="media/header-component-img/statik-slider/Background-img-right-slide.png" alt=""></div>
       <div class="col-4">
-        <h1 class="text-center display-3">
+        <h1 class="text-center display-3 mb-10">
           Ваша выгода
         </h1>
         <section class="d-flex flex-column justify-content-around">
@@ -54,16 +54,25 @@
 </script>
   
 <style scoped>
+section div div:hover {
+  box-shadow: 10px 5px 5px rgb(88, 85, 85);
+  position: relative;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 2rem !important;
+  transition-duration: 0.3s;
+}
 * {
   animation: ani 1s forwards;
 }
 
 section div div {
-  padding: 0 1rem;
+  padding: 1rem;
   width: 30%;
   height: 30%;
   border-radius: 10px 100px / 130px;
   text-align: center;
+  box-shadow: 100px;
 }
 
 section div div>p {

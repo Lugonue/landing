@@ -16,8 +16,10 @@ const startCondition = () => statusSlide.value = '';
       <div class="split left">
         <i class="fa-solid fa-chevron-right d-none opacity-0" id="fa-chevron-right"></i>
         <div class="position-absolute w-100 h-100 d-none" id="startCondition" @click="startCondition()"></div>
-        <img src="/media/header-component-img/statik-slider/left-cut-bg-prod.png" class="position-absolute bottom-0"
-          id="leftslideImg" alt="">
+        <div v-if="statusSlide.length === 0" style="height: 100%;"
+          class="d-flex flex-column align-items-center justify-content-end">
+          <img style="height: 80%;" src="/media/header-component-img/statik-slider/left-cut-bg-prod.png">
+        </div>
         <template v-if="statusSlide.length === 0">
           <button @click="buttonKnowMore('fullLeft')" id="fullLeft"
             class='opacity-50 h-100 position-absolute bottom-0 start-0 border-0'>
@@ -37,8 +39,10 @@ const startCondition = () => statusSlide.value = '';
         <i class="fa-solid fa-chevron-left d-none opacity-0" id="fa-chevron-left"></i>
         <div class="position-absolute w-100 h-100 d-none" id="startCondition" @click="startCondition()"></div>
         <!-- описание поменять -->
-        <img src="/media/header-component-img/statik-slider/right-cut-bg-prod.png" id="rightSlideImg"
-          class="position-absolute bottom-0 end-0" alt=" adidas pharrell williams tennis hu shoe in tangerine/gold">
+        <div v-if="statusSlide.length === 0" style="height: 100%;"
+          class="d-flex flex-column align-items-center justify-content-end">
+          <img style="height: 80%;" src="/media/header-component-img/statik-slider/right-cut-bg-prod.png" class="" alt="">
+        </div>
         <template v-if="statusSlide.length === 0">
           <button @click="buttonKnowMore('fullRight')" id="fullRight"
             class='opacity-50 h-100 position-absolute bottom-0 end-0 border-0'>
@@ -102,15 +106,6 @@ const startCondition = () => statusSlide.value = '';
   width: 95%;
 }
 
-/* .fullLeft>.left {
-  background: linear-gradient(to right, rgba(198, 15, 170, 0.6), rgba(179, 177, 178, 0.7)), center / 110% no-repeat url("/media/header-component-img/statik-slider/Background-img-left-slide1.png");
-  transition: background 1s;
-} */
-
-/* .fullRight>.right {
-  background: linear-gradient(to left, rgba(123, 123, 123, 0.6), rgba(170, 164, 167, 0.9)), center / 110% no-repeat url("/media/header-component-img/statik-slider/Background-img-right-slide.png");
-  transition: background 1s;
-} */
 
 .fullLeft>.right,
 .fullRight>.left {
@@ -173,12 +168,12 @@ const startCondition = () => statusSlide.value = '';
 /* ********************** img change *************** */
 
 
-.fullRight>.split>#rightSlideImg,
+/* .fullRight>.split>#rightSlideImg,
 .fullRight>.split>#leftslideImg,
 .fullLeft>.split>#rightSlideImg,
 .fullLeft>.split>#leftslideImg {
-  display: none;
-}
+  opacity: 0;
+} */
 
 
 .fullLeft>.left>.fa-square-xmark,
@@ -197,17 +192,23 @@ const startCondition = () => statusSlide.value = '';
 
 #leftslideImg {
   width: 60%;
-  left: 20%;
+  left: 15%;
+
+  animation: ani 1s forwards;
+  animation-delay: 1s;
+  opacity: 0;
 }
 
 #rightSlideImg {
   width: 100%;
 
   left: 0%;
+  animation: ani 1s forwards;
+  animation-delay: 1s;
+  opacity: 0;
 }
 
 /* chevron changes */
-
 
 .fullRight>.split>#fa-chevron-left,
 .fullLeft>.split>#fa-chevron-right {
@@ -224,17 +225,6 @@ const startCondition = () => statusSlide.value = '';
   transition-delay: 3s;
 }
 
-/* chats appierence */
-/* .fullLeft>.chats,
-.fullRight>.chats {
-  opacity: 0 !important;
-} */
-
-/* .fullLeft>.chats>.chat-style,
-.fullRight>.chats>.chat-style {
-  opacity: 0;
-  transition-delay: 0ms !important;
-} */
 /* Buttons KnowMore */
 #fullLeft,
 #fullRight {
@@ -245,5 +235,15 @@ const startCondition = () => statusSlide.value = '';
 #fullRight:hover {
   opacity: 100 !important;
   color: black;
+}
+
+@keyframes ani {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 </style>

@@ -2,39 +2,39 @@
   <div class="row justify-content-center align-items-center h-100">
     <div class="col-2"></div>
     <div class="col-4">
-      <h1 class="text-center display-3">
+      <h1 class="text-center display-3 mb-10">
         Ваша выгода
       </h1>
       <section class="d-flex flex-column justify-content-around">
         <div class="d-flex justify-content-center mb-5">
-          <div class="bg-white p-5 me-5">
+          <div class="p-5 me-5">
             <h1>Работа по договору</h1>
             <p>Заключение договора на разработку</p>
           </div>
         </div>
         <div class="d-flex justify-content-around mb-5">
-          <div class="bg-white p-5">
+          <div class="p-5">
             <h1>Мгновенный исполнитель</h1>
             <p>назначение проверенного исполнителя в день обращения</p>
           </div>
-          <div class="bg-white p-5">
+          <div class="p-5">
             <h1>Полный анализ</h1>
             <p>полный анализ деятельности от ТОП-овых специалистов</p>
           </div>
         </div>
 
         <div class="d-flex justify-content-around mb-5">
-          <div class="bg-white p-5">
+          <div class="p-5">
             <h1>Постоянно на связи</h1>
             <p>менеджер на связи 25/8</p>
           </div>
-          <div class="bg-white p-5">
+          <div class=" p-5">
             <h1>Все риски на нас</h1>
             <p>выполнение специалистом работы лежит на нашей области ответственности</p>
           </div>
         </div>
         <div class="d-flex justify-content-around mb-5">
-          <div class="bg-white p-5">
+          <div class="p-5">
             <h1>Оповещение</h1>
             <p>автоматическое оповещение прохождения этапов по почте или в соц сетях</p>
           </div>
@@ -54,6 +54,14 @@
 </script>
 
 <style scoped>
+section div div:hover {
+  box-shadow: 10px 5px 5px rgb(88, 85, 85);
+  position: relative;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 2rem !important;
+}
+
 * {
 animation: ani 1s forwards;
 }
@@ -64,6 +72,7 @@ width: 30%;
 height: 30%;
 border-radius: 10px 100px / 130px;
 text-align: center;
+background-color: rgb(249,250,251);
 }
 
 section div div>p {
