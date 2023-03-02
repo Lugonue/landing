@@ -11,9 +11,10 @@
                 </div>
                 <div class="d-flex" style="justify-content: end;">
                     <div class="card shadow-sm d-flex flex-row no-wrap p-5 w-75">
-                        <div class="card-body fs-4 py-4">
+                        <div class="card-body fs-5 py-2">
                             <p>Наш веб-сервис открывает доступ к инженерам-экологам, которые способны
-                                разработать любые проекты. Самые топовые разработчики имеют представление о сотнях
+                                разработать любые проекты.</p>
+                            <p>Самые топовые разработчики имеют представление о сотнях
                                 компаний и
                                 знают, что Вам нужно.</p>
                             <p>Инженеры-экологи могут присоединиться к нашей компании, и начать
@@ -26,43 +27,25 @@
                     </div>
                 </div>
             </div>
+            <hr>
+            <div class="row flex-column py-7">
+                <div class="card shadow-sm d-flex fs-5 flex-row no-wrap p-5 d-flex w-50" style="background-image: url('media/scroll.jpg');">
+                    <div>
+                        <h2>ДЛЯ ЧЕГО НУЖНЫ ЭКОЛОГИЧЕСКИЕ РАБОТЫ?</h2>
+                    <p>По законодательству к юридическим лицам и ИП предъявляют требования
+                        природоохранные органы Минприроды и Росприроднадзора</p>
+                    <p>Требуют отчеты, проекты, паспорта и разрешения</p>
+                    </div>
+                </div>
+                <div class="row justify-content-end text-end">
+                    <div class="py-6 mt-6 col-6">
+                        <p class="fs-1 text-dark fw-bolder">В 2021 году выявлен рост зафиксированных нарушений
+                            по сравнению с 2020 годом почти в 2 раза. Доля выигранных
+                            судебных дел снижается с 47% до 44%. За трендами идёт
+                            активная реформа законодательства и КоАп</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <h1 class="fs-2hx text-center">Наши партнеры</h1>
-    <div class="container mb-20" style="background: radial-gradient(closest-side, #D684D0 5%, #F9FAFB 90%);">
-        <section class="d-flex flex-center flex-wrap position-relative px-5 my-10 py-10">
-        <!--begin::Client-->
-        <div class="d-flex flex-center m-3 m-md-6 " data-bs-toggle="tooltip" title="" data-bs-original-title="Fujifilm">
-            <img src="media/company-logo/99c08050dc9d2168650bedc219637852.png" class="mh-100px mh-lg-100px border rounded-circle" alt="">
-        </div>
-        <!--end::Client-->
-        <!--begin::Client-->
-        <div class="d-flex flex-center m-3 m-md-6 " data-bs-toggle="tooltip" title="" data-bs-original-title="Vodafone">
-            <img src="media/company-logo/esec.png" class="mh-100px mh-lg-100px border rounded-circle" alt="">
-        </div>
-        <!--end::Client-->
-        <!--begin::Client-->
-        <div class="d-flex flex-center m-3 m-md-6 " data-bs-toggle="tooltip" title=""
-            data-bs-original-title="KPMG International">
-            <img src="media/company-logo/logo204-2.png" class="mh-100px mh-lg-100px border rounded-circle" alt="">
-        </div>
-        <!--end::Client-->
-        <!--begin::Client-->
-        <div class="d-flex flex-center m-3 m-md-6 " data-bs-toggle="tooltip" title="" data-bs-original-title="Nasa">
-            <img src="media/company-logo/peppell.png" class="mh-100px mh-lg-100px border rounded-circle" alt="">
-        </div>
-        <!--end::Client-->
-        <!--begin::Client-->
-        <div class="d-flex flex-center m-3 m-md-6 " data-bs-toggle="tooltip" title="Согласно Закону" data-bs-original-title="Aspnetzero">
-            <img src="media/company-logo/SZ.png" class="mh-100px mh-lg-100px border rounded-circle" alt="">
-        </div>
-        <!--end::Client-->
-        <!--begin::Client-->
-        <div class="d-flex flex-center m-3 m-md-6 " data-bs-toggle="tooltip" title=""
-            data-bs-original-title="AON - Empower Results">
-            <img src="media/company-logo/НПК АВТОПРИБОР.jpg" class="mh-100px mh-lg-100px border rounded-circle" alt="">
-        </div>
-        <!--end::Client-->
-    </section>
-    </div>
 </template>

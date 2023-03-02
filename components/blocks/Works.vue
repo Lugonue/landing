@@ -1,9 +1,9 @@
 
 <template>
-  <h1 class="fs-2hx text-center">Поиск работ по тегам</h1>
+  <h1 class="fs-2hx text-center mt-10">Поиск работ по тегам</h1>
   <section class="container py-5" v-if="!pending">
-    <div class="d-flex flex-column  rounded border p-10">
-      <ul class="nav border-transparent flex-row justify-content-between border-0 me-5 mb-3 mb-md-0 fs-6 pe-10"
+    <div class="d-flex flex-row  rounded border p-10">
+      <ul class="nav border-transparent flex-column justify-content-start border-0 me-5 mb-3 mb-md-0 fs-6 pe-10"
         role="tablist">
         <li class="nav-item me-0 mb-md-2" v-for="sphere in dataWorks">
           <a class="nav-link text-gray-500 text-active-dark p-0" data-bs-toggle="tab" :href="'#' + sphere.slug">
@@ -35,8 +35,12 @@
       </div>
     </div>
   </section>
+  <client-only>
+      <BlocksUtilsclientSideRender />
+    </client-only>
 </template>
 <script setup>
 const { data: dataWorks, pending } = useFetch('http://api.free-eco.ru/api/v1/works/spheres');
+console.log(dataWorks);
 </script>
 

@@ -41,7 +41,11 @@
         </div>
       </section>
     </div>
-    <div class="col-4"><img class="w-100" src="media/header-component-img/statik-slider/Background-img-left-slide1.jpg" alt=""></div>
+    <div class="col-4">
+      <div class="d-flex flex-column align-items-start justify-content-end" style="height: 100vh">
+        <img style="height: 80%;" src="media/header-component-img/statik-slider/Background-img-left-slide1.png" alt="">
+      </div>
+    </div>
     <div class="col-2"></div>
   </div>
   <div>

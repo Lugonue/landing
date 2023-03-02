@@ -1,7 +1,7 @@
 <template>
-  <div class="position-absolute top-0 w-25 d-flex" id="containerForChats" style="height: 100%;">
+    <div class="position-absolute top-0 w-25 d-flex" id="containerForChats" style="height: 100vh;">
     <template v-for="chat in chats">
-      <div class="push-notification chat-style mb-10 p-2">
+      <div class="push-notification chat-style mb-10 p-2 rounded">
         <div class="push-notification__avatar w-25 me-2">
           <img class="me-5 w-100" :src=chat.img alt="User Avatar">
         </div>

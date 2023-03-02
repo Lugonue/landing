@@ -3,16 +3,15 @@
     <div class="mb-0" id="home">
       <div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom">
         <RegionsHeader />
-        <client-only>
           <BlocksStaticSlide />
-        </client-only>
         <!-- <BlocksSlider/> -->
       </div>
     </div>
     <BlocksUniqueTradeOffer />
-    <BlocksWorks />
     <BlocksWorkScheme />
-    <BlocksProjects />
+    <BlocksWorks />
+    <!-- <BlocksProjects /> -->
+    <BlocksPartners />
     <BlocksTestimonials />
     <RegionsFooter />
   </div>

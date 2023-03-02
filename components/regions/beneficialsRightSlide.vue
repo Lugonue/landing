@@ -1,52 +1,56 @@
 <template>
-    <div class="row justify-content-center align-items-center h-100">
-      <div class="col-2"></div>
-      <div class="col-4"><img src="media/header-component-img/statik-slider/Background-img-right-slide.png" alt=""></div>
-      <div class="col-4">
-        <h1 class="text-center display-3 mb-10">
-          Ваша выгода
-        </h1>
-        <section class="d-flex flex-column justify-content-around">
-          <div class="d-flex justify-content-center mb-5">
-            <div class="bg-info me-5">
-              <h1>Работа по договору</h1>
-              <p>Заключение договора на разработку</p>
-            </div>
-          </div>
-          <div class="d-flex justify-content-around mb-5">
-            <div class="bg-info">
-              <h1>Мгновенный исполнитель</h1>
-              <p>назначение проверенного исполнителя в день обращения</p>
-            </div>
-            <div class="bg-info">
-              <h1>Полный анализ</h1>
-              <p>полный анализ деятельности от ТОП-овых специалистов</p>
-            </div>
-          </div>
-
-          <div class="d-flex justify-content-around mb-5">
-            <div class="bg-info">
-              <h1>Постоянно на связи</h1>
-              <p>менеджер на связи 25/8</p>
-            </div>
-            <div class="bg-info">
-              <h1>Все риски на нас</h1>
-              <p>выполнение специалистом работы лежит на нашей области ответственности</p>
-            </div>
-          </div>
-          <div class="d-flex justify-content-around mb-5">
-            <div class="bg-info">
-              <h1>Оповещение</h1>
-              <p>автоматическое оповещение прохождения этапов по почте или в соц сетях</p>
-            </div>
-          </div>
-        </section>
+  <div class="row justify-content-center align-items-center h-100">
+    <div class="col-2"></div>
+    <div class="col-4">
+      <div class="d-flex flex-column align-items-center justify-content-end" style="height: 100vh">
+        <img style="height: 80%;" src="media/header-component-img/statik-slider/Background-img-right-slide.png" alt="">
       </div>
-      <div class="col-2"></div>
     </div>
-    <div>
-      <a href="#" class="btn btn-dark"><span class=" w-100 svg-icon svg-icon-1"><svg>...</svg></span>Сделать заказ</a>
+    <div class="col-4">
+      <h1 class="text-center display-3 mb-10">
+        Ваша выгода
+      </h1>
+      <section class="d-flex flex-column justify-content-around">
+        <div class="d-flex justify-content-center mb-5">
+          <div class="bg-info me-5">
+            <h1>Работа по договору</h1>
+            <p>Заключение договора на разработку</p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-around mb-5">
+          <div class="bg-info">
+            <h1>Мгновенный исполнитель</h1>
+            <p>назначение проверенного исполнителя в день обращения</p>
+          </div>
+          <div class="bg-info">
+            <h1>Полный анализ</h1>
+            <p>полный анализ деятельности от ТОП-овых специалистов</p>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-around mb-5">
+          <div class="bg-info">
+            <h1>Постоянно на связи</h1>
+            <p>менеджер на связи 25/8</p>
+          </div>
+          <div class="bg-info">
+            <h1>Все риски на нас</h1>
+            <p>выполнение специалистом работы лежит на нашей области ответственности</p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-around mb-5">
+          <div class="bg-info">
+            <h1>Оповещение</h1>
+            <p>автоматическое оповещение прохождения этапов по почте или в соц сетях</p>
+          </div>
+        </div>
+      </section>
     </div>
+    <div class="col-2"></div>
+  </div>
+  <div>
+    <a href="#" class="btn btn-dark"><span class=" w-100 svg-icon svg-icon-1"><svg>...</svg></span>Сделать заказ</a>
+  </div>
 </template>
   
 <script>
@@ -62,6 +66,7 @@ section div div:hover {
   font-size: 2rem !important;
   transition-duration: 0.3s;
 }
+
 * {
   animation: ani 1s forwards;
 }
