@@ -12,36 +12,36 @@
       </h1>
       <section class="d-flex flex-column justify-content-around">
         <div class="d-flex justify-content-center mb-5">
-          <div class="bg-info me-5">
-            <h1>Работа по договору</h1>
-            <p>Заключение договора на разработку</p>
+          <div class="bg-secondary p-5 me-5">
+            <h1>Работа на постоянке</h1>
+            <p>назначение проверенного исполнителя в день обращения</p>
           </div>
         </div>
         <div class="d-flex justify-content-around mb-5">
-          <div class="bg-info">
-            <h1>Мгновенный исполнитель</h1>
-            <p>назначение проверенного исполнителя в день обращения</p>
-          </div>
-          <div class="bg-info">
-            <h1>Полный анализ</h1>
+          <div class="bg-secondary p-5">
+            <h1>Опыт</h1>
             <p>полный анализ деятельности от ТОП-овых специалистов</p>
+          </div>
+          <div class="bg-secondary p-5">
+            <h1>Заработок</h1>
+            <p>Получайте высокие рейтинги и забирайте все работы</p>
           </div>
         </div>
 
         <div class="d-flex justify-content-around mb-5">
-          <div class="bg-info">
+          <div class="bg-secondary p-5">
+            <h1>Оповещение</h1>
+            <p>автоматическое оповещение прохождения этапов по почте или в соц сетях</p>
+          </div>
+          <div class="bg-secondary p-5">
             <h1>Постоянно на связи</h1>
             <p>менеджер на связи 25/8</p>
           </div>
-          <div class="bg-info">
-            <h1>Все риски на нас</h1>
-            <p>выполнение специалистом работы лежит на нашей области ответственности</p>
-          </div>
         </div>
         <div class="d-flex justify-content-around mb-5">
-          <div class="bg-info">
-            <h1>Оповещение</h1>
-            <p>автоматическое оповещение прохождения этапов по почте или в соц сетях</p>
+          <div class="bg-secondary p-5">
+            <h1>Все риски на нас</h1>
+            <p>выполнение специалистом работы лежит на нашей области ответственности</p>
           </div>
         </div>
       </section>
@@ -58,6 +58,9 @@
 </script>
   
 <style scoped>
+p {
+  font-size: 0.9rem !important;
+}
 section div div:hover {
   box-shadow: 10px 5px 5px rgb(88, 85, 85);
   position: relative;

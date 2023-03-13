@@ -58,6 +58,9 @@
 </script>
 
 <style scoped>
+p {
+  font-size: 0.9rem !important;
+}
 section div div:hover {
   box-shadow: 10px 5px 5px rgb(88, 85, 85);
   position: relative;

@@ -29,9 +29,8 @@
         data-bs-original-title="Aspnetzero">
         <img src="media/company-logo/SZ.png" class="mh-100px mh-lg-100px border rounded-circle" alt="">
       </div>
-      <!--end::Client-->
       <!--begin::Client-->
-      <div class="d-flex flex-center m-3 m-md-6 " data-bs-toggle="tooltip" title=""
+      <div class="d-flex flex-center m-3 m-md-6 " data-bs-toggle="tooltip" title="НПК АВТОПРИБОР"
         data-bs-original-title="AON - Empower Results">
         <img src="media/company-logo/НПК АВТОПРИБОР.jpg" class="mh-100px mh-lg-100px border rounded-circle" alt="">
       </div>

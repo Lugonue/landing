@@ -1,5 +1,5 @@
 <template>
-    <div class="position-absolute top-0 w-25 d-flex" id="containerForChats" style="height: 100vh;">
+    <div class="position-absolute top-0 w-25 d-flex justify-content-center" id="containerForChats" style="height: 100%;">
     <template v-for="chat in chats">
       <div class="push-notification chat-style mb-10 p-2 rounded">
         <div class="push-notification__avatar w-25 me-2">
@@ -22,7 +22,7 @@ const chats = [
   { img: 'media/avatars/chat-face-2.jpg', header: freeco, body: 'На freeeco зарегистрированы инженеры-экологи, которые решат все Ваши задачи' },
   { img: 'media/avatars/chat-face.jpg', header: employer, body: 'А эти документы точно нам нужны? Что мне необходимо сделать?' },
   { img: 'media/avatars/chat-face-2.jpg', header: freeco, body: 'Войдите в веб-сервис и оформите заказ. Мы проведём анализ, составим договор, назначим специалиста и он приступит к работе.' },
-  { img: 'media/avatars/150-14.jpg', header: 'Ирина инженер-эколог', body: 'Добрый день. Чем могу Вам помочь?' },
+  // { img: 'media/avatars/150-14.jpg', header: 'Ирина инженер-эколог', body: 'Добрый день. Чем могу Вам помочь?' },
 ]
 </script>
 <style scoped>
@@ -66,7 +66,7 @@ const chats = [
 #containerForChats {
   margin-top: 2%;
   left: 40%;
-  z-index: 2;
+  z-index: 1;
   flex-direction: column;
 }
 
