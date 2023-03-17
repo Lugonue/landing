@@ -8,11 +8,13 @@
       </div>
     </div>
     <BlocksUniqueTradeOffer />
-    <BlocksWorkScheme />
+    <!-- <BlocksWorkScheme /> -->
     <BlocksWorks />
     <!-- <BlocksProjects /> -->
+    <LazyBlocksTopFreelancers />
+    <BlocksTeam />
     <BlocksPartners />
-    <BlocksTestimonials />
+    <RegionsOffer />
     <RegionsFooter />
   </div>
 </template>

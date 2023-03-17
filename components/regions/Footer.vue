@@ -1,13 +1,7 @@
 <template>
     <!--begin::Footer Section-->
     <footer class="mb-0">
-        <!--begin::Curve top-->
-        <div class="landing-curve landing-dark-color">
-            <svg viewBox="15 -1 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z" fill="currentColor"></path>
-            </svg>
-        </div>
-        <!--end::Curve top-->
+       
         <!--begin::Wrapper-->
         <div class="landing-dark-bg pt-20">
             <!--begin::Container-->
@@ -19,24 +13,20 @@
                         <!--begin::Block-->
                         <div class="rounded landing-dark-border p-9 mb-10">
                             <!--begin::Title-->
-                            <h2 class="text-white">Would you need a Custom License?</h2>
+                            <h2 class="text-white">У вас остались вопросы? </h2>
                             <!--end::Title-->
                             <!--begin::Text-->
-                            <span class="fw-normal fs-4 text-gray-700">ЕМАЙЛ us to
+                            <span class="fw-normal fs-4 text-gray-700">Напишите нам!
                             <a href="https://keenthemes.com/support" class="text-white opacity-50 text-hover-primary">support@free-eco.com</a></span>
                             <!--end::Text-->
                         </div>
                         <!--end::Block-->
                         <!--begin::Block-->
-                        <div class="rounded landing-dark-border p-9">
-                            <!--begin::Title-->
+                        <!-- <div class="rounded landing-dark-border p-9">
                             <h2 class="text-white">How About a Custom Project?</h2>
-                            <!--end::Title-->
-                            <!--begin::Text-->
                             <span class="fw-normal fs-4 text-gray-700">Use Our Custom Development Service.
                             <a href="../../demo3/dist/pages/profile/overview.html" class="text-white opacity-50 text-hover-primary">Click to Get a Quote</a></span>
-                            <!--end::Text-->
-                        </div>
+                        </div> -->
                         <!--end::Block-->
                     </div>
                     <!--end::Col-->
@@ -47,32 +37,32 @@
                             <!--begin::Links-->
                             <div class="d-flex fw-bold flex-column me-20">
                                 <!--begin::Subtitle-->
-                                <h4 class="fw-bolder text-gray-400 mb-6">More for Metronic</h4>
+                                <h4 class="fw-bolder text-gray-400 mb-6">Дополнительно о FreeEco</h4>
                                 <!--end::Subtitle-->
                                 <!--begin::Link-->
-                                <a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">FAQ</a>
+                                <a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Часто задаваемые вопросы</a>
                                 <!--end::Link-->
                                 <!--begin::Link-->
-                                <a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Documentaions</a>
+                                <a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Документы</a>
                                 <!--end::Link-->
                                 <!--begin::Link-->
-                                <a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Video Tuts</a>
+                                <a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6"></a>
                                 <!--end::Link-->
                                 <!--begin::Link-->
-                                <a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Changelog</a>
+                                <a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6"></a>
                                 <!--end::Link-->
                                 <!--begin::Link-->
-                                <a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Github</a>
+                                <a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6"></a>
                                 <!--end::Link-->
                                 <!--begin::Link-->
-                                <a href="#" class="text-white opacity-50 text-hover-primary fs-5">Tutorials</a>
+                                <a href="#" class="text-white opacity-50 text-hover-primary fs-5"></a>
                                 <!--end::Link-->
                             </div>
                             <!--end::Links-->
                             <!--begin::Links-->
                             <div class="d-flex fw-bold flex-column ms-lg-20">
                                 <!--begin::Subtitle-->
-                                <h4 class="fw-bolder text-gray-400 mb-6">Stay Connected</h4>
+                                <h4 class="fw-bolder text-gray-400 mb-6">Контакты</h4>
                                 <!--end::Subtitle-->
                                 <!--begin::Link-->
                                 <a href="#" class="mb-6">
@@ -91,14 +81,6 @@
                                     <img src="media/svg/brand-logos/twitter.svg" class="h-20px me-2" alt="" />
                                     <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Twitter</span>
                                 </a>
-                                <!--end::Link-->
-                                <!--begin::Link-->
-                                <a href="#" class="mb-6">
-                                    <img src="media/svg/brand-logos/dribbble-icon-1.svg" class="h-20px me-2" alt="" />
-                                    <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Dribbble</span>
-                                </a>
-                                <!--end::Link-->
-                                <!--begin::Link-->
                                 <a href="#" class="mb-6">
                                     <img src="media/svg/brand-logos/instagram-2-1.svg" class="h-20px me-2" alt="" />
                                     <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Instagram</span>

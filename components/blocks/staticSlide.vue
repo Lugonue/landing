@@ -23,7 +23,7 @@ const startCondition = () => statusSlide.value = '';
         <template v-if="statusSlide.length === 0">
           <button @click="buttonKnowMore('fullLeft')" id="fullLeft"
             class='opacity-50 h-100 position-absolute bottom-0 start-0 border-0'>
-            <p class="display-6 p-0 m-0">Узнать больше</p>
+            <p class="fs-1 p-0 m-0">Узнать больше</p>
           </button>
         </template>
         <!-- left slide benefitials -->
@@ -46,7 +46,7 @@ const startCondition = () => statusSlide.value = '';
         <template v-if="statusSlide.length === 0">
           <button @click="buttonKnowMore('fullRight')" id="fullRight"
             class='opacity-50 h-100 position-absolute bottom-0 end-0 border-0'>
-            <p class="display-6 p-0 m-0">Узнать больше</p>
+            <p class="fs-1 p-0 m-0">Узнать больше</p>
           </button>
         </template>
         <!-- right slide benefitials -->
@@ -61,8 +61,9 @@ const startCondition = () => statusSlide.value = '';
 </template>
 
 <style scoped>
-#startCondition {
+#startCondition:hover {
   cursor: pointer;
+  background: rgba(135, 32, 208, 0.4);
 }
 
 #fullRight p {

@@ -1,51 +1,98 @@
 <template>
-    <section class="bg-light mb-20">
-        <div class="container">
-            <div class="row flex-column py-7">
-                <div class="col-lg-6">
-                    <div class="py-6 mt-6">
-                        <p class="fs-1 text-dark fw-bolder">Хотите сделать бизнес в соответствии с экологическим
-                            законодательством и завоевать
-                            лояльность клиентов?</p>
-                    </div>
-                </div>
-                <div class="d-flex" style="justify-content: end;">
-                    <div class="card shadow-sm d-flex flex-row no-wrap p-5 w-75">
-                        <div class="card-body fs-5 py-2">
-                            <p>Наш веб-сервис открывает доступ к инженерам-экологам, которые способны
-                                разработать любые проекты.</p>
-                            <p>Самые топовые разработчики имеют представление о сотнях
-                                компаний и
-                                знают, что Вам нужно.</p>
-                            <p>Инженеры-экологи могут присоединиться к нашей компании, и начать
-                                развиваться и зарабатывать</p>
-
-                        </div>
-                        <div class="d-flex" style="width: 100%; align-items: center;">
-                            <img class="w-100" src="media/ESG.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="row flex-column py-7">
-                <div class="card shadow-sm d-flex fs-5 flex-row no-wrap p-5 d-flex w-50" style="background-image: url('media/scroll.jpg');">
-                    <div>
-                        <h2>ДЛЯ ЧЕГО НУЖНЫ ЭКОЛОГИЧЕСКИЕ РАБОТЫ?</h2>
-                    <p>По законодательству к юридическим лицам и ИП предъявляют требования
-                        природоохранные органы Минприроды и Росприроднадзора</p>
-                    <p>Требуют отчеты, проекты, паспорта и разрешения</p>
-                    </div>
-                </div>
-                <div class="row justify-content-end text-end">
-                    <div class="py-6 mt-6 col-6">
-                        <p class="fs-1 text-dark fw-bolder">В 2021 году выявлен рост зафиксированных нарушений
-                            по сравнению с 2020 годом почти в 2 раза. Доля выигранных
-                            судебных дел снижается с 47% до 44%. За трендами идёт
-                            активная реформа законодательства и КоАп</p>
-                    </div>
-                </div>
-            </div>
+  <div class="container-fluid bg-body-secondary d-flex flex-column justify-content-center" style="min-height: 100vh;">
+    <div class="row justify-content-center">
+      <div class="col-lg-4">
+        <div class="py-6 mt-6">
+          <p class="fs-1 text-dark fw-bolder">Хотите сделать бизнес в соответствии с экологическим
+            законодательством и завоевать
+            лояльность клиентов?</p>
         </div>
-    </section>
+      </div>
+      <div class="col-lg-5 d-flex position-relative">
+        <div class="card shadow-sm d-flex no-wrap flex-row" style=" top: 5rem;">
+          <div class="card-body">
+            <p>Наш веб-сервис открывает доступ к инженерам-экологам, которые способны
+              разработать любые проекты.Самые топовые разработчики имеют представление о сотнях
+              компаний и знают, что Вам нужно.</p>
+            <p>Инженеры-экологи могут присоединиться к нашей компании, и начать
+              развиваться и зарабатывать</p>
+          </div>
+          <div class=" pe-3 d-flex " style="width: 100%; align-items: center;">
+            <img style="width: 100%;" src="/media/ESG.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="height: 200px;"></div>
+    <div class="row justify-content-center">
+      <div class="col-lg-4">
+        <div class="card shadow-sm p-3" style="background: right / contain no-repeat url('/media/scroll.jpg')">
+          <p class="fs-1 text-dark fw-bolder">Для чего нужны экологические работы?</p>
+          <p>По законодательству к юридическим лицам и ИП предъявляют требования
+            природоохранные органы Минприроды и Росприроднадзора</p>
+          <p>Требуют отчеты, проекты, паспорта и разрешения</p>
+        </div>
+      </div>
+      <div class=" col-lg-5 justify-content-end  position-relative" style=" top: 3rem;">
+
+
+        <!--begin::Accordion-->
+        <div class="accordion" id="kt_accordion_1">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="kt_accordion_1_header_1">
+              <button class="accordion-button fs-4 fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#kt_accordion_1_body_1" aria-expanded="true" aria-controls="kt_accordion_1_body_1">
+                Фриланс биржа с уклоном на контроль работ
+              </button>
+            </h2>
+            <div id="kt_accordion_1_body_1" class="accordion-collapse collapse show"
+              aria-labelledby="kt_accordion_1_header_1" data-bs-parent="#kt_accordion_1">
+              <div class="accordion-body">
+                “Это не совсем обычная фриланс биржа.“ К работе мы прекрепляем своего менеджера. Он сам
+                производит релевантный подбор как одного специалиста, так и несколько для комлпексного решения задачи.
+                Компаниям все чаще требуются команды подрядчиков, а не только один фрилансер. Решение, которое может
+                масштабироваться от двух фрилансеров до сотен фрилансеров, имеет решающее значение для роста. На всём
+                этапе менеджер контролирует работы. По окончанию работы проводится внутренний аудит итоговой работы.
+                Договора заключаются с нашей компаний как стороны заказчика, так со стороны и исполнителя.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="kt_accordion_1_header_2">
+              <button class="accordion-button fs-4 fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#kt_accordion_1_body_2" aria-expanded="false" aria-controls="kt_accordion_1_body_2">
+                Сводка правонарушений
+              </button>
+            </h2>
+            <div id="kt_accordion_1_body_2" class="accordion-collapse collapse" aria-labelledby="kt_accordion_1_header_2"
+              data-bs-parent="#kt_accordion_1">
+              <div class="accordion-body">
+                В 2021 году выявлен рост зафиксированных нарушений
+                по сравнению с 2020 годом почти в 2 раза. Доля выигранных
+                судебных дел снижается с 47% до 44%. За трендами идёт
+                активная реформа законодательства и КоАп
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="kt_accordion_1_header_3">
+              <button class="accordion-button fs-4 fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#kt_accordion_1_body_3" aria-expanded="false" aria-controls="kt_accordion_1_body_3">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="kt_accordion_1_body_3" class="accordion-collapse collapse" aria-labelledby="kt_accordion_1_header_3"
+              data-bs-parent="#kt_accordion_1">
+              <div class="accordion-body">
+                ...
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end::Accordion-->
+      </div>
+    </div>
+  </div>
 </template>
