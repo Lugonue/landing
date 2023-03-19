@@ -2,15 +2,12 @@
   <div class="container-fluid">
     <h1 class="fs-2hx text-center mb-10">Наша команда</h1>
 
-    <div class="row justify-content-center ">
-      <div class="card-wrapper">
-
+    <div class="row justify-content-evenly">
+      <div class="card-wrapper" v-for="item in dataTeam">
         <div class="card">
-
           <div class="card-image">
-            <img src="https://image.ibb.co/dUTfmJ/profile_img.jpg" alt="profile one">
+            <img class="w-100" :src=item.img alt="profile">
           </div>
-
           <ul class="social-icons">
             <li>
               <a href="">
@@ -33,140 +30,25 @@
               </a>
             </li>
           </ul>
-
-          <div class="details">
-            <h2>John Smith
+          <div class="details p-2">
+            <h2>{{ item.name }}
               <br>
-              <span class="job-title">UI Developer</span>
+              <span class="job-title">{{ item.description }}</span>
             </h2>
           </div>
         </div>
       </div><!-- end box wrapper -->
-      <div class="card-wrapper">
-
-        <div class="card">
-
-          <div class="card-image">
-            <img src="https://image.ibb.co/dUTfmJ/profile_img.jpg" alt="profile one">
-          </div>
-
-          <ul class="social-icons">
-            <li>
-              <a href="">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fab fa-dribbble"></i>
-              </a>
-            </li>
-          </ul>
-
-          <div class="details">
-            <h2>John Smith
-              <br>
-              <span class="job-title">UI Developer</span>
-            </h2>
-          </div>
-        </div>
-      </div><!-- end box wrapper -->
-      <div class="card-wrapper">
-
-        <div class="card">
-
-          <div class="card-image">
-            <img src="https://image.ibb.co/dUTfmJ/profile_img.jpg" alt="profile one">
-          </div>
-
-          <ul class="social-icons">
-            <li>
-              <a href="">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fab fa-dribbble"></i>
-              </a>
-            </li>
-          </ul>
-
-          <div class="details">
-            <h2>John Smith
-              <br>
-              <span class="job-title">UI Developer</span>
-            </h2>
-          </div>
-        </div>
-      </div><!-- end box wrapper -->
-      <div class="card-wrapper">
-
-        <div class="card">
-
-          <div class="card-image">
-            <img src="https://image.ibb.co/dUTfmJ/profile_img.jpg" alt="profile one">
-          </div>
-
-          <ul class="social-icons">
-            <li>
-              <a href="">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fab fa-dribbble"></i>
-              </a>
-            </li>
-          </ul>
-
-          <div class="details">
-            <h2>John Smith
-              <br>
-              <span class="job-title">UI Developer</span>
-            </h2>
-          </div>
-        </div>
-      </div><!-- end box wrapper -->
-
-
       <!-- END box wrapper -->
     </div>
 
   </div><!-- END container -->
 </template>
-
+<script setup>
+const dataTeam = [
+  { id: 1, name: 'Евгений Веренков', description: 'Инженер-эколог, общественный инспектор', img: '/media/avatars/team/photo_2021-09-16_13-34-31.jpg' },
+  { id: 2, name: 'Константин Попко', description: 'Инженер-эколог, разработчик', img: '/media/avatars/team/DSC_0055.jpg' },
+]
+</script>
 <style lang="scss" scoped>
 /**** Sass Variables ****/
 $bodyFont: 'Open Sans', sans-serif;
@@ -184,7 +66,7 @@ body {
 }
 
 .card-wrapper {
-  width: 400px;
+  width: 200px;
   height: 500px;
   position: relative;
 }
@@ -193,8 +75,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 350px;
-  height: 450px;
+  width: 200px;
+  height: 290px;
   transform: translate(-50%, -50%);
   border-radius: 16px;
   overflow: hidden;
@@ -203,7 +85,7 @@ body {
   transition: 0.5s;
 
   .card-image {
-    position: absolute;
+    // position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -220,7 +102,14 @@ body {
 }
 
 .card:hover .card-image {
-  transform: translateY(-100px);
+  transform: translateY(-10%);
+  transition: all .9s;
+  z-index: 1;
+
+}
+
+.card:hover .details {
+  z-index: 2 !important;
   transition: all .9s;
 }
 
@@ -238,17 +127,18 @@ body {
     list-style: none;
 
     a {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      margin: 0 5px;
       position: relative;
       display: block;
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
-      text-align: center;
+      width: 30px;
+      height: 30px;
+
       background: #fff;
-      font-size: 23px;
+      font-size: 1rem;
       color: #333;
-      font-weight: bold;
-      margin: 0 6px;
       transition: .4s;
       transform: translateY(200px);
       opacity: 0;
@@ -259,6 +149,7 @@ body {
 .card:hover .social-icons li a {
   transform: translateY(0px);
   opacity: 1;
+
 }
 
 .social-icons li a:hover {
@@ -301,22 +192,18 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #fff;
+  background: #ffffff;
   width: 100%;
-  height: 120px;
-  z-index: 1;
-  padding: 10px;
+  height: 30%;
 
   h2 {
-    margin: 30px 0;
     padding: 0;
     text-align: center;
 
     .job-title {
       font-size: 1rem;
-      line-height: 2.5rem;
       color: #333;
-      font-weight: 300;
+      font-weight: 400;
     }
   }
 }
@@ -328,5 +215,4 @@ body {
 .card:hover .profile-img--two {
   transform: rotateY(180deg);
 }
-
 </style>

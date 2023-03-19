@@ -1,15 +1,15 @@
 <template>
-  <div class="container-fluid bg-body-secondary d-flex flex-column justify-content-center" style="min-height: 100vh;">
+  <div class="container-fluid bg-body-secondary d-flex flex-column justify-content-center" id="bg" style="min-height: 100vh; ">
     <div class="row justify-content-center">
       <div class="col-lg-4">
-        <div class="py-6 mt-6">
-          <p class="fs-1 text-dark fw-bolder">Хотите сделать бизнес в соответствии с экологическим
+        <div class=" card p-6">
+          <p class=" fs-1 text-dark fw-bolder">Хотите сделать бизнес в соответствии с экологическим
             законодательством и завоевать
             лояльность клиентов?</p>
         </div>
       </div>
       <div class="col-lg-5 d-flex position-relative">
-        <div class="card shadow-sm d-flex no-wrap flex-row" style=" top: 5rem;">
+        <div class="card shadow-sm d-flex no-wrap flex-row p-4" style=" top: 5rem;">
           <div class="card-body">
             <p>Наш веб-сервис открывает доступ к инженерам-экологам, которые способны
               разработать любые проекты.Самые топовые разработчики имеют представление о сотнях
@@ -17,7 +17,7 @@
             <p>Инженеры-экологи могут присоединиться к нашей компании, и начать
               развиваться и зарабатывать</p>
           </div>
-          <div class=" pe-3 d-flex " style="width: 100%; align-items: center;">
+          <div class=" d-flex " style="width: 100%; align-items: center;">
             <img style="width: 100%;" src="/media/ESG.png" alt="">
           </div>
         </div>
@@ -26,7 +26,7 @@
     <div style="height: 200px;"></div>
     <div class="row justify-content-center">
       <div class="col-lg-4">
-        <div class="card shadow-sm p-3" style="background: right / contain no-repeat url('/media/scroll.jpg')">
+        <div class="card shadow-sm p-5" style="background: right / contain no-repeat url('/media/scroll.jpg'), white">
           <p class="fs-1 text-dark fw-bolder">Для чего нужны экологические работы?</p>
           <p>По законодательству к юридическим лицам и ИП предъявляют требования
             природоохранные органы Минприроды и Росприроднадзора</p>
@@ -96,3 +96,10 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+
+#bg {
+  background: linear-gradient(rgb(233, 196, 244), white)
+}
+</style>

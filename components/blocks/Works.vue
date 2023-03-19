@@ -6,11 +6,10 @@ const isActiveWork = (id) => id === 2;
 
 </script>
 <template>
-  <div class="container-fluid d-flex justify-content-center" style="min-height: 100vh;">
-
+  <div class="container-fluid d-flex justify-content-center bg-white" style="min-height: 100vh;">
     <section class="col-lg-10 py-5" v-if="!pending">
       <h1 class="fs-2hx text-center mt-10">Поиск работ по тегам</h1>
-      <div class="d-flex flex-row justify-content-start rounded border p-10">
+      <div class="d-flex flex-row justify-content-start p-10">
         <ul class="nav border-transparent flex-column justify-content-start border-0 me-5 mb-3 mb-md-0 fs-6 pe-10"
           role="tablist">
           <li class="nav-item me-0 mb-md-2" v-for="sphere in spheres.data">
