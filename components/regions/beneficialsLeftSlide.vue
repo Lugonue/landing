@@ -45,7 +45,7 @@ section div:hover {
   position: relative;
   bottom: 1rem;
   right: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 * {

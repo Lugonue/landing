@@ -21,6 +21,7 @@ const startCondition = () => statusSlide.value = '';
           <img style="height: 80%;" src="/media/header-component-img/statik-slider/left-cut-bg-prod.png">
         </div>
         <template v-if="statusSlide.length === 0">
+          <i @click="buttonKnowMore('fullLeft')" class="fa-regular fa-arrow-left-long position-absolute display-5 text-black"  style="left: 70px; top: 47%; cursor: pointer;"></i>
           <button @click="buttonKnowMore('fullLeft')" id="fullLeft"
             class='opacity-50 h-100 position-absolute bottom-0 start-0 border-0'>
             <p class="fs-1 p-0 m-0">Узнать больше</p>
@@ -44,6 +45,7 @@ const startCondition = () => statusSlide.value = '';
           <img style="height: 80%;" src="/media/header-component-img/statik-slider/right-cut-bg-prod.png" class="" alt="">
         </div>
         <template v-if="statusSlide.length === 0">
+          <i @click="buttonKnowMore('fullRight')" class="fa-regular fa-arrow-right-long position-absolute display-5"  style="right: 70px; top: 47%; cursor: pointer;"></i>
           <button @click="buttonKnowMore('fullRight')" id="fullRight"
             class='opacity-50 h-100 position-absolute bottom-0 end-0 border-0'>
             <p class="fs-1 p-0 m-0">Узнать больше</p>
