@@ -25,8 +25,8 @@ const chats = [
   { img: '/media/avatars/chat-face-2.png', header: managerFreeeco, headerPart: managerFreeecoHeader, body: 'Да. На freeeco зарегистрированы удаленные инженеры-экологи, которые разрабатывают разные документы от отчётов до проектов' },
   { img: '/media/avatars/chat-face.jpg', header: customerChat, headerPart: customerChatHeader, body: 'А эти документы точно нужны моей компании? Что мне необходимо сделать?' },
   { img: '/media/avatars/chat-face-2.png', header: managerFreeeco, headerPart: managerFreeecoHeader, body: 'Войдите в веб-сервис и оформите заказ. Мы проведём анализ, составим договор. Подберём подходящего специалиста, а также проконтролируем работу' },
-  { img: '/media/avatars/150-11.jpg', header: 'Ирина', headerPart: 'инженер-эколог', body: 'Здравствуйте. Меня зовут Ирина, я инженер-эколог со стажем. Хочу получать экологические заказы' },
-  { img: '/media/avatars/150-11.jpg', header: managerFreeeco, headerPart: managerFreeecoHeader, body: 'Проходите регистрацию, отмечайте работы, которые хотите получать и добро пожаловать' },
+  { img: '/media/avatars/chat-ingener.PNG', header: 'Ирина', headerPart: 'инженер-эколог', body: 'Здравствуйте. Меня зовут Ирина, я инженер-эколог со стажем. Хочу получать экологические заказы' },
+  { img: '/media/avatars/chat-face-2.png', header: managerFreeeco, headerPart: managerFreeecoHeader, body: 'Проходите регистрацию, отмечайте работы, которые хотите получать и добро пожаловать' },
 ]
 </script>
 <style scoped>
@@ -116,4 +116,10 @@ const chats = [
     opacity: 1;
   }
 }
+
+/* @media (max-width: 1000px) {
+  #containerForChats {
+    display: none;
+  }
+} */
 </style>

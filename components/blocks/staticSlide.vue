@@ -90,7 +90,7 @@ function scrollToPosition() {
     document.removeEventListener('scroll', scrollToPosition);
     document.body.classList.add('overflow-hidden');
     owerflowOn();
-    setTimeout(() => document.body.classList.remove('overflow-hidden'), 5000);
+    setTimeout(() => document.body.classList.remove('overflow-hidden'), 1000);
     window.scrollTo({
     top: position + 100,
     behavior: "smooth"

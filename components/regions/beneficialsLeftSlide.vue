@@ -1,18 +1,18 @@
 <template>
   <div class="row justify-content-center align-items-center">
     <div class="col-5 text-center">
-      <h1 class="text-center display-3 mb-10">
+      <h1 class="text-center display-3 mb-10 text-dark">
         Ваша выгода
       </h1>
-      <section class="d-flex flex-wrap align-items-center" style="height: 60vh;">
-        <div class="p-1 me-4" v-for="item in data">
-          <h3>{{ item.title }}</h3>
+      <section class="d-flex flex-wrap align-items-center" style="height: 60vh; width: 75vh;">
+        <div class="p-3 me-4 text-dark" v-for="item in data" >
+          <h3 class="text-dark text-shadow fw-bolder">{{ item.title }}</h3>
           <p>{{ item.body }}</p>
         </div>
         
       </section>
       <div style="justify-self: center;">
-          <a href="#" class="btn btn-info fs-1"><span class=" w-100 svg-icon svg-icon-1"></span>Сделать заказ</a>
+          <a href="#" class="btn btn-dark fs-1"><span class=" w-100 svg-icon svg-icon-1"></span>Сделать заказ</a>
         </div>
     </div>
     <div class="col-4">
@@ -43,9 +43,8 @@ a:hover {
 section div:hover {
   box-shadow: 10px 5px 5px rgb(88, 85, 85);
   position: relative;
-  bottom: 1rem;
-  right: 1rem;
-  font-size: 1.1rem;
+  bottom: .5rem;
+  right: .5rem;
 }
 
 * {
@@ -65,41 +64,43 @@ section>div {
   align-items: center;
   text-align: center;
 
+  background: linear-gradient( rgb(222, 207, 232),  rgb(100, 6, 232) );;
+
   animation: ani 3s forwards;
 }
 
 section>div:nth-child(1) {
 
   border-radius: 50%;
-  background-color: rgb(154, 122, 122);
+  /* background-color: rgb(24,28,50); */
 }
 
 section>div:nth-child(2) {
   border-radius: 10px;
-  background-color: rgb(90, 219, 97);
+  /* background-color: rgb(24,28,50); */
 }
 
 section>div:nth-child(3) {
   flex-grow: 1;
   border-radius: 10px;
-  background-color: rgb(226, 173, 40);
+  /* background-color: rgb(24,28,50); */
 }
 
 section>div:nth-child(4) {
   flex-grow: 1;
   border-radius: 10px;
-  background-color: rgb(226, 173, 40);
+  /* background-color: rgb(226, 173, 40); */
 }
 
 section>div:nth-child(5) {
   border-radius: 10px;
-  background-color: rgb(90, 219, 97);
+  /* background-color: rgb(90, 219, 97); */
 }
 
 section>div:nth-child(6) {
 
   border-radius: 50%;
-  background-color: rgb(154, 122, 122);
+  /* background-color: rgb(24,28,50); */
 }
 
 .bg {

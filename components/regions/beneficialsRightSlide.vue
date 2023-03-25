@@ -5,20 +5,20 @@
         <img style="height: 80%;" src="media/header-component-img/statik-slider/Background-img-right-slide.png" alt="">
       </div>
     </div>
-    <div class="col-5">
-      <h1 class="text-center display-3 mb-10">
+    <div class="col-5 text-center">
+      <h1 class="text-center display-3 mb-10 text-dark">
         Ваша выгода
       </h1>
-      <section class="d-flex flex-wrap align-items-center" style="height: 60vh;">
-        <div class="p-1 me-4" v-for="item in data">
-          <h3>{{ item.title }}</h3>
+      <section class="d-flex flex-wrap align-items-center" style="height: 60vh; width: 75vh;">
+        <div class="p-3 me-4 bg-info text-white fw-lighter" v-for="item in data">
+          <h3 class="text-white fw-lighter">{{ item.title }}</h3>
           <p>{{ item.body }}</p>
         </div>
       </section>
+      <div>
+          <a href="#" class="btn btn-dark fs-1"><span class=" w-100 svg-icon svg-icon-1"></span>Сделать заказ</a>
+        </div>
     </div>
-  </div>
-  <div>
-    <a href="#" class="btn btn-dark"><span class=" w-100 svg-icon svg-icon-1"><svg>...</svg></span>Сделать заказ</a>
   </div>
 </template>
   
@@ -38,9 +38,8 @@ const data = [
 section div:hover {
   box-shadow: 10px 5px 5px rgb(88, 85, 85);
   position: relative;
-  bottom: 1rem;
-  right: 1rem;
-  font-size: 1.1rem;
+  bottom: .5rem;
+  right: .5rem;
 }
 
 * {
