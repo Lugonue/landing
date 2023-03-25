@@ -1,12 +1,6 @@
-<script setup>
-const statusSlide = ref('');
-
-const buttonKnowMore = (slide) => statusSlide.value = slide;
-const startCondition = () => statusSlide.value = '';
-
-</script>
 <template>
-  <div>
+  <div >
+    <span id="start"></span>
     <div :class="'main ' + statusSlide" id="main">
       <!-- chats start  -->
       <template v-if="statusSlide.length === 0">
@@ -21,7 +15,9 @@ const startCondition = () => statusSlide.value = '';
           <img style="height: 80%;" src="/media/header-component-img/statik-slider/left-cut-bg-prod.png">
         </div>
         <template v-if="statusSlide.length === 0">
-          <i @click="buttonKnowMore('fullLeft')" class="fa-regular fa-arrow-left-long position-absolute display-5 text-black"  style="left: 70px; top: 47%; cursor: pointer;"></i>
+          <i @click="buttonKnowMore('fullLeft')"
+            class="fa-regular fa-arrow-left-long position-absolute display-5 text-black"
+            style="left: 70px; top: 47%; cursor: pointer;"></i>
           <button @click="buttonKnowMore('fullLeft')" id="fullLeft"
             class='opacity-50 h-100 position-absolute bottom-0 start-0 border-0'>
             <p class="fs-1 p-0 m-0">Узнать больше</p>
@@ -45,7 +41,8 @@ const startCondition = () => statusSlide.value = '';
           <img style="height: 80%;" src="/media/header-component-img/statik-slider/right-cut-bg-prod.png" class="" alt="">
         </div>
         <template v-if="statusSlide.length === 0">
-          <i @click="buttonKnowMore('fullRight')" class="fa-regular fa-arrow-right-long position-absolute display-5"  style="right: 70px; top: 47%; cursor: pointer;"></i>
+          <i @click="buttonKnowMore('fullRight')" class="fa-regular fa-arrow-right-long position-absolute display-5"
+            style="right: 70px; top: 47%; cursor: pointer;"></i>
           <button @click="buttonKnowMore('fullRight')" id="fullRight"
             class='opacity-50 h-100 position-absolute bottom-0 end-0 border-0'>
             <p class="fs-1 p-0 m-0">Узнать больше</p>
@@ -60,9 +57,63 @@ const startCondition = () => statusSlide.value = '';
       </div>
     </div>
   </div>
+  <span id="next"></span>
 </template>
 
+<script setup>
+
+const statusSlide = ref('');
+
+function addEventScroll(){
+  const section = document.querySelector('#next');
+  if (window.scrollY === 0) {
+    document.addEventListener("scroll", scrollToPosition);
+  }
+}
+
+function scrollToPosition() {
+  const startingSection = document.querySelector('#start');
+  const startingPosition  = startingSection.offsetTop;
+  const section = document.querySelector('#next');
+  const position = section.offsetTop;
+
+  const owerflowOn = () => {
+    const currentPosition = window.scrollY;
+    if (currentPosition >= position) {
+      document.body.classList.remove('overflow-hidden');
+      return;
+    } else {
+      return setTimeout(owerflowOn, 100);
+    }
+}
+  if (window.scrollY > startingPosition) {
+    document.removeEventListener('scroll', scrollToPosition);
+    document.body.classList.add('overflow-hidden');
+    owerflowOn();
+    setTimeout(() => document.body.classList.remove('overflow-hidden'), 5000);
+    window.scrollTo({
+    top: position + 100,
+    behavior: "smooth"
+  });
+  }
+}
+
+onMounted(() => {
+    document.addEventListener("scroll", scrollToPosition);
+    document.addEventListener("scroll", addEventScroll);
+ 
+})
+
+
+
+const buttonKnowMore = (slide) => statusSlide.value = slide;
+const startCondition = () => statusSlide.value = '';
+
+</script>
 <style scoped>
+.disable-scroll {
+  overflow-y: hidden;
+}
 #startCondition:hover {
   cursor: pointer;
   background: rgba(135, 32, 208, 0.4);
@@ -248,5 +299,4 @@ const startCondition = () => statusSlide.value = '';
   to {
     opacity: 1;
   }
-}
-</style>
+}</style>

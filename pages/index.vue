@@ -4,7 +4,6 @@
       <div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom">
         <RegionsHeader />
           <BlocksStaticSlide />
-        <!-- <BlocksSlider/> -->
       </div>
     </div>
     <BlocksUniqueTradeOffer />

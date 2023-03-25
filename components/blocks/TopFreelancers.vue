@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid" style="height: 50vh;">
+  <div class="container-fluid d-flex flex-column justify-content-center" style="height: 100vh;">
     <h1 class="fs-2hx text-center mb-10">Топ фрилансеров</h1>
     <div class="row flex-row justify-content-center" style="flex-wrap: wrap;">
       <div v-for="freeLancer in freeLancers" class="col-1">

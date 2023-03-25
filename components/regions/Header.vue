@@ -1,5 +1,5 @@
 <template>
-    <div class="landing-header" data-kt-sticky="true" data-kt-sticky-name="landing-header" data-kt-sticky-offset="{default: '200px', lg: '300px'}" style="animation-duration: 0.3s; position: absolute; top: 0; z-index: 9; width: 100%;">
+    <div class="landing-header" data-kt-sticky="true" data-kt-sticky-name="landing-header" data-kt-sticky-offset="{default: '200px', lg: '300px'}" style="animation-duration: .3s; position: absolute; top: 0; z-index: 9; width: 100%;">
         <!--begin::Container-->
         <div class="container-fluid">
             <!--begin::Wrapper-->

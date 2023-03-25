@@ -1,9 +1,8 @@
 <template>
     <!--begin::Footer Section-->
     <footer class="mb-0">
-       
         <!--begin::Wrapper-->
-        <div class="landing-dark-bg pt-20">
+        <div class="bg-dark pt-20">
             <!--begin::Container-->
             <div class="container">
                 <!--begin::Row-->
