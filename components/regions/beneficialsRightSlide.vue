@@ -1,5 +1,5 @@
 <template>
-  <div class="row justify-content-center align-items-center h-100">
+  <div class="row justify-content-center align-items-center h-100 bg-light">
     <div class="col-4">
       <div class="d-flex flex-column align-items-center justify-content-end" style="height: 100vh">
         <img style="height: 80%;" src="media/header-component-img/statik-slider/Background-img-right-slide.png" alt="">

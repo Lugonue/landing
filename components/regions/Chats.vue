@@ -1,13 +1,15 @@
 <template>
-    <div class="position-absolute top-0 w-25 d-flex flex-column justify-content-between" id="containerForChats" style="height: 90%; overflow: hidden;">
+  <div class="position-absolute top-0 w-25 d-flex flex-column" id="containerForChats"
+    style="max-height: 90%; overflow: scroll;">
     <template v-for="chat in chats">
-      <div class="push-notification chat-style p-2 rounded">
+      <div class="push-notification chat-style p-2 mb-5 rounded">
         <div class="push-notification__avatar w-25 me-2">
           <img class="me-5 w-100" :src=chat.img alt="User Avatar">
         </div>
-        <div class="push-notification__content">
-          <p class="push-notification__text fs-6 mb-1">{{ chat.header }} <span class="text-info">{{ chat.headerPart }}</span></p>
-          <p class="push-notification__message fs-6">{{ chat.body }}</p>
+        <div class="push-notification__content mb-1">
+          <p class="push-notification__text mb-1">{{ chat.header }} <span class="text-info">{{ chat.headerPart }}</span>
+          </p>
+          <p class="push-notification__message ">{{ chat.body }}</p>
         </div>
       </div>
     </template>
@@ -28,19 +30,29 @@ const chats = [
   { img: '/media/avatars/chat-ingener.PNG', header: 'Ирина', headerPart: 'инженер-эколог', body: 'Здравствуйте. Меня зовут Ирина, я инженер-эколог со стажем. Хочу получать экологические заказы' },
   { img: '/media/avatars/chat-face-2.png', header: managerFreeeco, headerPart: managerFreeecoHeader, body: 'Проходите регистрацию, отмечайте работы, которые хотите получать и добро пожаловать' },
 ]
+onMounted(() => {
+  const chatElemts = document.querySelectorAll('.push-notification');
+  let counter = 0;
+  const interval = setInterval(() => {
+    console.log(chatElemts[counter])
+    chatElemts[counter].style.display = 'flex';
+    counter += 1;
+    if (counter === 6) clearInterval(interval);
+  }, 300)
+})
+
 </script>
 <style scoped>
-
 .push-notification {
   width: 70%;
   display: flex;
-  align-items: center;
+  align-items: start;
   background-color: #fff;
-  border: 1px solid #ccc;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
   animation: ani 1s forwards;
   opacity: 0;
+  display: none;
 }
 
 .push-notification:hover {
@@ -101,6 +113,7 @@ const chats = [
   animation-delay: 3.5s;
   margin-right: auto;
 }
+
 .chat-style:nth-child(7) {
   animation-delay: 4s;
   margin-left: auto;

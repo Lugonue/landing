@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div id="box">
     <span id="start"></span>
     <div :class="'main ' + statusSlide" id="main">
       <!-- chats start  -->
@@ -37,7 +37,7 @@
         <div class="position-absolute w-100 h-100 d-none" id="startCondition" @click="startCondition()"></div>
         <!-- описание поменять -->
         <div v-if="statusSlide.length === 0" style="height: 100%;"
-          class="d-flex flex-column align-items-center justify-content-end">
+          class="d-flex flex-column align-items-center justify-content-end bg-light">
           <img style="height: 80%;" src="/media/header-component-img/statik-slider/right-cut-bg-prod.png" class="" alt="">
         </div>
         <template v-if="statusSlide.length === 0">
@@ -62,50 +62,47 @@
 
 <script setup>
 
+
+// scroll
+// function addEventScroll() {
+//   if (window.scrollY === 0) {
+//     document.addEventListener("scroll", scrollToPosition);
+//   }
+// }
+
+// const scrollToTop = () => {
+//   const anchorSlider = document.querySelector('#next');
+//   const position = anchorSlider.offsetTop;
+//   if (window.scrollY > position) return;
+//   document.removeEventListener('scroll', scrollToTop);
+//   window.scrollTo({
+//     top: 0,
+//     behavior: "smooth"
+//   });
+// }
+
+// function scrollToPosition() {
+//   const startingSection = document.querySelector('#start');
+//   const startingPosition = startingSection.offsetTop;
+//   const anchorSlider = document.querySelector('#next');
+//   const position = anchorSlider.offsetTop;
+//   if (window.scrollY > startingPosition) {
+//     document.removeEventListener('scroll', scrollToPosition);
+//     setTimeout(() => document.addEventListener('scroll', scrollToTop), 2000);
+//     window.scrollTo({
+//       top: position,
+//       behavior: "smooth"
+//     });
+//   }
+// }
+
+// onMounted(() => {
+//     document.addEventListener("scroll", scrollToPosition);
+//     document.addEventListener("scroll", addEventScroll);
+  
+// })
+//slide
 const statusSlide = ref('');
-
-function addEventScroll(){
-  const section = document.querySelector('#next');
-  if (window.scrollY === 0) {
-    document.addEventListener("scroll", scrollToPosition);
-  }
-}
-
-function scrollToPosition() {
-  const startingSection = document.querySelector('#start');
-  const startingPosition  = startingSection.offsetTop;
-  const section = document.querySelector('#next');
-  const position = section.offsetTop;
-
-  const owerflowOn = () => {
-    const currentPosition = window.scrollY;
-    if (currentPosition >= position) {
-      document.body.classList.remove('overflow-hidden');
-      return;
-    } else {
-      return setTimeout(owerflowOn, 100);
-    }
-}
-  if (window.scrollY > startingPosition) {
-    document.removeEventListener('scroll', scrollToPosition);
-    document.body.classList.add('overflow-hidden');
-    owerflowOn();
-    setTimeout(() => document.body.classList.remove('overflow-hidden'), 1000);
-    window.scrollTo({
-    top: position + 100,
-    behavior: "smooth"
-  });
-  }
-}
-
-onMounted(() => {
-    document.addEventListener("scroll", scrollToPosition);
-    document.addEventListener("scroll", addEventScroll);
- 
-})
-
-
-
 const buttonKnowMore = (slide) => statusSlide.value = slide;
 const startCondition = () => statusSlide.value = '';
 
@@ -114,6 +111,7 @@ const startCondition = () => statusSlide.value = '';
 .disable-scroll {
   overflow-y: hidden;
 }
+
 #startCondition:hover {
   cursor: pointer;
   background: rgba(135, 32, 208, 0.4);
@@ -132,6 +130,7 @@ const startCondition = () => statusSlide.value = '';
   width: 100%;
   height: 100%;
   min-height: 100vh;
+  scroll-snap-type: y;
 }
 
 /* chats start  */
@@ -220,16 +219,6 @@ const startCondition = () => statusSlide.value = '';
 
 
 /* ********************** img change *************** */
-
-
-/* .fullRight>.split>#rightSlideImg,
-.fullRight>.split>#leftslideImg,
-.fullLeft>.split>#rightSlideImg,
-.fullLeft>.split>#leftslideImg {
-  opacity: 0;
-} */
-
-
 .fullLeft>.left>.fa-square-xmark,
 .fullRight>.right>.fa-square-xmark,
 .fullRight>.left>#startCondition,
@@ -299,4 +288,5 @@ const startCondition = () => statusSlide.value = '';
   to {
     opacity: 1;
   }
-}</style>
+}
+</style>

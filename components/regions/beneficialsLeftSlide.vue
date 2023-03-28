@@ -5,15 +5,15 @@
         Ваша выгода
       </h1>
       <section class="d-flex flex-wrap align-items-center" style="height: 60vh; width: 75vh;">
-        <div class="p-3 me-4 text-dark" v-for="item in data" >
+        <div class="p-3 me-4 text-dark" v-for="item in data">
           <h3 class="text-dark text-shadow fw-bolder">{{ item.title }}</h3>
           <p>{{ item.body }}</p>
         </div>
-        
+
       </section>
       <div style="justify-self: center;">
-          <a href="#" class="btn btn-dark fs-1"><span class=" w-100 svg-icon svg-icon-1"></span>Сделать заказ</a>
-        </div>
+        <a href="#" class="btn btn-dark fs-1"><span class=" w-100 svg-icon svg-icon-1"></span>Сделать заказ</a>
+      </div>
     </div>
     <div class="col-4">
       <div class="d-flex flex-column align-items-start justify-content-end" style="height: 100vh">
@@ -25,12 +25,12 @@
 
 <script setup>
 const data = [
-  { id: 1, title: 'Работа по договору', body: 'Заключение договора на разработку' },
-  { id: 3, title: 'Полный анализ', body: 'Полный анализ деятельности от ТОП-овых специалистов' },
-  { id: 2, title: 'Мгновенный исполнитель', body: 'Назначение проверенного исполнителя в день обращения' },
   { id: 4, title: 'Постоянно на связи', body: 'Менеджер на связи 25/8' },
+  { id: 3, title: 'Полный анализ', body: 'Полный анализ деятельности от ТОП-овых специалистов' },
   { id: 5, title: 'Все риски на нас', body: 'Выполнение специалистом работы лежит на нашей области ответственности' },
   { id: 6, title: 'Оповещение', body: 'Автоматическое оповещение прохождения этапов по почте или в соц сетях' },
+  { id: 2, title: 'Мгновенный исполнитель', body: 'Назначение проверенного исполнителя в день обращения' },
+  { id: 1, title: 'Работа по договору', body: 'Заключение договора на разработку' },
 ]
 
 </script>
@@ -64,7 +64,8 @@ section>div {
   align-items: center;
   text-align: center;
 
-  background: linear-gradient( rgb(222, 207, 232),  rgb(100, 6, 232) );;
+  background: linear-gradient(rgb(222, 207, 232), rgb(100, 6, 232));
+  ;
 
   animation: ani 3s forwards;
 }
@@ -118,4 +119,5 @@ section>div:nth-child(6) {
   to {
     opacity: 1;
   }
-}</style>
+}
+</style>

@@ -56,12 +56,12 @@ export default defineNuxtConfig({
         '@/assets/css/plugins.css',
         '@/assets/css/fontawesome.css',
     ],
-    script: [
-        {
-          src: "bootstrap/dist/js/bootstrap.bundle.min.js",
-          type: "text/javascript"
-        }
-    ],
+    // script: [
+    //     {
+    //       src: "bootstrap/dist/js/bootstrap.bundle.min.js",
+    //       type: "text/javascript"
+    //     }
+    // ],
 
     runtimeConfig: {
         // The private keys which are only available within server-side

@@ -1,7 +1,7 @@
 <template>
   <section class="bg-light" style="padding-top: 10rem; padding-bottom: 10rem;">
     <div class="container-fluid d-flex flex-column justify-content-center">
-      <h1 class="fs-2hx text-center mb-10">Топ фрилансеров</h1>
+      <h1 class="fs-2hx text-center fw-bold mb-20">Топ фрилансеров</h1>
       <div class="row flex-row justify-content-center" style="flex-wrap: wrap;">
         <div v-for="freeLancer in freeLancers" class="col-1">
           <div class="card p-1" style="">

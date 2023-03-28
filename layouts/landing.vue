@@ -1,5 +1,5 @@
 <template>
-	<div class="d-flex flex-column flex-root">
+	<div class="d-flex flex-column flex-root bg-secondary" id="app">
 		<slot />
 		<WidgetsScrollTop/>
 	</div>
@@ -25,4 +25,8 @@
 		opacity: 0;
 		filter: blur(1rem);
 	}
+	#app {
+  font-family: 'Poppins', 'Arial', serif;
+}
+
 </style>

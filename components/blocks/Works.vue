@@ -10,7 +10,7 @@ const isActiveWork = (id) => [1, 2, 3, 4, 16, 5, 10].includes(id);
   <section class="bg-white border-bottom border-top" style="padding-top: 10rem; padding-bottom: 10rem;">
     <div class="container-fluid d-flex justify-content-center">
       <section class="col-lg-10" v-if="!pending">
-        <h1 class="fs-2hx text-center mt-10">Поиск работ по тегам</h1>
+        <h1 class="fs-2hx text-center fw-bold mt-10">Поиск работ по тегам</h1>
         <div class="d-flex flex-row justify-content-start p-10">
           <ul class="nav border-transparent flex-column justify-content-start border-0 me-5 mb-3 mb-md-0 fs-6 pe-10"
             role="tablist">
