@@ -1,47 +1,49 @@
 <template>
-  <div class="container-fluid">
-    <h1 class="fs-2hx text-center mb-10">Наша команда</h1>
+  <section class="" style="padding-top: 10rem; padding-bottom: 10rem;">
+    <div class="container-fluid">
+      <h1 class="fs-2hx text-center mb-10">Наша команда</h1>
 
-    <div class="row justify-content-evenly">
-      <div class="card-wrapper" v-for="item in dataTeam">
-        <div class="card">
-          <div class="card-image">
-            <img class="w-100" :src=item.img alt="profile">
+      <div class="row justify-content-evenly">
+        <div class="card-wrapper" v-for="item in dataTeam">
+          <div class="card">
+            <div class="card-image">
+              <img class="w-100" :src=item.img alt="profile">
+            </div>
+            <ul class="social-icons">
+              <li>
+                <a href="">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fab fa-dribbble"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="details p-2">
+              <h2>{{ item.name }}
+                <br>
+                <span class="job-title">{{ item.description }}</span>
+              </h2>
+            </div>
           </div>
-          <ul class="social-icons">
-            <li>
-              <a href="">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fab fa-dribbble"></i>
-              </a>
-            </li>
-          </ul>
-          <div class="details p-2">
-            <h2>{{ item.name }}
-              <br>
-              <span class="job-title">{{ item.description }}</span>
-            </h2>
-          </div>
-        </div>
-      </div><!-- end box wrapper -->
-      <!-- END box wrapper -->
-    </div>
+        </div><!-- end box wrapper -->
+        <!-- END box wrapper -->
+      </div>
 
-  </div><!-- END container -->
+    </div><!-- END container -->
+  </section>
 </template>
 <script setup>
 const dataTeam = [
@@ -67,7 +69,7 @@ body {
 
 .card-wrapper {
   width: 200px;
-  height: 500px;
+  height: 300px;
   position: relative;
 }
 

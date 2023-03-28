@@ -1,18 +1,20 @@
 <template>
-  <div class="container-fluid d-flex flex-column justify-content-center" style="height: 100vh;">
-    <h1 class="fs-2hx text-center mb-10">Топ фрилансеров</h1>
-    <div class="row flex-row justify-content-center" style="flex-wrap: wrap;">
-      <div v-for="freeLancer in freeLancers" class="col-1">
-        <div class="card p-1" style="">
-          <img :src=freeLancer.img class="card-img-top" alt="...">
-          <div class="card-body p-4 text-center">
-            <h5 class="card-title">{{freeLancer.name}}</h5>
-            <p class="card-text">{{freeLancer.spheres}}</p>
+  <section class="bg-light" style="padding-top: 10rem; padding-bottom: 10rem;">
+    <div class="container-fluid d-flex flex-column justify-content-center">
+      <h1 class="fs-2hx text-center mb-10">Топ фрилансеров</h1>
+      <div class="row flex-row justify-content-center" style="flex-wrap: wrap;">
+        <div v-for="freeLancer in freeLancers" class="col-1">
+          <div class="card p-1" style="">
+            <img :src=freeLancer.img class="card-img-top" alt="...">
+            <div class="card-body p-4 text-center">
+              <h5 class="card-title">{{freeLancer.name}}</h5>
+              <p class="card-text">{{freeLancer.spheres}}</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>

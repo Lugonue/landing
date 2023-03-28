@@ -10,8 +10,8 @@
         Ваша выгода
       </h1>
       <section class="d-flex flex-wrap align-items-center" style="height: 60vh; width: 75vh;">
-        <div class="p-3 me-4 bg-info text-white fw-lighter" v-for="item in data">
-          <h3 class="text-white fw-lighter">{{ item.title }}</h3>
+        <div class="p-3 me-4 bg-info text-white fw-lighter shadow-sm" v-for="item in data">
+          <h3 class="text-white fw-bolder">{{ item.title }}</h3>
           <p>{{ item.body }}</p>
         </div>
       </section>

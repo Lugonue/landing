@@ -7,10 +7,11 @@
       </div>
     </div>
     <BlocksUniqueTradeOffer />
-    <!-- <BlocksWorkScheme /> -->
     <BlocksWorks />
+    
     <!-- <BlocksProjects /> -->
     <LazyBlocksTopFreelancers />
+    <BlocksWorkScheme />
     <BlocksTeam />
     <BlocksPartners />
     <RegionsOffer />

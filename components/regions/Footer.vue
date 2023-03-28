@@ -119,7 +119,7 @@
                             <a href="https://keenthemes.com/support" target="_blank" class="menu-link px-2">Support</a>
                         </li>
                         <li class="menu-item">
-                            <a href="" target="_blank" class="menu-link px-2">Purchase</a>
+                            <a href="" target="_blank" class="menu-link px-2">Политика конфиденциальности</a>
                         </li>
                     </ul>
                     <!--end::Menu-->

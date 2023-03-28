@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid bg-body-secondary d-flex flex-column justify-content-around" id="bg" style="height: 200vh; ">
+  <div class="container-fluid d-flex flex-column justify-content-around" id="bg" style="height: 100vh; ">
     <div class="row justify-content-center">
       <div class="col-lg-4">
         <div class=" card p-6">
@@ -97,6 +97,6 @@
 <style scoped>
 
 #bg {
-  background: linear-gradient(rgb(233, 196, 244), white)
+  /* background: linear-gradient(rgb(233, 196, 244), white) */
 }
 </style>
