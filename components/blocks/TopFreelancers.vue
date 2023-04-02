@@ -1,33 +1,56 @@
 <template>
-  <section class="bg-light" style="padding-top: 10rem; padding-bottom: 10rem;">
-    <div class="container-fluid d-flex flex-column justify-content-center">
-      <h1 class="fs-2hx text-center fw-bold mb-20">Топ фрилансеров</h1>
-      <div class="row flex-row justify-content-center" style="flex-wrap: wrap;">
-        <div v-for="freeLancer in freeLancers" class="col-1">
-          <div class="card p-1" style="">
-            <img :src=freeLancer.img class="card-img-top" alt="...">
-            <div class="card-body p-4 text-center">
-              <h5 class="card-title">{{freeLancer.name}}</h5>
-              <p class="card-text">{{freeLancer.spheres}}</p>
-            </div>
+  <div class="container-xl d-flex flex-column justify-content-center mt-20 mb-20 pb-10 pt-10 rounded" id="bg">
+    <h1 class="fs-2hx text-center fw-bold mb-20">Топ фрилансеров</h1>
+    <div class="row flex-row justify-content-center overflow-auto" style="flex-wrap: nowrap;" >
+      <div v-for="freeLancer in freeLancers" class="col-lg-2 col-md-2 col-sm-4 col-3" id="anime">
+        <div class="card rounded-0" style="">
+          <img :src=freeLancer.img class="card-img-top rounded-0" alt="...">
+          <div class="card-body p-4 text-center">
+            <h5 class="card-title">{{ freeLancer.name }}</h5>
+            <p class="card-text">{{ freeLancer.spheres }}</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script setup>
-  // for example
+// for example
 const freeLancers = [
-  {name: 'Vasian', spheres: 'Voda, Vozduh', img: '/media/avatars/150-6.jpg'},
-  {name: 'Vovan', spheres: 'PDV', img: '/media/avatars/150-8.jpg'},
-  {name: 'Kolian', spheres: 'SZZ, OOS', img: '/media/avatars/150-9.jpg'},
-  {name: 'Kolian', spheres: 'SZZ, OOS', img: '/media/avatars/150-10.jpg'},
-  {name: 'Kolian', spheres: 'SZZ, OOS', img: '/media/avatars/150-11.jpg'},
-  {name: 'Kolian', spheres: 'SZZ, OOS', img: '/media/avatars/150-12.jpg'},
-  {name: 'Kolian', spheres: 'SZZ, OOS', img: '/media/avatars/150-13.jpg'},
-  {name: 'Kolian', spheres: 'SZZ, OOS', img: '/media/avatars/150-15.jpg'},
-  {name: 'Kolian', spheres: 'SZZ, OOS', img: '/media/avatars/150-14.jpg'},
+  { name: 'Vasian', spheres: 'Voda, Vozduh', img: '/media/avatars/150-6.jpg' },
+  { name: 'Vovan', spheres: 'PDV', img: '/media/avatars/150-8.jpg' },
+  { name: 'Kolian', spheres: 'SZZ, OOS', img: '/media/avatars/150-9.jpg' },
+  { name: 'Kolian', spheres: 'SZZ, OOS', img: '/media/avatars/150-10.jpg' },
+  { name: 'Kolian', spheres: 'SZZ, OOS', img: '/media/avatars/150-11.jpg' },
+  { name: 'Kolian', spheres: 'SZZ, OOS', img: '/media/avatars/150-12.jpg' },
+  { name: 'Kolian', spheres: 'SZZ, OOS', img: '/media/avatars/150-13.jpg' },
+  { name: 'Kolian', spheres: 'SZZ, OOS', img: '/media/avatars/150-15.jpg' },
+  { name: 'Kolian', spheres: 'SZZ, OOS', img: '/media/avatars/150-14.jpg' },
 ]
 </script>
+
+<style scoped>
+#bg {
+  background: linear-gradient(45deg, rgb(253, 252, 252) 10%, rgb(228, 230, 239) 40%, rgb(239, 201, 239) 50%);
+}
+
+#anime {
+  animation: leftright 6s infinite alternate ease-in-out;
+}
+
+@keyframes leftright {
+
+  0%,
+  20% {
+    transform: translateX(0%);
+    left: 0%;
+  }
+
+  80%,
+  100% {
+    transform: translateX(-100%);
+    left: 100%;
+  }
+}
+</style>

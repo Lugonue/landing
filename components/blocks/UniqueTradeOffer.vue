@@ -1,7 +1,7 @@
 <template>
-  <div class="container-xl d-flex flex-column justify-content-around mt-20 pt-4 rounded fs-4" id="UniqueTradeOffer" >
+  <div class="container-xl d-flex flex-column justify-content-around mb-20 mt-20 p-5 rounded fs-4" id="UniqueTradeOffer" >
     <div class="row justify-content-between mt-10 mb-20">
-      <div class="col-lg-5">
+      <div class="col-md-5 col-sm-6">
         <div class="">
           <p class=" fs-1 text-black fw-bold">Сервис для бизнеса<br> и инженеров-экологов</p>
           <p class="">Наша фриланс биржа открывает доступ к удаленным
@@ -12,7 +12,7 @@
             присоединиться к нашей компании, начать развиваться и зарабатывать</p>
         </div>
       </div>
-      <div class="col-lg-5 d-flex justify-content-center">
+      <div class="col-md-5 col-sm-6 d-flex justify-content-center">
         <div class="">
           <div class=" d-flex " style="max-width: 300px;">
             <img style="max-width: 100%;" src="/media/2block.png" alt="">
@@ -21,7 +21,7 @@
       </div>
     </div>
     <div class="row justify-content-between mb-20">
-      <div class="col-lg-5">
+      <div class="col-lg-5 mb-5">
         <div class="d-flex justify-content-center">
           <div class=" d-flex " style="max-width: 350px;">
             <img style="max-width: 100%;" src="/media/ESG.png" alt="">
@@ -68,6 +68,9 @@
 
 <style scoped>
 #UniqueTradeOffer{
-  background: no-repeat center/120% url('/media/bg-2-block.PNG');
+  /* background: no-repeat center/120% url('/media/bg-2-block.PNG'); */
+  background: linear-gradient(45deg,rgb(253, 252, 252) 10%, rgb(228,230,239) 40%, rgb(239, 201, 239) 50%);
+  overflow-y: auto;
+  max-height: 150vh;
 }
 </style>

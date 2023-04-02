@@ -1,13 +1,13 @@
 <template>
-  <div class="row justify-content-center align-items-center">
-    <div class="col-5 text-center">
+  <div class="row justify-content-around align-items-center">
+    <div class="col-lg-6 col-md-12 text-center">
       <h1 class="text-center display-3 mb-10 text-dark">
-        Ваша выгода
+        Приемущества
       </h1>
-      <section class="d-flex flex-wrap align-items-center" style="height: 60vh; width: 75vh;">
-        <div class="p-3 me-4 text-dark" v-for="item in data">
-          <h3 class="text-dark text-shadow fw-bolder">{{ item.title }}</h3>
-          <p>{{ item.body }}</p>
+      <section class="d-flex flex-wrap align-items-center" style="max-height: 500px; max-width: 1000px;">
+        <div class="p-4 ms-4 shadow-lg" v-for="item in data">
+          <h3 class="fw-bolder fs-1">{{ item.title }}</h3>
+          <p style="font-size: 0.8rem;">{{ item.body }}</p>
         </div>
 
       </section>
@@ -15,8 +15,8 @@
         <a href="#" class="btn btn-dark fs-1"><span class=" w-100 svg-icon svg-icon-1"></span>Сделать заказ</a>
       </div>
     </div>
-    <div class="col-4">
-      <div class="d-flex flex-column align-items-start justify-content-end" style="height: 100vh">
+    <div class="col-4" id="mobile">
+      <div class="d-flex align-items-end justify-content-end" style="height: 100vh">
         <img style="height: 80%;" src="media/header-component-img/statik-slider/Background-img-left-slide1.png" alt="">
       </div>
     </div>
@@ -25,12 +25,12 @@
 
 <script setup>
 const data = [
-  { id: 4, title: 'Постоянно на связи', body: 'Менеджер на связи 25/8' },
+  { id: 4, title: 'Постоянно на связи', body: 'Выполнение специалистом работы лежит на нашей области ответственности'  },
   { id: 3, title: 'Полный анализ', body: 'Полный анализ деятельности от ТОП-овых специалистов' },
-  { id: 5, title: 'Все риски на нас', body: 'Выполнение специалистом работы лежит на нашей области ответственности' },
-  { id: 6, title: 'Оповещение', body: 'Автоматическое оповещение прохождения этапов по почте или в соц сетях' },
+  { id: 5, title: 'Все риски на нас', body: 'Менеджер на связи 25/8' },
+  { id: 6, title: 'Оповещение', body: 'Заключение договора на разработку'  },
   { id: 2, title: 'Мгновенный исполнитель', body: 'Назначение проверенного исполнителя в день обращения' },
-  { id: 1, title: 'Работа по договору', body: 'Заключение договора на разработку' },
+  { id: 1, title: 'Работа по договору', body: 'Автоматическое оповещение прохождения этапов по почте или в соц сетях'},
 ]
 
 </script>
@@ -64,44 +64,51 @@ section>div {
   align-items: center;
   text-align: center;
 
-  background: linear-gradient(rgb(222, 207, 232), rgb(100, 6, 232));
-  ;
-
   animation: ani 3s forwards;
 }
 
 section>div:nth-child(1) {
-
-  border-radius: 50%;
-  /* background-color: rgb(24,28,50); */
+  flex-grow: 1;
+  border-radius: 30px;
+  background-color: #F0910F;
 }
 
 section>div:nth-child(2) {
-  border-radius: 10px;
-  /* background-color: rgb(24,28,50); */
+  border-radius: 30px;
+  background-color: #0FF091;
 }
 
 section>div:nth-child(3) {
-  flex-grow: 1;
-  border-radius: 10px;
-  /* background-color: rgb(24,28,50); */
+  border-radius: 35%;
+  color: #ff9603;
+  font-size: 0.7rem;
+  background-color: #910FF0;
+}
+
+section>div:nth-child(3) h3 {
+  font-size: 1.5rem;
+  color: rgb(1, 1, 70);
 }
 
 section>div:nth-child(4) {
-  flex-grow: 1;
-  border-radius: 10px;
-  /* background-color: rgb(226, 173, 40); */
+  border-radius: 35%;
+  color: #ff9603;
+  background-color: #910FF0;
 }
 
 section>div:nth-child(5) {
-  border-radius: 10px;
-  /* background-color: rgb(90, 219, 97); */
+  border-radius: 30px;
+  background-color: #0FF091;
 }
 
 section>div:nth-child(6) {
+  flex-grow: 1;
+  border-radius: 30px;
+  background-color: #F0910F;
+}
 
-  border-radius: 50%;
-  /* background-color: rgb(24,28,50); */
+section>div:nth-child(4) h3 {
+  color: rgb(15, 2, 27);
 }
 
 .bg {

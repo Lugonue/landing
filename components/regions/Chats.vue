@@ -6,7 +6,7 @@
         <div class="push-notification__avatar w-25 me-2">
           <img class="me-5 w-100" :src=chat.img alt="User Avatar">
         </div>
-        <div class="push-notification__content mb-1">
+        <div class="push-notification__content mb-1 overflow-auto">
           <p class="push-notification__text mb-1">{{ chat.header }} <span class="text-info">{{ chat.headerPart }}</span>
           </p>
           <p class="push-notification__message ">{{ chat.body }}</p>
@@ -130,9 +130,9 @@ onMounted(() => {
   }
 }
 
-/* @media (max-width: 1000px) {
-  #containerForChats {
-    display: none;
+@media (max-width: 1000px) {
+  #containerForChats{
+    display: none !important;
   }
-} */
+}
 </style>

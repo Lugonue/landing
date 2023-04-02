@@ -11,9 +11,11 @@
     
     <!-- <BlocksProjects /> -->
     <LazyBlocksTopFreelancers />
-    <BlocksWorkScheme />
-    <BlocksTeam />
     <BlocksPartners />
+    <BlocksWorkScheme />
+    <BlocksTeamTest />
+    <!-- <BlocksTeam /> -->
+    
     <RegionsOffer />
     <RegionsFooter />
   </div>

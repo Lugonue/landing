@@ -1,43 +1,51 @@
 <template>
-  <section class="bg-light" style="padding-top: 10rem; padding-bottom: 10rem;">
-    <div class="container d-flex flex-column justify-content-center">
-      <h1 class="fs-2hx text-center mb-10">Наши партнеры</h1>
-      <div class="row">
-        <div class="col-sm border rounded shadow-sm me-2 bg-white">
-          <div class="d-flex flex-center m-3 m-md-6 " data-bs-toggle="tooltip" title="Экология производства" data-bs-original-title="Fujifilm">
-            <img src="/media/company-logo/99c08050dc9d2168650bedc219637852.png"
-              class="mh-100px mh-lg-100px border rounded-circle" alt="">
-          </div>
-        </div>
-        <div class="col-sm border rounded shadow-sm me-2 bg-white">
-          <div class="d-flex flex-center m-3 m-md-6 " data-bs-toggle="tooltip" title="" data-bs-original-title="Vodafone">
-            <img src="/media/company-logo/esec.png" class="mh-100px mh-lg-100px border rounded" alt="">
-          </div>
-        </div>
-        <div class="col-sm border rounded shadow-sm me-2 bg-white">
-          <div class="d-flex flex-center m-3 m-md-6 " data-bs-toggle="tooltip" title=""
-            data-bs-original-title="KPMG International">
-            <img src="/media/company-logo/logo204-2.png" class="mh-100px mh-lg-100px border rounded" alt="">
-          </div>
-        </div>
-        <div class="col-sm border rounded shadow-sm me-2 bg-white">
-          <div class="d-flex flex-center m-3 m-md-6 " data-bs-toggle="tooltip" title="" data-bs-original-title="Nasa">
-            <img src="/media/company-logo/peppell.png" class="mh-100px mh-lg-100px border rounded" alt="">
-          </div>
-        </div>
-        <div class="col-sm border rounded shadow-sm me-2 bg-white">
-          <div class="d-flex flex-center m-3 m-md-6 " data-bs-toggle="tooltip" title="Согласно Закону"
-            data-bs-original-title="Aspnetzero">
-            <img src="/media/company-logo/SZ.png" class="mh-100px mh-lg-100px border rounded" alt="">
-          </div>
-        </div>
-        <div class="col-sm border rounded shadow-sm me-2 bg-white">
-          <div class="d-flex flex-center m-3 m-md-6 " data-bs-toggle="tooltip" title="НПК АВТОПРИБОР"
-            data-bs-original-title="AON - Empower Results">
-            <img src="/media/company-logo/НПК АВТОПРИБОР.jpg" class="mh-100px mh-lg-100px border rounded-circle" alt="">
-          </div>
+  <div class="container-xl d-flex flex-column justify-content-center mt-20 mb-20 pb-10 pt-10 rounded" id="bg">
+    <h1 class="fs-2hx text-center fw-bold mb-10">Наши партнеры</h1>
+    <div class="row flex-row justify-content-center align-items-center overflow-auto" style="flex-wrap: nowrap;">
+      <div v-for="companyImg in companies" class="col-lg-2 col-md-2 col-sm-4 col-3" id="anime">
+        <div class="d-flex justify-content-center rounded overflow-hidden bg-white">
+          <img style="max-width: 200px; max-height: 200px;" :src=companyImg class="card-img-top rounded-0" alt="...">
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
+
+<script setup>
+const companies = [
+  '/media/company-logo/99c08050dc9d2168650bedc219637852.png',
+  '/media/company-logo/ES.png',
+  '/media/company-logo/logo204-2.png',
+  '/media/company-logo/PP.PNG',
+  '/media/company-logo/SZ.jpg',
+  '/media/company-logo/НПК АВТОПРИБОР.jpg',
+]
+</script>
+<style scoped>
+#bg {
+  background: linear-gradient(45deg,rgb(239, 201, 239) 10%, rgb(228,230,2391) 40%, rgb(255, 255, 255) 50%);
+}
+
+
+
+@keyframes leftright {
+
+  0%,
+  20% {
+    transform: translateX(0%);
+    left: 0%;
+  }
+
+  80%,
+  100% {
+    transform: translateX(-100%);
+    left: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  #anime {
+  animation: leftright 6s infinite alternate ease-in-out;
+}
+}
+</style>
