@@ -34,7 +34,7 @@
                         <!--begin::Navs-->
                         <div class="d-flex justify-content-center">
                             <!--begin::Links-->
-                            <div class="d-flex fw-bold flex-column me-20">
+                            <div class="d-flex flex-column me-20">
                                 <!--begin::Subtitle-->
                                 <h4 class="fw-bolder text-gray-400 mb-6">Дополнительно о FreeEco</h4>
                                 <!--end::Subtitle-->
@@ -59,9 +59,9 @@
                             </div>
                             <!--end::Links-->
                             <!--begin::Links-->
-                            <div class="d-flex fw-bold flex-column ms-lg-20">
+                            <div class="d-flex flex-column ms-lg-20">
                                 <!--begin::Subtitle-->
-                                <h4 class="fw-bolder text-gray-400 mb-6">Контакты</h4>
+                                <h4 class=" text-gray-400 mb-6">Контакты</h4>
                                 <!--end::Subtitle-->
                                 <!--begin::Link-->
                                 <a href="#" class="mb-6">
@@ -106,7 +106,7 @@
                     <div class="d-flex align-items-center order-2 order-md-1">
                         <WidgetsLogo variant="dark"/>
                         <!--begin::Logo image-->
-                        <span class="mx-5 fs-6 fw-bold text-gray-600 pt-1" href="https://keenthemes.com">© 2023 FREEECO Inc.</span>
+                        <span class="mx-5 fs-6 fw-bold text-gray-600 pt-1" href="#">© 2023 FREEECO Inc.</span>
                         <!--end::Logo image-->
                     </div>
                     <!--end::Copyright-->

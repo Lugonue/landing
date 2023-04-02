@@ -1,18 +1,18 @@
 <template>
   <div class="row justify-content-center align-items-center h-100 bg-light">
-    <div class="col-4">
+    <div class="col-4 col-md-0">
       <div class="d-flex flex-column align-items-center justify-content-end" style="height: 100vh">
         <img style="height: 80%;" src="media/header-component-img/statik-slider/Background-img-right-slide.png" alt="">
       </div>
     </div>
-    <div class="col-5 text-center">
+    <div class="col-lg-5 col-md-8 text-center">
       <h1 class="text-center display-3 mb-10 text-dark">
-        Ваша выгода
+        Приемущество
       </h1>
       <section class="d-flex flex-wrap align-items-center" style="height: 60vh; width: 75vh;">
-        <div class="p-3 me-4 bg-info text-white fw-lighter shadow-sm" v-for="item in data">
-          <h3 class="text-white fw-bolder">{{ item.title }}</h3>
-          <p>{{ item.body }}</p>
+        <div class="d-flex fles-column justify-content-start p-6 me-4 shadow-lg" v-for="item in data">
+          <h3 class="fw-bolder text-secondary   fs-1">{{ item.title }}</h3>
+          <p class="text-secondary fs-7">{{ item.body }}</p>
         </div>
       </section>
       <div>
@@ -26,9 +26,9 @@
 const data = [
   { id: 3, title: 'Опыт', body: 'полный анализ деятельности от ТОП-овых специалистов' },
   { id: 2, title: 'Заработок', body: 'Получайте высокие рейтинги и забирайте все работы' },
-  { id: 1, title: 'Работа на постоянке', body: 'Заключение договора на разработку' },
-  { id: 4, title: 'Оповещение', body: 'автоматическое оповещение прохождения этапов по почте или в соц сетях' },
-  { id: 6, title: 'Все риски на нас', body: 'выполнение специалистом работы лежит на нашей области ответственности' },
+  { id: 1, title: 'Работа на постоянке', body: 'автоматическое оповещение прохождения этапов по почте или в соц сетях'  },
+  { id: 4, title: 'Оповещение', body:  'выполнение специалистом работы лежит на нашей области ответственности' },
+  { id: 6, title: 'Все риски на нас', body: 'Заключение договора на разработку' },
   { id: 5, title: 'Постоянно на связи', body: 'менеджер на связи 25/8' },
 ]
 </script>
@@ -80,37 +80,38 @@ section>div {
 
 section>div:nth-child(1) {
 
-  border-radius: 50%;
-  background-color: rgb(154, 122, 122);
+  border-radius: 35%;
+  background-color: #6B9491;
 }
 
 section>div:nth-child(2) {
-  border-radius: 10px;
-  background-color: rgb(90, 219, 97);
+  border-radius: 30px;
+  background-color: #916B94;
 }
 
 section>div:nth-child(3) {
   flex-grow: 1;
-  border-radius: 10px;
-  background-color: rgb(226, 173, 40);
+  border-radius: 30px;
+  background-color: #94916B;
+}
+section>div:nth-child(6) {
+
+  border-radius: 35%;
+  background-color: #6B9491;
+}
+
+section>div:nth-child(5) {
+  border-radius: 30px;
+  background-color: #916B94;
 }
 
 section>div:nth-child(4) {
   flex-grow: 1;
-  border-radius: 10px;
-  background-color: rgb(226, 173, 40);
+  border-radius: 30px;
+  background-color: #94916B;
 }
 
-section>div:nth-child(5) {
-  border-radius: 10px;
-  background-color: rgb(90, 219, 97);
-}
 
-section>div:nth-child(6) {
-
-  border-radius: 50%;
-  background-color: rgb(154, 122, 122);
-}
 
 @keyframes ani {
   from {

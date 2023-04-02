@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div id="bg">
-
+    <div class="position-relative" id="bg">
+      <h1 class="text-dark display-3 text-white text-center pt-10 position-absolute top-0 start-50 translate-middle-x" >Кто все это поддреживает?</h1>
     </div>
   </div>
 </template>

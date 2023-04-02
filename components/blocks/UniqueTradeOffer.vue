@@ -1,5 +1,5 @@
 <template>
-  <div class="container-xl d-flex flex-column justify-content-around mb-20 mt-20 p-5 rounded fs-4" id="UniqueTradeOffer" >
+  <div class="container-xl d-flex flex-column justify-content-around mb-20 mt-20 p-10 rounded fs-4" id="UniqueTradeOffer" >
     <div class="row justify-content-between mt-10 mb-20">
       <div class="col-md-5 col-sm-6">
         <div class="">

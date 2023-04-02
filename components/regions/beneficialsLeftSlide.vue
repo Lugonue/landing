@@ -1,13 +1,13 @@
 <template>
   <div class="row justify-content-around align-items-center">
-    <div class="col-lg-6 col-md-12 text-center">
+    <div class="col-xl-5 col-md-10 text-center">
       <h1 class="text-center display-3 mb-10 text-dark">
         Приемущества
       </h1>
       <section class="d-flex flex-wrap align-items-center" style="max-height: 500px; max-width: 1000px;">
-        <div class="p-4 ms-4 shadow-lg" v-for="item in data">
-          <h3 class="fw-bolder fs-1">{{ item.title }}</h3>
-          <p style="font-size: 0.8rem;">{{ item.body }}</p>
+        <div class="d-flex fles-column justify-content-start p-6 me-4 shadow-lg" v-for="item in data">
+          <h3 class="fw-bolder text-dark fs-2">{{ item.title }}</h3>
+          <p class="fs-8 text-dark">{{ item.body }}</p>
         </div>
 
       </section>
