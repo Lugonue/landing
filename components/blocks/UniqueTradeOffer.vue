@@ -70,7 +70,6 @@
 #UniqueTradeOffer{
   /* background: no-repeat center/120% url('/media/bg-2-block.PNG'); */
   background: linear-gradient(45deg,rgb(253, 252, 252) 10%, rgb(228,230,239) 40%, rgb(239, 201, 239) 50%);
-  overflow-y: auto;
   max-height: 150vh;
 }
 </style>

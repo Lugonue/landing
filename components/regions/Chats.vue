@@ -34,7 +34,6 @@ onMounted(() => {
   const chatElemts = document.querySelectorAll('.push-notification');
   let counter = 0;
   const interval = setInterval(() => {
-    console.log(chatElemts[counter])
     chatElemts[counter].style.display = 'flex';
     counter += 1;
     if (counter === 6) clearInterval(interval);

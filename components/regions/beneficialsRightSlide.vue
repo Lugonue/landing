@@ -1,22 +1,19 @@
 <template>
   <div class="row justify-content-center align-items-center h-100 bg-light">
-    <div class="col-4 col-md-0">
+    <div class="col-4 col-md-6 col-sm-6">
       <div class="d-flex flex-column align-items-center justify-content-end" style="height: 100vh">
         <img style="height: 80%;" src="media/header-component-img/statik-slider/Background-img-right-slide.png" alt="">
       </div>
     </div>
-    <div class="col-lg-5 col-md-8 text-center">
+    <div class="col-lg-5 col-md-6 col-sm-6 text-center h-100 d-flex flex-column justify-content-evenly" style="padding-top: 5rem;">
       <h1 class="text-center display-3 mb-10 text-dark">
-        Приемущество
+        Приемущества
       </h1>
-      <section class="d-flex flex-wrap align-items-center" style="height: 60vh; width: 75vh;">
-        <div class="d-flex fles-column justify-content-start p-6 me-4 shadow-lg" v-for="item in data">
-          <h3 class="fw-bolder text-secondary   fs-1">{{ item.title }}</h3>
-          <p class="text-secondary fs-7">{{ item.body }}</p>
-        </div>
+      <section class="w-100 h-75 row d-flex flex-row flex-wrap align-items-start" style="">
+        <UiCardInSlider v-bind:item="item" v-for="item in data"/>
       </section>
       <div>
-          <a href="#" class="btn btn-dark fs-1"><span class=" w-100 svg-icon svg-icon-1"></span>Сделать заказ</a>
+          <a href="#" class="btn btn-dark ">Сделать заказ</a>
         </div>
     </div>
   </div>
@@ -34,31 +31,9 @@ const data = [
 </script>
   
 <style scoped>
-
-section div:hover {
-  box-shadow: 10px 5px 5px rgb(88, 85, 85);
-  position: relative;
-  bottom: .5rem;
-  right: .5rem;
-}
-
 * {
   animation: ani 1s forwards;
 }
-
-section div div {
-  padding: 1rem;
-  width: 30%;
-  height: 30%;
-  border-radius: 10px 100px / 130px;
-  text-align: center;
-  box-shadow: 100px;
-}
-
-section div div>p {
-  font-size: 0.8rem;
-}
-
 
 .bg {
   width: 100%;
@@ -66,52 +41,20 @@ section div div>p {
   /* background: linear-gradient(to right, rgba(156, 155, 156, 0.2), rgba(179, 177, 178, 0.2)), left / 100% no-repeat url("media/header-component-img/statik-slider/Background-img-right-slide.jpg"); */
 }
 
-section>div {
+section {
   width: 25%;
-  height: 30%;
+  height: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow-y: auto;
 
   animation: ani 3s forwards;
 }
-
-section>div:nth-child(1) {
-
-  border-radius: 35%;
-  background-color: #6B9491;
+@media screen and (max-width: 1500px) {
 }
-
-section>div:nth-child(2) {
-  border-radius: 30px;
-  background-color: #916B94;
-}
-
-section>div:nth-child(3) {
-  flex-grow: 1;
-  border-radius: 30px;
-  background-color: #94916B;
-}
-section>div:nth-child(6) {
-
-  border-radius: 35%;
-  background-color: #6B9491;
-}
-
-section>div:nth-child(5) {
-  border-radius: 30px;
-  background-color: #916B94;
-}
-
-section>div:nth-child(4) {
-  flex-grow: 1;
-  border-radius: 30px;
-  background-color: #94916B;
-}
-
-
 
 @keyframes ani {
   from {

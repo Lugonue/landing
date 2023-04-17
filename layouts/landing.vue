@@ -1,7 +1,7 @@
 <template>
 	<div class="d-flex flex-column flex-root bg-secondary" id="app">
 		<slot />
-		<WidgetsScrollTop/>
+		<WidgetsScrollTop />
 	</div>
 </template>
 
@@ -16,17 +16,18 @@
 </script>
 
 <style>
-	.page-enter-active,
-	.page-leave-active {
-		transition: all 0.4s;
-	}
-	.page-enter-from,
-	.page-leave-to {
-		opacity: 0;
-		filter: blur(1rem);
-	}
-	#app {
-  font-family: 'Poppins', 'Arial', serif;
+.page-enter-active,
+.page-leave-active {
+	transition: all 0.4s;
 }
 
+.page-enter-from,
+.page-leave-to {
+	opacity: 0;
+	filter: blur(1rem);
+}
+
+/* #app {
+	font-family: 'Poppins', 'Arial', serif;
+} */
 </style>
