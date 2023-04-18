@@ -65,23 +65,23 @@
                                 <!--end::Subtitle-->
                                 <!--begin::Link-->
                                 <a href="#" class="mb-6">
-                                    <img src="media/svg/brand-logos/facebook-4.svg" class="h-20px me-2" alt="" />
+                                    <img src="/media/svg/brand-logos/facebook-4.svg" class="h-20px me-2" alt="" />
                                     <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Facebook</span>
                                 </a>
                                 <!--end::Link-->
                                 <!--begin::Link-->
                                 <a href="#" class="mb-6">
-                                    <img src="media/svg/brand-logos/github.svg" class="h-20px me-2" alt="" />
+                                    <img src="/media/svg/brand-logos/github.svg" class="h-20px me-2" alt="" />
                                     <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Github</span>
                                 </a>
                                 <!--end::Link-->
                                 <!--begin::Link-->
                                 <a href="#" class="mb-6">
-                                    <img src="media/svg/brand-logos/twitter.svg" class="h-20px me-2" alt="" />
+                                    <img src="/media/svg/brand-logos/twitter.svg" class="h-20px me-2" alt="" />
                                     <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Twitter</span>
                                 </a>
                                 <a href="#" class="mb-6">
-                                    <img src="media/svg/brand-logos/instagram-2-1.svg" class="h-20px me-2" alt="" />
+                                    <img src="/media/svg/brand-logos/instagram-2-1.svg" class="h-20px me-2" alt="" />
                                     <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Instagram</span>
                                 </a>
                                 <!--end::Link-->

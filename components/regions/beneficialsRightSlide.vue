@@ -2,7 +2,7 @@
   <div class="row justify-content-center align-items-center h-100 bg-light">
     <div class="col-4 col-md-6 col-sm-6">
       <div class="d-flex flex-column align-items-center justify-content-end" style="height: 100vh">
-        <img style="height: 80%;" src="media/header-component-img/statik-slider/Background-img-right-slide.png" alt="">
+        <img style="height: 80%;" src="/media/header-component-img/statik-slider/Background-img-right-slide.png" alt="">
       </div>
     </div>
     <div class="col-lg-5 col-md-6 col-sm-6 text-center h-100 d-flex flex-column justify-content-evenly" style="padding-top: 5rem;">

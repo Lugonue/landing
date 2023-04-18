@@ -2,3 +2,4 @@
 /.nuxt
 .output/
 permissions
+build

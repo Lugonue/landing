@@ -13,7 +13,7 @@
     </div>
     <div class="col-5 h-100" id="mobile">
       <div class="d-flex align-items-end justify-content-end h-100">
-        <img class="h-75" src="media/header-component-img/statik-slider/Background-img-left-slide1.png" alt="">
+        <img class="h-75" src="/media/header-component-img/statik-slider/Background-img-left-slide1.png" alt="">
       </div>
     </div>
   </div>
