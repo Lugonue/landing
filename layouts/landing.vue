@@ -1,5 +1,5 @@
 <template>
-	<div class="d-flex flex-column flex-root bg-secondary" id="app">
+	<div class="d-flex flex-column flex-root bg-light" id="app">
 		<slot />
 		<WidgetsScrollTop />
 	</div>

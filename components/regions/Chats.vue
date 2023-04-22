@@ -1,13 +1,13 @@
 <template>
-  <div class="position-absolute top-0 w-25 d-flex flex-column" id="containerForChats"
-    style="max-height: 90%; overflow: scroll;">
+  <div class="position-absolute top-0 d-flex flex-column" id="containerForChats">
     <template v-for="chat in chats">
       <div class="push-notification chat-style p-2 mb-5 rounded">
-        <div class="push-notification__avatar w-25 me-2">
+        <div class="push-notification__avatar me-2">
           <img class="me-5 w-100" :src=chat.img alt="User Avatar">
         </div>
-        <div class="push-notification__content mb-1 overflow-auto">
-          <p class="push-notification__text mb-1">{{ chat.header }} <span class="text-info">{{ chat.headerPart }}</span>
+        <div class="push-notification__content mb-1">
+          <p class="push-notification__text mb-1">{{ chat.header }} <span class="text-secondary">{{ chat.headerPart.toLocaleUpperCase()
+          }}</span>
           </p>
           <p class="push-notification__message ">{{ chat.body }}</p>
         </div>
@@ -16,19 +16,15 @@
   </div>
 </template>
 <script setup>
-const customerChat = 'Павел';
-const customerChatHeader = 'заказчик';
 
-const managerFreeeco = 'Анастасия';
-const managerFreeecoHeader = 'проект менеджер'
 const chats = [
-  { img: '/media/avatars/chat-face-2.png', header: managerFreeeco, headerPart: managerFreeecoHeader, body: 'Здравствуйте. Это фриланс-биржа экологических работ для бизнеса' },
-  { img: '/media/avatars/chat-face.jpg', header: customerChat, headerPart: customerChatHeader, body: 'Здравствуйте. Вы делаете проекты НДВ? СЗЗ?' },
-  { img: '/media/avatars/chat-face-2.png', header: managerFreeeco, headerPart: managerFreeecoHeader, body: 'Да. На freeeco зарегистрированы удаленные инженеры-экологи, которые разрабатывают разные документы от отчётов до проектов' },
-  { img: '/media/avatars/chat-face.jpg', header: customerChat, headerPart: customerChatHeader, body: 'А эти документы точно нужны моей компании? Что мне необходимо сделать?' },
-  { img: '/media/avatars/chat-face-2.png', header: managerFreeeco, headerPart: managerFreeecoHeader, body: 'Войдите в веб-сервис и оформите заказ. Мы проведём анализ, составим договор. Подберём подходящего специалиста, а также проконтролируем работу' },
-  { img: '/media/avatars/chat-ingener.PNG', header: 'Ирина', headerPart: 'инженер-эколог', body: 'Здравствуйте. Меня зовут Ирина, я инженер-эколог со стажем. Хочу получать экологические заказы' },
-  { img: '/media/avatars/chat-face-2.png', header: managerFreeeco, headerPart: managerFreeecoHeader, body: 'Проходите регистрацию, отмечайте работы, которые хотите получать и добро пожаловать' },
+  { img: '/media/avatars/150-7.jpg', header: 'Анастасия', headerPart: 'Проект менеджер', body: 'Здравствуйте. Это фриланс-биржа экологических работ для бизнеса' },
+  { img: '/media/avatars/chat-face.jpg', header: 'Павел', headerPart: 'Заказчик', body: 'Здравствуйте. Вы делаете проекты НДВ? СЗЗ?' },
+  { img: '/media/avatars/150-7.jpg', header: 'Анастасия', headerPart: 'Проект менеджер', body: 'Да. На freeeco зарегистрированы удаленные инженеры-экологи, которые разрабатывают разные документы от отчётов до проектов' },
+  { img: '/media/avatars/chat-face.jpg', header: 'Павел', headerPart: 'Заказчик', body: 'А эти документы точно нужны моей компании? Что мне необходимо сделать?' },
+  { img: '/media/avatars/150-7.jpg', header: 'Анастасия', headerPart: 'Проект менеджер', body: 'Войдите в веб-сервис и оформите заказ. Мы проведём анализ, составим договор. Подберём подходящего специалиста, а также проконтролируем работу' },
+  { img: '/media/avatars/chat-face-2.png', header: 'Ирина', headerPart: 'Инженер-эколог', body: 'Здравствуйте. Меня зовут Ирина, я инженер-эколог со стажем. Хочу получать экологические заказы' },
+  { img: '/media/avatars/150-7.jpg', header: 'Анастасия', headerPart: 'Проект менеджер', body: 'Проходите регистрацию, отмечайте работы, которые хотите получать и добро пожаловать' },
 ]
 onMounted(() => {
   const chatElemts = document.querySelectorAll('.push-notification');
@@ -36,7 +32,7 @@ onMounted(() => {
   const interval = setInterval(() => {
     chatElemts[counter].style.display = 'flex';
     counter += 1;
-    if (counter === 6) clearInterval(interval);
+    if (counter === 7) clearInterval(interval);
   }, 300)
 })
 
@@ -63,6 +59,11 @@ onMounted(() => {
   border-radius: 50%;
 }
 
+.push-notification__avatar {
+  width: 23%;
+  align-self: center;
+}
+
 .push-notification__content {
   flex: 1;
 }
@@ -77,10 +78,17 @@ onMounted(() => {
 
 
 #containerForChats {
+  padding-top: 60px;
+  max-height: 90vh; 
+  overflow: scroll;
+  max-width: 25%;
   margin-top: 2%;
   left: 40%;
   z-index: 1;
   flex-direction: column;
+  font-weight: 550;
+  font-size: 1em;
+  line-height: 1.3em;
 }
 
 .chat-style:nth-child(1) {
@@ -110,12 +118,12 @@ onMounted(() => {
 
 .chat-style:nth-child(6) {
   animation-delay: 3.5s;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .chat-style:nth-child(7) {
   animation-delay: 4s;
-  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -130,7 +138,7 @@ onMounted(() => {
 }
 
 @media (max-width: 1000px) {
-  #containerForChats{
+  #containerForChats {
     display: none !important;
   }
 }

@@ -1,50 +1,52 @@
+<script setup>
+const state = ref('');
+state.value = {
+  customer: false,
+  executor: false,
+};
+
+const changeShow = (description) => {
+  state.value[description] = !state.value[description];
+  if (description === 'customer') {
+    state.value.executor = false;
+  }
+  if (description === 'executor') {
+    state.value.customer = false;
+  }
+}
+</script>
 <template>
-  <div class="container-fluid bg-dark" style="height: 70vh;">
-    <h1 class="fs-2hx text-white text-center pt-10">Как это работает?</h1>
-    <div class="row flex-column justify-content-center">
-      <ul class="col-6 nav nav-tabs nav-pills border-0 me-5 mb-3 mb-md-0 fs-6 d-flex justify-content-center ">
+  <div class="container-fluid bg-dark" style="height: 100vh;">
+    <h1 class="fs-2hx text-white text-center p-10">Как это работает?</h1>
+    <div class="row flex-column justify-content-center position-relative">
+
+      <ul class="nav nav-tabs nav-pills border-0 me-5 mb-3 mb-md-0 fs-6 d-flex justify-content-center p-5">
         <li class="nav-item me-0 mb-md-2">
-          <a class="nav-link active btn btn-flex btn-active-light-success" data-bs-toggle="tab" href="#kt_vtab_pane_1">
+          <a :class="'nav-link btn btn-flex btn-active-light-success me-4' + (state.customer ? ' active' : '')"
+            @click="changeShow('customer')">
             <span class="svg-icon svg-icon-2"><svg>...</svg></span>
-            <span class="d-flex flex-column align-items-start">
-              <span class="fs-4 fw-bolder">Link 1</span>
-              <span class="fs-7">Description</span>
+            <span class="d-flex flex-column align-items-center">
+              <span class="fs-4 fw-bolder">Я Заказчик</span>
+              <span class="fs-7">Открыть инструкцию</span>
             </span>
           </a>
         </li>
         <li class="nav-item me-0 mb-md-2">
-          <a class="nav-link btn btn-flex btn-active-light-info" data-bs-toggle="tab" href="#kt_vtab_pane_2">
+          <a :class="'nav-link btn btn-flex btn-active-light-info' + (state.executor ? ' active' : '')"
+            @click="changeShow('executor')">
             <span class="svg-icon svg-icon-2"><svg>...</svg></span>
             <span class="d-flex flex-column align-items-start">
-              <span class="fs-4 fw-bolder">Link 2</span>
-              <span class="fs-7">Description</span>
-            </span>
-          </a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link btn btn-flex btn-active-light-danger" data-bs-toggle="tab" href="#kt_vtab_pane_3">
-            <span class="svg-icon svg-icon-2"><svg>...</svg></span>
-            <span class="d-flex flex-column align-items-start">
-              <span class="fs-4 fw-bolder">Link 3</span>
-              <span class="fs-7">Description</span>
+              <span class="fs-4 fw-bolder">Я Исполнитель</span>
+              <span class="fs-7">Открыть инструкцию</span>
             </span>
           </a>
         </li>
       </ul>
-      <div class="col-5 fs-1" id="myTabContent">
-        <div class="tab-pane fade active show" id="kt_vtab_pane_1" role="tabpanel">
-          Инструкция №1
-        </div>
-        <div class="tab-pane fade" id="kt_vtab_pane_2" role="tabpanel">
-          Инструкция №2
-        </div>
-        <div class="tab-pane fade" id="kt_vtab_pane_3" role="tabpanel">
-          Инструкция №3
-        </div>
-        <div class="tab-pane fade" id="kt_vtab_pane_4" role="tabpanel">
-          Инструкция №1
-        </div>
-      </div>
+
+      <!-- Инструкция для заказчика -->
+      <RegionsHowItWorksCustomer v-if="state.customer" />
+      <!-- Инструкция для Исполнителя -->
+      <RegionsHowItWorksPerformer v-if="state.executor" />
     </div>
   </div>
 </template>

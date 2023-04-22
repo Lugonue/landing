@@ -3,9 +3,11 @@
     <span id="start"></span>
     <div :class="'main ' + statusSlide" id="main">
       <!-- chats start  -->
+
       <template v-if="statusSlide.length === 0">
         <RegionsChats />
       </template>
+      
       <!-- Start left Slide -->
       <div class="split left">
         <i class="fa-solid fa-chevron-right d-none opacity-0" id="fa-chevron-right"></i>
@@ -23,6 +25,7 @@
             <p class="fs-1 p-0 m-0">Узнать больше</p>
           </button>
         </template>
+
         <!-- left slide benefitials -->
         <template v-if="statusSlide === 'fullLeft'">
           <div class="w-100 h-100">
@@ -61,51 +64,9 @@
 </template>
 
 <script setup>
-
-
-// scroll
-// function addEventScroll() {
-//   if (window.scrollY === 0) {
-//     document.addEventListener("scroll", scrollToPosition);
-//   }
-// }
-
-// const scrollToTop = () => {
-//   const anchorSlider = document.querySelector('#next');
-//   const position = anchorSlider.offsetTop;
-//   if (window.scrollY > position) return;
-//   document.removeEventListener('scroll', scrollToTop);
-//   window.scrollTo({
-//     top: 0,
-//     behavior: "smooth"
-//   });
-// }
-
-// function scrollToPosition() {
-//   const startingSection = document.querySelector('#start');
-//   const startingPosition = startingSection.offsetTop;
-//   const anchorSlider = document.querySelector('#next');
-//   const position = anchorSlider.offsetTop;
-//   if (window.scrollY > startingPosition) {
-//     document.removeEventListener('scroll', scrollToPosition);
-//     setTimeout(() => document.addEventListener('scroll', scrollToTop), 2000);
-//     window.scrollTo({
-//       top: position,
-//       behavior: "smooth"
-//     });
-//   }
-// }
-
-// onMounted(() => {
-//     document.addEventListener("scroll", scrollToPosition);
-//     document.addEventListener("scroll", addEventScroll);
-  
-// })
-//slide
 const statusSlide = ref('');
 const buttonKnowMore = (slide) => statusSlide.value = slide;
 const startCondition = () => statusSlide.value = '';
-
 </script>
 <style scoped>
 .disable-scroll {

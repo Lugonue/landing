@@ -1,5 +1,6 @@
 <template>
-  <div class="container-xl d-flex flex-column justify-content-around mb-20 mt-20 p-10 rounded fs-4" id="UniqueTradeOffer" >
+  <div class="container-xl d-flex flex-column justify-content-around mb-20 mt-20 p-10 rounded fs-4" id="UniqueTradeOffer">
+    <!-- <section class="w-100 h-100 position-absolute" style="background: url('/media/bg-2-block.PNG');"></section> -->
     <div class="row justify-content-between mt-10 mb-20">
       <div class="col-md-5 col-sm-6">
         <div class="">
@@ -68,7 +69,17 @@
 
 <style scoped>
 #UniqueTradeOffer{
-  /* background: no-repeat center/120% url('/media/bg-2-block.PNG'); */
-  background: linear-gradient(45deg,rgb(253, 252, 252) 10%, rgb(228,230,239) 40%, rgb(239, 201, 239) 50%);
+  background: no-repeat center/120% url('/media/bg-2-block.PNG');
+  background-position: 55% 15%;
+  /* background: linear-gradient(45deg,rgb(253, 252, 252) 10%, rgb(228,230,239) 40%, rgb(239, 201, 239) 50%); */
+}
+
+@media screen and (max-width: 768px) {
+  #UniqueTradeOffer{
+    background: none;
+  }
+  #UniqueTradeOffer > div > div{
+    margin-bottom: 50px !important;
+  }
 }
 </style>

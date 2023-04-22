@@ -1,40 +1,47 @@
 <template>
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <div class="d-flex justify-content-start position-relative">
+    <ul class="col-6 nav nav-tabs nav-pills border-0 me-5 mb-3 mb-md-0 fs-6 d-flex flex-column justify-content-center">
+      <li>
+        <h3 class="m-5">Инструкция для Заказчика</h3>
+      </li>
+      <li class="nav-item me-0 mb-md-2">
+        <a class="nav-link active btn btn-flex btn-active-light-success" data-bs-toggle="tab" href="#kt_vtab_pane_11">
+          <span class="svg-icon svg-icon-2"><svg>...</svg></span>
+          <span class="d-flex flex-column align-items-start">
+            <span class="fs-4 fw-bolder">Шаг 1</span>
+            <span class="fs-7">Description</span>
+          </span>
+        </a>
+      </li>
+      <li class="nav-item me-0 mb-md-2">
+        <a class="nav-link btn btn-flex btn-active-light-info" data-bs-toggle="tab" href="#kt_vtab_pane_12">
+          <span class="svg-icon svg-icon-2"><svg>...</svg></span>
+          <span class="d-flex flex-column align-items-start">
+            <span class="fs-4 fw-bolder">Шаг 2</span>
+            <span class="fs-7">Description</span>
+          </span>
+        </a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link btn btn-flex btn-active-light-danger" data-bs-toggle="tab" href="#kt_vtab_pane_13">
+          <span class="svg-icon svg-icon-2"><svg>...</svg></span>
+          <span class="d-flex flex-column align-items-start">
+            <span class="fs-4 fw-bolder">Шаг 3</span>
+            <span class="fs-7">Description</span>
+          </span>
+        </a>
+      </li>
+    </ul>
+    <div class="col-5 position-absolute bg-light tab-pane fade top-50 active show" style="left: 50%;" id="kt_vtab_pane_11"
+      role="tabpanel">
+      <h3 class="border border-dark p-10">Скриншот 1</h3>
+    </div>
+    <div class="col-5 position-absolute bg-light tab-pane fade top-50" style="left: 50%;" id="kt_vtab_pane_12"
+      role="tabpanel">
+      <h3 class="border border-dark p-10">Скриншот 2</h3>
+    </div>
+    <div class="col-5 position-absolute bg-light tab-pane fade top-50" style="left: 50%;" id="kt_vtab_pane_13"
+      role="tabpanel">
+      <h3 class="border border-dark p-10">Скриншот 3</h3>
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="media/flags/andorra.svg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Скриншот какогото действия</h5>
-        <p>Можно нажать чтобы увеличить на весь экран</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="media/flags/angola.svg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Скриншот какогото действия</h5>
-        <p>Можно нажать чтобы увеличить на весь экран</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="media/flags/aruba.svg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Скриншот какогото действия</h5>
-        <p>Можно нажать чтобы увеличить на весь экран</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</template>
+</div></template>

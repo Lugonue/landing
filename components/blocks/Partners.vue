@@ -22,9 +22,9 @@ const companies = [
 ]
 </script>
 <style scoped>
-#bg {
+/* #bg {
   background: linear-gradient(45deg,rgb(239, 201, 239) 10%, rgb(228,230,2391) 40%, rgb(255, 255, 255) 50%);
-}
+} */
 
 
 

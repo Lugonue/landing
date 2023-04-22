@@ -7,7 +7,7 @@
     </div>
     <div class="col-lg-5 col-md-6 col-sm-6 text-center h-100 d-flex flex-column justify-content-evenly" style="padding-top: 5rem;">
       <h1 class="text-center display-3 mb-10 text-dark">
-        Приемущества
+        Преимущества 
       </h1>
       <section class="w-100 h-75 row d-flex flex-row flex-wrap align-items-start" style="">
         <UiCardInSlider v-bind:item="item" v-for="item in data"/>
