@@ -8,14 +8,14 @@
     </div>
     <BlocksUniqueTradeOffer />
     <BlocksWorks />
-    
     <!-- <BlocksProjects /> -->
-    <LazyBlocksTopFreelancers />
-    <BlocksPartners />
     <BlocksWorkScheme />
-    <BlocksTeamTest />
+    <LazyBlocksTopFreelancers />
+    <hr>
     <!-- <BlocksTeam /> -->
-    
+    <BlocksTeamTest />
+    <hr>
+    <BlocksPartners />
     <RegionsOffer />
     <RegionsFooter />
   </div>

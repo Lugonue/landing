@@ -1,8 +1,8 @@
 <template>
   <div class="col-lg-6 col-xl-4 col-md-12 col-12 custom-height ">
-    <div class="h-100 border rounded bg-light d-flex flex-column justify-content-between" id="card">
-      <h1 class=" w-100 p-2">{{ this.item.title }}</h1>
+    <div class="h-100 border rounded bg-light d-flex flex-column justify-content-center" id="card">
       <i :class="'fa-solid display-3 m-2 text-info ' + this.item.icon" ></i>
+      <h3 class=" w-100 p-2">{{ this.item.title }}</h3>
       <p class="bg-light p-1">{{ this.item.body }}</p>
     </div>
   </div>

@@ -5,7 +5,7 @@
         <h3 class="m-5">Инструкция для Заказчика</h3>
       </li>
       <li class="nav-item me-0 mb-md-2">
-        <a class="nav-link active btn btn-flex btn-active-light-success" data-bs-toggle="tab" href="#kt_vtab_pane_11">
+        <a class="nav-link active btn btn-flex btn-active-light-info" data-bs-toggle="tab" href="#kt_vtab_pane_11">
           <span class="svg-icon svg-icon-2"><svg>...</svg></span>
           <span class="d-flex flex-column align-items-start">
             <span class="fs-4 fw-bolder">Шаг 1</span>
@@ -23,7 +23,7 @@
         </a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link btn btn-flex btn-active-light-danger" data-bs-toggle="tab" href="#kt_vtab_pane_13">
+        <a class="nav-link btn btn-flex btn-active-light-info" data-bs-toggle="tab" href="#kt_vtab_pane_13">
           <span class="svg-icon svg-icon-2"><svg>...</svg></span>
           <span class="d-flex flex-column align-items-start">
             <span class="fs-4 fw-bolder">Шаг 3</span>

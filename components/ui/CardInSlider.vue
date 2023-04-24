@@ -3,7 +3,7 @@
     <div class="h-75 border border-secondary rounded bg-light" id="card">
       <div class="p-2 bg-success"></div>
       <h1 class=" bg-secondary w-100 h-25 p-2">{{ this.item.title }}</h1>
-      <p class="fst-italic  p-1">{{ this.item.body }}</p>
+      <p class="  p-1">{{ this.item.body }}</p>
     </div>
   </div>
 </template>

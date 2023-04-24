@@ -16,7 +16,7 @@ const changeShow = (description) => {
 }
 </script>
 <template>
-  <div class="container-fluid bg-dark" style="height: 100vh;">
+  <div class="container-fluid" id="main">
     <h1 class="fs-2hx text-white text-center p-10">Как это работает?</h1>
     <div class="row flex-column justify-content-center position-relative">
 
@@ -51,3 +51,10 @@ const changeShow = (description) => {
   </div>
 </template>
 
+<style scoped>
+#main{
+  height: 100vh;
+   margin-top: 10rem;
+  background: rgb(26, 24, 58);
+}
+</style>

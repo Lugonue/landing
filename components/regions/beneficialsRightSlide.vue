@@ -1,33 +1,40 @@
 <template>
-  <div class="row justify-content-center align-items-center h-100 bg-light">
-    <div class="col-4 col-md-6 col-sm-6">
-      <div class="d-flex flex-column align-items-center justify-content-end" style="height: 100vh">
+  <div class="row justify-content-center align-items-center h-100 bg-light" id="bg">
+    <div class="col-4">
+      <div class="d-flex align-items-end justify-content-center" style="height: 100vh">
         <img style="height: 80%;" src="/media/header-component-img/statik-slider/Background-img-right-slide.png" alt="">
       </div>
     </div>
-    <div class="col-lg-5 col-md-6 col-sm-6 text-center h-100 d-flex flex-column justify-content-evenly" style="padding-top: 5rem;">
-      <h1 class="text-center display-3 mb-10 text-dark">
-        Преимущества 
+    <div class="col-lg-7 col-md-7 col-sm-7 text-center h-100 d-flex flex-column justify-content-evenly elign-items-center" style="padding-top: 5rem;">
+      
+      <h1 class="w-100 d-flex align-items-center justify-content-center rounded p-2 w-75 text-center mb-5 text-dark display-5"
+      
+      >
+        <!-- <i class="text-dark fs-1 fa-sharp fa-solid fa-angles-left"></i> -->
+        <i class="text-dark display-6 fa-sharp fa-solid fa-angles-right"></i>
+        <i class="text-dark display-6 fa-sharp fa-solid fa-angles-right"></i>
+        <i class="text-dark display-6 fa-sharp fa-solid fa-angles-right"></i>
+        <i class="text-dark display-6 fa-sharp fa-solid fa-angles-right"></i>
+        Преимущества для Исполнителя
       </h1>
-      <section class="w-100 h-75 row d-flex flex-row flex-wrap align-items-start" style="">
-        <UiCardInSlider v-bind:item="item" v-for="item in data"/>
+      
+      <section class="w-75 h-75 row d-flex flex-row flex-wrap align-items-start" style="">
+        <RegionsCardInSliderExecutor />
+        <!-- <UiCardInSlider v-bind:item="item" v-for="item in data"/> -->
       </section>
-      <div>
-          <a href="#" class="btn btn-dark ">Сделать заказ</a>
-        </div>
     </div>
   </div>
 </template>
   
 <script setup>
-const data = [
-  { id: 3, title: 'Опыт', body: 'полный анализ деятельности от ТОП-овых специалистов' },
-  { id: 2, title: 'Заработок', body: 'Получайте высокие рейтинги и забирайте все работы' },
-  { id: 1, title: 'Работа на постоянке', body: 'автоматическое оповещение прохождения этапов по почте или в соц сетях'  },
-  { id: 4, title: 'Оповещение', body:  'выполнение специалистом работы лежит на нашей области ответственности' },
-  { id: 6, title: 'Все риски на нас', body: 'Заключение договора на разработку' },
-  { id: 5, title: 'Постоянно на связи', body: 'менеджер на связи 25/8' },
-]
+// const data = [
+//   { id: 1, title: 'Опыт', body: 'полный анализ деятельности от ТОП-овых специалистов' },
+//   { id: 2, title: 'Заработок', body: 'Получайте высокие рейтинги и забирайте все работы' },
+//   { id: 3, title: 'Оповещение', body: 'автоматическое оповещение прохождения этапов по почте или в соц сетях'  },
+//   { id: 4, title: 'Работа на постоянке', body:  'выполнение специалистом работы лежит на нашей области ответственности' },
+//   { id: 5, title: 'Все риски на нас', body: 'Заключение договора на разработку' },
+//   { id: 6, title: 'Постоянно на связи', body: 'Менеджер на связи 25/8' },
+// ]
 </script>
   
 <style scoped>
@@ -35,10 +42,8 @@ const data = [
   animation: ani 1s forwards;
 }
 
-.bg {
-  width: 100%;
-  height: 100%;
-  /* background: linear-gradient(to right, rgba(156, 155, 156, 0.2), rgba(179, 177, 178, 0.2)), left / 100% no-repeat url("media/header-component-img/statik-slider/Background-img-right-slide.jpg"); */
+#bg {
+  background: radial-gradient(farthest-side at 75% 35%, rgb(216,136,209) 10%, rgb(245,248,250) 80%);
 }
 
 section {

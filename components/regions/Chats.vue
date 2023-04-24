@@ -6,9 +6,9 @@
           <img class="me-5 w-100" :src=chat.img alt="User Avatar">
         </div>
         <div class="push-notification__content mb-1">
-          <p class="push-notification__text mb-1">{{ chat.header }} <span class="text-secondary">{{ chat.headerPart.toLocaleUpperCase()
+          <h6 class="push-notification__text mb-1">{{ chat.header }} <span class="text-gray-600">{{ chat.headerPart.toLocaleUpperCase()
           }}</span>
-          </p>
+          </h6>
           <p class="push-notification__message ">{{ chat.body }}</p>
         </div>
       </div>
@@ -86,7 +86,7 @@ onMounted(() => {
   left: 40%;
   z-index: 1;
   flex-direction: column;
-  font-weight: 550;
+  font-weight: 500;
   font-size: 1em;
   line-height: 1.3em;
 }
