@@ -1,16 +1,15 @@
 <template>
-  <div class="container-fluid d-flex flex-column justify-content-center pb-10 pt-10 rounded bg-secondary" id="bg">
-    <div class="container-xl">
-      <h1 class="fs-2hx text-center fw-bold mb-10">Наши партнеры</h1>
+  <div class="container-fluid d-flex flex-column justify-content-center pb-10 pt-10 rounded" id="bg">
+    <div class="container-fluid">
+      <h1 class="fs-2hx fw-bolder text-center mb-10">Наши партнеры</h1>
     <div class="row flex-row justify-content-center align-items-center overflow-auto" style="flex-wrap: nowrap;">
-      <div v-for="companyImg in companies" class="col-lg-2 col-md-2 col-sm-4 col-3" id="anime">
-        <div class="d-flex justify-content-center rounded overflow-hidden bg-white">
-          <img style="max-width: 200px; max-height: 200px;" :src=companyImg class="card-img-top rounded-0" alt="...">
+      <div v-for="companyImg in companies" class="shadow-sm m-5" id="anime">
+        <div class="">
+          <img style="max-width: 200px; max-height: 200px;" :src=companyImg class=" rounded-0" alt="...">
         </div>
       </div>
     </div>
     </div>
-    
   </div>
 </template>
 

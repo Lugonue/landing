@@ -19,7 +19,6 @@ const changeShow = (description) => {
   <div class="container-fluid" id="main">
     <h1 class="fs-2hx text-white text-center p-10">Как это работает?</h1>
     <div class="row flex-column justify-content-center position-relative">
-
       <ul class="nav nav-tabs nav-pills border-0 me-5 mb-3 mb-md-0 fs-6 d-flex justify-content-center p-5">
         <li class="nav-item me-0 mb-md-2">
           <a :class="'nav-link btn btn-flex btn-active-light-success me-4' + (state.customer ? ' active' : '')"
@@ -56,5 +55,7 @@ const changeShow = (description) => {
   height: 100vh;
    margin-top: 10rem;
   background: rgb(26, 24, 58);
+  border-radius: 130px 0 130px 0 ;
+
 }
 </style>

@@ -38,7 +38,7 @@ export default defineNuxtConfig({
     },
 
     plugins: [
-        { src: '~/plugins/helpers/' },
+        { src: '~/plugins/helpers/index.ts' },
         { src: "~/plugins/useBootstrap.client.ts", mode: "client" },
     ],
 
@@ -65,7 +65,7 @@ export default defineNuxtConfig({
 
     runtimeConfig: {
         // The private keys which are only available within server-side
-        
+
         //updateVIA: Number(process.env.UPDATE_VIA) || 60,
 
         // Keys within public, will be also exposed to the client-side

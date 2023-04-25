@@ -7,14 +7,7 @@
     </div>
     <div class="col-lg-7 col-md-7 col-sm-7 text-center h-100 d-flex flex-column justify-content-evenly elign-items-center" style="padding-top: 5rem;">
       
-      <h1 class="w-100 d-flex align-items-center justify-content-center rounded p-2 w-75 text-center mb-5 text-dark display-5"
-      
-      >
-        <!-- <i class="text-dark fs-1 fa-sharp fa-solid fa-angles-left"></i> -->
-        <i class="text-dark display-6 fa-sharp fa-solid fa-angles-right"></i>
-        <i class="text-dark display-6 fa-sharp fa-solid fa-angles-right"></i>
-        <i class="text-dark display-6 fa-sharp fa-solid fa-angles-right"></i>
-        <i class="text-dark display-6 fa-sharp fa-solid fa-angles-right"></i>
+      <h1 class="w-75 d-flex align-items-center justify-content-center rounded p-2 w-75 text-center mb-5 text-dark display-5">
         Преимущества для Исполнителя
       </h1>
       
@@ -43,7 +36,7 @@
 }
 
 #bg {
-  background: radial-gradient(farthest-side at 75% 35%, rgb(216,136,209) 10%, rgb(245,248,250) 80%);
+  background: radial-gradient(farthest-side at 55% 45%, rgb(207, 212, 212) 10%, rgb(245,248,250) 80%);
 }
 
 section {

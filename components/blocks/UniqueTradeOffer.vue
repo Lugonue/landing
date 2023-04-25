@@ -5,7 +5,7 @@
       <div class="row justify-content-between mt-10 mb-20">
         <div class="col-md-5 col-sm-6">
           <div class="">
-            <p class=" fs-1 text-black fw-bold">Сервис для бизнеса<br> и инженеров-экологов</p>
+            <p class=" fs-1 text-black fw-bolder">Сервис для бизнеса<br> и инженеров-экологов</p>
             <p class="">Наша фриланс биржа открывает доступ к удаленным
               инженерам-экологам. Самые топовые разработчики имеют
               представление о сотнях компаний и знают, что им нужно.
@@ -32,7 +32,7 @@
         </div>
         <div class="col-lg-5 d-flex">
           <div class="">
-            <p class="fs-1 text-black fw-bold">Для чего нужны экологические
+            <p class="fs-1 text-black fw-bolder">Для чего нужны экологические
               работы</p>
             <p class="">По законодательству к юридическим лицам и ИП предъявляют
               требования природоохранные органы Минприроды и
@@ -47,7 +47,7 @@
       <div class="row justify-content-between mb-20">
         <div class="col-lg-5">
           <div class="">
-            <p class="fs-1 text-black fw-bold">Это не совсем обычная
+            <p class="fs-1 text-black fw-bolder">Это не совсем обычная
               фриланс-биржа</p>
             <p class="">Наша фриланс биржа открывает доступ к удаленным
               инженерам-экологам. Самые топовые разработчики имеют
@@ -74,12 +74,13 @@
 
 <style scoped>
 #UniqueTradeOffer {
-  background: no-repeat center/120% url('/media/bg-2-block.PNG');
-  background-position: 15% 25%;
+  background: no-repeat center/100% url('/media/bg-2-block.PNG');
+  /* background-position: 15% 45%; */
+  background-size: 110% 130%;
   /* background: linear-gradient(45deg,rgb(253, 252, 252) 10%, rgb(228,230,239) 40%, rgb(239, 201, 239) 50%); */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   #UniqueTradeOffer {
     background: none;
   }
