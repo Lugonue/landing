@@ -4,7 +4,7 @@
 			<div class="mb-0" id="home">
 				<div>Хело!</div>
 				<!--begin::Wrapper-->
-				<div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom landing-dark-bg min-vh-100" style="background-image: url(media/svg/illustrations/landing.svg)">
+				<div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom landing-dark-bg min-vh-100" style="background-image: url('/media/svg/illustrations/landing.svg')">
 					<!--begin::Header-->
 					<div class="landing-header" data-kt-sticky="true" data-kt-sticky-name="landing-header" data-kt-sticky-offset="{default: '200px', lg: '300px'}">
 						<!--begin::Container-->
@@ -27,8 +27,8 @@
 									<!--end::Mobile menu toggle-->
 									<!--begin::Logo image-->
 									<NuxtLink to="/about">
-										<img alt="Logo" src="media/logos/logo-landing.svg" class="logo-default h-25px h-lg-30px" />
-										<img alt="Logo" src="media/logos/logo-landing-dark.svg" class="logo-sticky h-20px h-lg-25px" />
+										<img alt="Logo" src="/media/logos/logo-landing.svg" class="logo-default h-25px h-lg-30px" />
+										<img alt="Logo" src="/media/logos/logo-landing-dark.svg" class="logo-sticky h-20px h-lg-25px" />
 									</NuxtLink>
 									<!--end::Logo image-->
 								</div>
@@ -116,42 +116,42 @@
 						<div class="d-flex flex-center flex-wrap position-relative px-5">
 							<!--begin::Client-->
 							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Fujifilm">
-								<img src="media/svg/brand-logos/fujifilm.svg" class="mh-30px mh-lg-40px" alt="" />
+								<img src="/media/svg/brand-logos/fujifilm.svg" class="mh-30px mh-lg-40px" alt="" />
 							</div>
 							<!--end::Client-->
 							<!--begin::Client-->
 							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Vodafone">
-								<img src="media/svg/brand-logos/vodafone.svg" class="mh-30px mh-lg-40px" alt="" />
+								<img src="/media/svg/brand-logos/vodafone.svg" class="mh-30px mh-lg-40px" alt="" />
 							</div>
 							<!--end::Client-->
 							<!--begin::Client-->
 							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="KPMG International">
-								<img src="media/svg/brand-logos/kpmg.svg" class="mh-30px mh-lg-40px" alt="" />
+								<img src="/media/svg/brand-logos/kpmg.svg" class="mh-30px mh-lg-40px" alt="" />
 							</div>
 							<!--end::Client-->
 							<!--begin::Client-->
 							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Nasa">
-								<img src="media/svg/brand-logos/nasa.svg" class="mh-30px mh-lg-40px" alt="" />
+								<img src="/media/svg/brand-logos/nasa.svg" class="mh-30px mh-lg-40px" alt="" />
 							</div>
 							<!--end::Client-->
 							<!--begin::Client-->
 							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Aspnetzero">
-								<img src="media/svg/brand-logos/aspnetzero.svg" class="mh-30px mh-lg-40px" alt="" />
+								<img src="/media/svg/brand-logos/aspnetzero.svg" class="mh-30px mh-lg-40px" alt="" />
 							</div>
 							<!--end::Client-->
 							<!--begin::Client-->
 							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="AON - Empower Results">
-								<img src="media/svg/brand-logos/aon.svg" class="mh-30px mh-lg-40px" alt="" />
+								<img src="/media/svg/brand-logos/aon.svg" class="mh-30px mh-lg-40px" alt="" />
 							</div>
 							<!--end::Client-->
 							<!--begin::Client-->
 							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Hewlett-Packard">
-								<img src="media/svg/brand-logos/hp-3.svg" class="mh-30px mh-lg-40px" alt="" />
+								<img src="/media/svg/brand-logos/hp-3.svg" class="mh-30px mh-lg-40px" alt="" />
 							</div>
 							<!--end::Client-->
 							<!--begin::Client-->
 							<div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Truman">
-								<img src="media/svg/brand-logos/truman.svg" class="mh-30px mh-lg-40px" alt="" />
+								<img src="/media/svg/brand-logos/truman.svg" class="mh-30px mh-lg-40px" alt="" />
 							</div>
 							<!--end::Client-->
 						</div>
