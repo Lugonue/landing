@@ -2,10 +2,10 @@
   <div class="container-fluid d-flex flex-column justify-content-center pb-10 pt-10 rounded" id="bg">
     <div class="container-fluid">
       <h1 class="fs-2hx fw-bolder text-center mb-10">Наши партнеры</h1>
-    <div class="row flex-row justify-content-center align-items-center overflow-auto" style="flex-wrap: nowrap;">
-      <div v-for="companyImg in companies" class="shadow-sm m-5" id="anime">
+    <div class="row flex-row justify-content-center align-items-center overflow-auto " style="flex-wrap: nowrap;">
+      <div v-for="companyImg in companies" class="shadow-sm m-5 w-auto p-0 border rounded" id="anime">
         <div class="">
-          <img style="max-width: 200px; max-height: 200px;" :src=companyImg class=" rounded-0" alt="...">
+          <img style="max-width: 150px; max-height: 150px;" :src=companyImg class=" rounded" alt="...">
         </div>
       </div>
     </div>

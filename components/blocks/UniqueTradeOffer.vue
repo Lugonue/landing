@@ -74,9 +74,8 @@
 
 <style scoped>
 #UniqueTradeOffer {
-  background: no-repeat center/100% url('/media/bg-2-block.PNG');
-  /* background-position: 15% 45%; */
-  background-size: 110% 130%;
+  background: no-repeat url('/media/bg-2-block.PNG');
+  background-size: 100%;
   /* background: linear-gradient(45deg,rgb(253, 252, 252) 10%, rgb(228,230,239) 40%, rgb(239, 201, 239) 50%); */
 }
 

@@ -22,6 +22,6 @@ export default {
   border: 1px solid rgba(0, 0, 0, 0);
 }
 #customButtn:hover {
-  border: 0.5px solid black;
+  border: 0.1px solid black;
 }
 </style>

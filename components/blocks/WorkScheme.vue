@@ -1,7 +1,7 @@
 <script setup>
 const state = ref('');
 state.value = {
-  customer: false,
+  customer: true,
   executor: false,
 };
 
@@ -23,7 +23,7 @@ const changeShow = (description) => {
         <li class="nav-item me-0 mb-md-2">
           <a :class="'nav-link btn btn-flex btn-active-light-success me-4' + (state.customer ? ' active' : '')"
             @click="changeShow('customer')">
-            <span class="svg-icon svg-icon-2"><svg>...</svg></span>
+            <!-- <span class="svg-icon svg-icon-2"><svg>...</svg></span> -->
             <span class="d-flex flex-column align-items-center">
               <span class="fs-4 fw-bolder">Я Заказчик</span>
               <span class="fs-7">Открыть инструкцию</span>
@@ -33,7 +33,7 @@ const changeShow = (description) => {
         <li class="nav-item me-0 mb-md-2">
           <a :class="'nav-link btn btn-flex btn-active-light-info' + (state.executor ? ' active' : '')"
             @click="changeShow('executor')">
-            <span class="svg-icon svg-icon-2"><svg>...</svg></span>
+            <!-- <span class="svg-icon svg-icon-2"><svg>...</svg></span> -->
             <span class="d-flex flex-column align-items-start">
               <span class="fs-4 fw-bolder">Я Исполнитель</span>
               <span class="fs-7">Открыть инструкцию</span>

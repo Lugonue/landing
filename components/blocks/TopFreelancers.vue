@@ -1,6 +1,6 @@
 <template>
   <div class="container-xl d-flex flex-column justify-content-center mt-20 mb-20 pb-10 pt-10 rounded" id="bg">
-    <h1 class="fs-2hx text-center fw-bold mb-20">Топ фрилансеров</h1>
+    <h1 class="fs-2hx text-center fw-bolder mb-20">Топ фрилансеров</h1>
     <div class="row flex-row justify-content-center overflow-auto" style="flex-wrap: nowrap;" >
       <div v-for="freeLancer in freeLancers" class="col-lg-2 col-md-2 col-sm-4 col-3" id="anime">
         <div class="card rounded" style="">

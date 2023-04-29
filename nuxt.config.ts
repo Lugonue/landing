@@ -36,6 +36,14 @@ export default defineNuxtConfig({
             mode: 'out-in' // default
         }
     },
+    // modules: [
+    //     ['@nuxtjs/yandex-metrika',
+    //         {
+    //             id: '93411924',
+    //             webvisor: true,
+    //         }
+    //     ],
+    // ],
 
     plugins: [
         { src: '~/plugins/helpers/index.ts' },

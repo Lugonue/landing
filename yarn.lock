@@ -604,6 +604,11 @@
     vite-plugin-checker "^0.5.6"
     vue-bundle-renderer "^1.0.3"
 
+"@nuxtjs/yandex-metrika@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/yandex-metrika/-/yandex-metrika-1.4.0.tgz#045dcfd6d8a43f4f869ecdae0b1062bf9d19fb83"
+  integrity sha512-6c5w3oV86575G0/GGJPnaREDCDYKPg5e7P7BiEk4UlSQce56Pqnaolaa8D8A6Ds/KJafZDGcAkc0z65F1anA5A==
+
 "@popperjs/core@^2.11.6":
   version "2.11.7"
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.7.tgz#ccab5c8f7dc557a52ca3288c10075c9ccd37fff7"

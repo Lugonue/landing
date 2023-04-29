@@ -60,7 +60,7 @@
       </div>
     </div>
   </div>
-  <span id="next"></span>
+  <span id=""></span>
 </template>
 
 <script setup>

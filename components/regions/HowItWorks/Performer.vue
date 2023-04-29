@@ -1,47 +1,96 @@
 <template>
-  <div class="d-flex justify-content-start position-relative">
-    <ul class="col-6 nav nav-tabs nav-pills border-0 me-5 mb-3 mb-md-0 fs-6 d-flex flex-column justify-content-center">
-      <li>
-        <h3 class="m-5">Инструкция для Исполнителя</h3>
-      </li>
-      <li class="nav-item me-0 mb-md-2">
-        <a class="nav-link active btn btn-flex btn-active-light-success" data-bs-toggle="tab" href="#kt_vtab_pane_21">
-          <span class="svg-icon svg-icon-2"><svg>...</svg></span>
+  <hr class="border-light">
+  <div class="w-100 d-flex justify-content-start position-relative">
+    <ul class="col-3 nav nav-tabs nav-pills border-0 me-5 mb-3 mb-md-0 fs-6 d-flex justify-content-center">
+      <li class="w-75 nav-item me-0 mb-md-2" v-for="button in buttonsToInstructions">
+        <a :class="'nav-link btn btn-flex btn-active-light-info' + (button.isActive ? ' active' : '')"
+          data-bs-toggle="tab" :href=button.href>
+          <!-- <span class="svg-icon svg-icon-2"><svg>...</svg></span> -->
           <span class="d-flex flex-column align-items-start">
-            <span class="fs-4 fw-bolder">Шаг 1</span>
-            <span class="fs-7">Description</span>
-          </span>
-        </a>
-      </li>
-      <li class="nav-item me-0 mb-md-2">
-        <a class="nav-link btn btn-flex btn-active-light-info" data-bs-toggle="tab" href="#kt_vtab_pane_22">
-          <span class="svg-icon svg-icon-2"><svg>...</svg></span>
-          <span class="d-flex flex-column align-items-start">
-            <span class="fs-4 fw-bolder">Шаг 2</span>
-            <span class="fs-7">Description</span>
-          </span>
-        </a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link btn btn-flex btn-active-light-danger" data-bs-toggle="tab" href="#kt_vtab_pane_23">
-          <span class="svg-icon svg-icon-2"><svg>...</svg></span>
-          <span class="d-flex flex-column align-items-start">
-            <span class="fs-4 fw-bolder">Шаг 3</span>
-            <span class="fs-7">Description</span>
+            <span class="fs-4 fw-bolder">{{ button.title }}</span>
+            <span class="fs-9 text-start">{{ button.text }}</span>
           </span>
         </a>
       </li>
     </ul>
-    <div class="col-5 position-absolute bg-light tab-pane fade top-50 active show" style="left: 50%;" id="kt_vtab_pane_21"
-      role="tabpanel">
-      <h3 class="border border-dark p-10">Скриншот 1</h3>
+
+    <div class="col-9 mt-10">
+      <div :class="'position-absolute w-100 tab-pane fade' + (instruction.isActive ? ' show active' : '')" :id=instruction.id
+        role="tabpanel" v-for="instruction in instructions">
+        <div class="d-flex w-100">
+          <div class="col-3 d-flex flex-column text-white border rounded border-secondary p-5">
+            <h1 class="text-white fw-bolder text-center mb-5">{{ instruction.title }}</h1>
+            <p class="fs-5" v-for="p in instruction.text">{{ p }}</p>
+          </div>
+          <div class="d-flex col-6 ms-5">
+            <img style="max-width: 90%; " alt="" :src=instruction.img />
+          </div>
+        </div>
+      </div>
+      <div class="col-5 position-absolute bg-light tab-pane fade top-50" style="left: 50%;" id="kt_vtab_pane_13"
+        role="tabpanel">
+        <h3 class="border border-dark p-10">Скриншот 3</h3>
+      </div>
     </div>
-    <div class="col-5 position-absolute bg-light tab-pane fade top-50" style="left: 50%;" id="kt_vtab_pane_22"
-      role="tabpanel">
-      <h3 class="border border-dark p-10">Скриншот 2</h3>
-    </div>
-    <div class="col-5 position-absolute bg-light tab-pane fade top-50" style="left: 50%;" id="kt_vtab_pane_23"
-      role="tabpanel">
-      <h3 class="border border-dark p-10">Скриншот 3</h3>
   </div>
-</div></template>
+</template>
+
+<script setup>
+
+const buttonsToInstructions = [
+  { href: '#kt_vtab_pane_21', title: 'Шаг 1', text: 'Регистрация', isActive: true },
+  { href: '#kt_vtab_pane_22', title: 'Шаг 2', text: 'Создание заказа' },
+  { href: '#kt_vtab_pane_23', title: 'Шаг 3', text: '' },
+  { href: '#kt_vtab_pane_24', title: 'Шаг 4', text: 'Заключение договора с нашим веб-сервисом' },
+  { href: '#kt_vtab_pane_25', title: 'Шаг 5', text: 'Назначение менеджера заказа' },
+  { href: '#kt_vtab_pane_26', title: 'Шаг 6', text: 'Подбор исполнителя' },
+  { href: '#kt_vtab_pane_27', title: 'Шаг 7', text: 'Выполнение работы' },
+  { href: '#kt_vtab_pane_28', title: 'Шаг 8', text: 'Прием работы' },
+]
+
+const instructions = [
+  {
+    id: 'kt_vtab_pane_21', title: 'Регистрация', text: [
+    ],
+    img: '/media/instructions/customerInstr-1.png', isActive: true
+  },
+  {
+    id: 'kt_vtab_pane_22', title: 'Создание заказа', text: [
+      'Перейдите в раздел «мои компетенции» и заполните данные о типах работ, городе выполнения работ и т.д',
+      'Укажите наиболее подробно виды работ для лучшего ориентирования нашего менеджера',
+      'Выберете способ получения уведомлений о новых аказах',
+    ], img: '/media/instructions/executerInstr-2.png'
+  },
+  {
+    id: 'kt_vtab_pane_23', title: 'Рассмотрение в этот же день', text: [
+    ], img: ''
+  },
+  {
+    id: 'kt_vtab_pane_24', title: 'Заключение договора', text: [
+    ], img: '/media/instructions/customerInstr-4.png'
+  },
+  {
+    id: 'kt_vtab_pane_25', title: 'Назначение менеджера', text: [
+    ], img: ''
+  },
+  {
+    id: 'kt_vtab_pane_26', title: 'Подбор исполнителя', text: [
+    ], img: ''
+  },
+  {
+    id: 'kt_vtab_pane_27', title: 'Уведомляем всех через сервис', text: [
+      'Мы прикрепляем к проекту нашего менеджера',
+      'Обмен файлами происходит именно с ним вне сервиса.',
+      'При выполнении работы меняйте этапность. Она автоматически уведомит заказчика, а также менеджера о переходе на следующую ступень.',
+      'Поменять этап можно внутри заказа кнопкой «сменить этап»',
+
+
+    ], img: '',
+  },
+  {
+    id: 'kt_vtab_pane_28', title: 'Прием работы', text: [
+   'При согласовании работы со всеми участниками, менеджер закрывает заказ и он попадает в раздел выполненные',
+    ], img: '',
+  }
+]
+</script>

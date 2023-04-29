@@ -7,11 +7,11 @@
     </div>
     <div class="col-lg-7 col-md-7 col-sm-7 text-center h-100 d-flex flex-column justify-content-evenly elign-items-center" style="padding-top: 5rem;">
       
-      <h1 class="w-75 d-flex align-items-center justify-content-center rounded p-2 w-75 text-center mb-5 text-dark display-5">
+      <h1 class="w-75 d-flex align-items-center justify-content-center rounded p-2 w-75 text-center mb-5 text-dark display-5 shadow-lg">
         Преимущества для Исполнителя
       </h1>
       
-      <section class="w-75 h-75 row d-flex flex-row flex-wrap align-items-start" style="">
+      <section class="w-75 h-75 row d-flex flex-row flex-wrap align-items-start">
         <RegionsCardInSliderExecutor />
         <!-- <UiCardInSlider v-bind:item="item" v-for="item in data"/> -->
       </section>
@@ -32,11 +32,12 @@
   
 <style scoped>
 * {
-  animation: ani 1s forwards;
+  animation: ani 2s forwards;
 }
 
 #bg {
   background: radial-gradient(farthest-side at 55% 45%, rgb(207, 212, 212) 10%, rgb(245,248,250) 80%);
+
 }
 
 section {
@@ -49,7 +50,7 @@ section {
   text-align: center;
   overflow-y: auto;
 
-  animation: ani 3s forwards;
+  animation: ani 5s forwards;
 }
 @media screen and (max-width: 1500px) {
 }
