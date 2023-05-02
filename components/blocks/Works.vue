@@ -10,7 +10,7 @@ const isActiveWork = (id) => [1, 2, 3, 4, 16, 5, 10].includes(id);
   <div class="container-xl d-flex justify-content-center rounded shadow-lg"
     style="margin-top: 10rem; padding-bottom: 10rem;" id="bg">
     <section class="col-lg-12" v-if="!pending">
-      <h1 class="fs-2hx text-center mt-10">Поиск работ</h1>
+      <h1 class="fs-2hx text-center my-5 p-5">Поиск работ</h1>
       <div class="d-flex flex-row justify-content-start ps-10" id="mobile">
         <ul class="nav border-transparent flex-column justify-content-start border-0 me-5 mb-3 mb-md-0 fs-6"
           role="tablist">
@@ -36,33 +36,33 @@ const isActiveWork = (id) => [1, 2, 3, 4, 16, 5, 10].includes(id);
                     <div :class="'tab-pane fade ' + (isActiveWork(work.id) ? 'show active' : '')" :id="'sub' + work.id"
                       role="tabpanel">
                       <div class="row">
-                        <div class="col-lg-6 col-sm-12  d-flex flex-column ">
-                          <div class="rounded p-4 bg-white shadow-sm mb-3">
+                        <div class="col-lg-6 col-sm-12 d-flex flex-column ">
+                          <div class="rounded p-4 bg-white shadow-xs mb-3 position-relative">
                             <h3 class="">Описание </h3>
                             <p class=" ">{{ work.description }} </p>
-                            <i class="fs-1 fa-regular fa-comment"></i>
+                            <i class="fa-duotone fa-comment position-absolute"></i>
                           </div>
-                          <div class="rounded p-4 bg-white shadow-sm mb-3">
+                          <div class="rounded p-4 bg-white shadow-xs mb-3 position-relative">
                             <h3 class=" ">Основания в законе</h3>
                             <p class="">{{ work.grounds }}</p>
-                            <i class="fs-1 fa-solid fa-gavel"></i>
+                            <i class="fa-duotone fa-gavel"></i>
                           </div>
-                          <div class="rounded p-4 bg-white shadow-sm mb-3">
+                          <div class="rounded p-4 bg-white shadow-xs mb-3 position-relative">
                             <h3 class="">Штраф за невыполнение</h3>
                             <p class="">{{ work.penalties }}</p>
-                            <i class="fs-1 fa-solid fa-user-police-tie"></i>
+                            <i class="fa-duotone fa-user-police-tie text-gray-400"></i>
                           </div>
                         </div>
                         <div class="col-lg-6 col-sm-12 d-flex flex-column">
-                          <div class="rounded p-4 bg-white shadow-sm mb-3">
+                          <div class="rounded p-4 bg-white shadow-xs mb-3 position-relative">
                             <h3 class="">На кого распространяется действие закона?</h3>
                             <p class="">{{ work.who_needs_it }}</p>
-                            <i class="fs-1 fa-duotone fa-book-section"></i>
+                            <i class="fa-duotone fa-book-section"></i>
                           </div>
-                          <div class="rounded p-4 bg-white shadow-sm mb-3">
+                          <div class="rounded p-4 bg-white shadow-xs mb-3 position-relative">
                             <h3 class="">Срок разработки</h3>
                             <p class=" ">{{ work.lead_time }}</p>
-                            <i class="fs-1 fa-solid fa-timer"></i>
+                            <i class="fa-duotone fa-timer"></i>
                           </div>
                         </div>
                         <div class="w-100 d-flex justify-content-end">
@@ -84,7 +84,16 @@ const isActiveWork = (id) => [1, 2, 3, 4, 16, 5, 10].includes(id);
 
 <style scoped>
 #bg {
-  background: linear-gradient(45deg, rgb(227, 227, 227) 10%, rgb(245,248,250) 50%);
+  background-color: #f2f3f5;
+}
+
+i {
+  color: #B5B5C3;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+  font-size: 30px;
 }
 
 @media (max-width: 800px) {

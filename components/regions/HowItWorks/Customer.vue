@@ -3,7 +3,7 @@
   <div class="d-flex justify-content-start position-relative">
     <ul class="col-3 nav nav-tabs nav-pills border-0 me-5 mb-3 mb-md-0 fs-6 d-flex justify-content-center">
       <li class="w-75 nav-item me-0 mb-md-2" v-for="button in buttonsToInstructions">
-        <a :class="'nav-link btn btn-flex btn-active-light-success' + (button.isActive ? ' active' : '')" data-bs-toggle="tab" :href=button.href>
+        <a :class="'nav-link btn btn-flex btn-active-light-secondary' + (button.isActive ? ' active' : '')" data-bs-toggle="tab" :href=button.href>
           <!-- <span class="svg-icon svg-icon-2"><svg>...</svg></span> -->
           <span class="d-flex flex-column align-items-start">
             <span class="fs-4 fw-bolder">{{ button.title }}</span>
@@ -14,7 +14,7 @@
     </ul>
 
     <div class="col-9 mt-10">
-      <div :class="'position-absolute w-100 tab-pane fade' + (instruction.isActive ? ' show active' : '')" :id=instruction.id role="tabpanel"
+      <div :class="'position-absolute tab-pane fade' + (instruction.isActive ? ' show active' : '')" :id=instruction.id role="tabpanel"
         v-for="instruction in instructions">
         <div class="d-flex w-100">
           <div class="d-flex col-3 flex-column text-white border rounded border-secondary p-5">

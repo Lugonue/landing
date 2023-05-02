@@ -60,10 +60,6 @@
   height: 150px;
 }
 
-#card {
-  box-shadow: 1px 5px 12px rgb(71, 68, 68) !important;
-}
-
 h1 {
   font-size: 1.3rem;
   font-weight: 800;

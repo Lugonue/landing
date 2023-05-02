@@ -100,9 +100,9 @@ $landing-header-sticky-height-tablet-and-mobile: 70px;
 }
 
 // Fix body padding top when Landing sticky header is on
-body[data-kt-sticky-landing-header="on"] {
-    padding-top: $landing-header-height;
-}
+// body[data-kt-sticky-landing-header="on"] {
+//     padding-top: $landing-header-height;
+// }
 
 // Tablet & mobile modes
 @include media-breakpoint-down(lg) {

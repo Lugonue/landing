@@ -7,7 +7,7 @@
     </div>
     <div class="col-lg-7 col-md-7 col-sm-7 text-center h-100 d-flex flex-column justify-content-evenly elign-items-center" style="padding-top: 5rem;">
       
-      <h1 class="w-75 d-flex align-items-center justify-content-center rounded p-2 w-75 text-center mb-5 text-dark display-5 shadow-lg">
+      <h1 class="w-75 d-flex align-items-center justify-content-center rounded p-2 w-75 text-center mb-5 display-5 text-gray-700">
         Преимущества для Исполнителя
       </h1>
       

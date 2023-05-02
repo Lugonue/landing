@@ -1,8 +1,8 @@
 <template>
   <div class="row d-flex justify-content-center align-items-center h-100 customBg">
-    <div class="col-lg-6 col-md-8 col-sm-10 text-center h-100 d-flex flex-column justify-content-center align-items-center" style="padding-top: 5rem;">
+    <div class="col-lg-6 col-md-8 col-sm-10 text-center h-100 d-flex flex-column justify-content-center align-items-center " style="padding-top: 5rem;">
 
-      <h1 class="overflow-auto rounded p-2 text-center mb-5 text-dark display-6 border border-dark">
+      <h1 class="overflow-auto rounded p-2 text-center mb-5 display-5 text-gray-700">
         Преимущества для Заказчика
       </h1>
 
@@ -42,7 +42,6 @@ section {
 
 .customBg {
   background: radial-gradient( farthest-corner at 15% 25%, rgb(208, 233, 233, 0.6) 1%, rgb(218,139,209) 80%);
-
 }
 
 

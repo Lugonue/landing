@@ -48196,9 +48196,6 @@ label.rating-label:hover ~ .rating-label > .svg-icon svg:hover [fill]:not(.perma
     [data-kt-sticky-landing-header="on"] .landing-header .logo-default {
       display: none; }
 
-body[data-kt-sticky-landing-header="on"] {
-  padding-top: 100px; }
-
 @media (max-width: 991.98px) {
   .landing-header {
     height: 70px; }
