@@ -12,10 +12,13 @@
     "nuxt": "^3.2.3"
   },
   "dependencies": {
+    "@nuxtjs/robots": "^3.0.0",
     "@nuxtjs/yandex-metrika": "^1.4.0",
     "@popperjs/core": "^2.11.6",
+    "@types/node": "^20.1.0",
     "bootstrap": "^5.2.2",
     "sass": "^1.56.0",
-    "sass-loader": "^13.1.0"
+    "sass-loader": "^13.1.0",
+    "yandex-metrika-module-nuxt3": "^1.5.3"
   }
 }

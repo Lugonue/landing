@@ -13,7 +13,7 @@ export default defineNuxtConfig({
             meta: [
                 { charset: 'utf-8' },
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-                { hid: 'description', name: 'description', content: 'Testing Nuxt3' },
+                { hid: 'description', name: 'description', content: 'Первая фриланс-биржа экологических проектов для бизнеса' },
                 { name: 'format-detection', content: 'telephone=no' },
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' }
             ],
@@ -36,18 +36,29 @@ export default defineNuxtConfig({
             mode: 'out-in' // default
         }
     },
-    // modules: [
-    //     ['@nuxtjs/yandex-metrika',
-    //         {
-    //             id: '93411924',
-    //             webvisor: true,
-    //         }
-    //     ],
-    // ],
+
+    modules: [
+        '@nuxtjs/robots',
+        [
+            'yandex-metrika-module-nuxt3',
+            {
+                id: '93442093',
+                webvisor: true,
+                clickmap: true,
+                trackHash: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                useCDN: false,
+                consoleLog: false,
+            }
+        ]
+    ],
 
     plugins: [
         { src: '~/plugins/helpers/index.ts' },
         { src: "~/plugins/useBootstrap.client.ts", mode: "client" },
+        { src: "~/plugins/layout/index.client.ts", mode: "client" },
+        { src: "~/plugins/components/index.client.ts", mode: "client" },
     ],
 
     // vite: {
