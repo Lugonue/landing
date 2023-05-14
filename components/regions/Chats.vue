@@ -6,7 +6,7 @@
           <img class="me-5 w-100" :src=chat.img alt="User Avatar">
         </div>
         <div class="push-notification__content mb-1">
-          <h6 class="push-notification__text mb-1">{{ chat.header }} <span class="text-gray-600">{{ chat.headerPart
+          <h6 class="push-notification__text mb-1">{{ chat.header }} <span class="text-gray-600">{{ chat.headerPart.toLowerCase()
           }}</span>
           </h6>
           <p class="push-notification__message ">{{ chat.body }}</p>

@@ -1,25 +1,47 @@
 <template>
-  <div class="row d-flex justify-content-center align-items-center h-100 customBg">
-    <div class="col-lg-6 col-md-8 col-sm-10 text-center h-100 d-flex flex-column justify-content-center align-items-center " style="padding-top: 5rem;">
+  <div class="container-fluid h-100 customBg">
+    <div class="row justify-content-center align-items-center h-100 ">
+      <div class="col-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8 h-100">
+        <div class="container-fluid overflow-hidden h-100">
+          <div class="row h-100 flex-column justify-content-center align-items-center">
+            <h1 class="rounded p-2 text-center mb-5 fs-1 text-gray-700">
+              Преимущества для Заказчика
+            </h1>
+            <section class="h-50 my-5">
+              <RegionsCardsInSliderCustomer />
+            </section>
+            <div v-if="hideImg" class="text-center mt-4">
+              <UiButtonToServise>Войти в сервис</UiButtonToServise>
+            </div>
+            
+          </div>
 
-      <h1 class="overflow-auto rounded p-2 text-center mb-5 display-5 text-gray-700">
-        Преимущества для Заказчика
-      </h1>
+        </div>
 
-      <section class="w-75  h-75 row d-flex flex-row flex-wrap align-items-end ps-10">
-        <RegionsCardsInSliderCustomer />
-      </section>
+      </div>
 
-    </div>
-    <div class="col-6 h-100" id="mobile">
-      <div class="d-flex align-items-end justify-content-start h-100">
-        <img style="height: 85%;" src="/media/header-component-img/statik-slider/Background-img-left-slide1.png" alt="">
+      <div class="col-4 h-100" id="mobile">
+        <div v-if="hideImg" class="d-flex align-items-end justify-content-start h-100">
+          <img style="height: 85%;" src="/media/header-component-img/statik-slider/Background-img-left-slide1.png" alt="">
+        </div>
+        <div v-else class="d-flex align-items-center justify-content-center h-100">
+          <UiButtonToServise>Войти в сервис</UiButtonToServise>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
+const hideImg = ref(true)
+
+onMounted(() => {
+  hideImg.value = window.innerWidth > 1200;
+  window.addEventListener('resize', () => hideImg.value = window.innerWidth > 1200)
+})
+
+
+
 const data = [
   // { id: 4, title: 'Все риски на нас ', body: 'Выполнение специалистом работы лежит на нашей области ответственности', icon: 'fa-exclamation-triangle' },
   // { id: 3, title: 'Полный анализ', body: 'Полный анализ деятельности от ТОП-овых специалистов', icon: 'fa-chart-pie' },
@@ -41,7 +63,8 @@ section {
 }
 
 .customBg {
-  background: radial-gradient( farthest-corner at 15% 25%, rgb(208, 233, 233, 0.6) 1%, rgb(218,139,209) 80%);
+  z-index: 2;
+  background: radial-gradient(farthest-corner at 15% 25%, rgb(208, 233, 233, 0.6) 1%, rgb(218, 139, 209) 80%);
 }
 
 
