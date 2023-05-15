@@ -47,9 +47,6 @@
       </div>
     </div>
   </div>
-  <div class="w-100 d-flex justify-content-center">
-    <UiButtonToServise>Войти в сервис</UiButtonToServise>
-  </div>
 </template>
 
 <script>

@@ -4,7 +4,7 @@
       <div class="col-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8 h-100">
         <div class="container-fluid overflow-hidden h-100">
           <div class="row h-100 flex-column justify-content-center align-items-center">
-            <h1 class="rounded p-2 text-center mb-5 fs-1 text-gray-700">
+            <h1 class="rounded text-center mt-5 fs-1 text-gray-700">
               Преимущества для Заказчика
             </h1>
             <section class="h-50 my-5">

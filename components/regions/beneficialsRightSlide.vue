@@ -1,25 +1,43 @@
 <template>
-  <div class="row justify-content-center align-items-center h-100 bg-light" id="bg">
-    <div class="col-4">
-      <div class="d-flex align-items-end justify-content-center" style="height: 100vh">
-        <img style="height: 80%;" src="/media/header-component-img/statik-slider/Background-img-right-slide.png" alt="">
+  <div class="container-fluid h-100">
+    <div class="row justify-content-center align-items-center h-100 ">
+      <div class="col-4 h-100" id="mobile">
+        <div v-if="hideImg" class="d-flex align-items-end justify-content-center" style="height: 100vh">
+          <img style="height: 80%;" src="/media/header-component-img/statik-slider/Background-img-right-slide.png" alt="">
+        </div>
+        <div v-else class="d-flex align-items-center justify-content-center h-100">
+          <UiButtonToServise>Войти в сервис</UiButtonToServise>
+        </div>
       </div>
-    </div>
-    <div class="col-lg-7 col-md-7 col-sm-7 text-center h-100 d-flex flex-column justify-content-evenly elign-items-center" style="padding-top: 5rem;">
-      
-      <h1 class="w-75 d-flex align-items-center justify-content-center rounded p-2 w-75 text-center mb-5 display-5 text-gray-700">
-        Преимущества для Исполнителя
-      </h1>
-      
-      <section class="w-75 h-75 row d-flex flex-row flex-wrap align-items-start">
-        <RegionsCardInSliderExecutor />
-        <!-- <UiCardInSlider v-bind:item="item" v-for="item in data"/> -->
-      </section>
+      <div class="col-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8 h-100">
+        <div class="container-fluid overflow-hidden h-100">
+          <div class="row h-100 flex-column justify-content-center align-items-center">
+            <h1
+              class="w-100 rounded text-start mt-5 fs-1 text-gray-700">
+              Преимущества для Исполнителя
+            </h1>
+            <section class="h-50 my-5">
+              <RegionsCardInSliderExecutor />
+            </section>
+            <div v-if="hideImg" class="text-center mt-4">
+              <UiButtonToServise>Войти в сервис</UiButtonToServise>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
   
 <script setup>
+
+const hideImg = ref(true)
+
+onMounted(() => {
+  hideImg.value = window.innerWidth > 1200;
+  window.addEventListener('resize', () => hideImg.value = window.innerWidth > 1200)
+})
+
 // const data = [
 //   { id: 1, title: 'Опыт', body: 'полный анализ деятельности от ТОП-овых специалистов' },
 //   { id: 2, title: 'Заработок', body: 'Получайте высокие рейтинги и забирайте все работы' },
@@ -36,24 +54,11 @@
 }
 
 #bg {
-  background: radial-gradient(farthest-side at 55% 45%, rgb(207, 212, 212) 10%, rgb(245,248,250) 80%);
+  background: radial-gradient(farthest-side at 55% 45%, rgb(207, 212, 212) 10%, rgb(245, 248, 250) 80%);
 
 }
 
-section {
-  width: 25%;
-  height: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  overflow-y: auto;
-
-  animation: ani 5s forwards;
-}
-@media screen and (max-width: 1500px) {
-}
+@media screen and (max-width: 1500px) {}
 
 @keyframes ani {
   from {

@@ -1,10 +1,50 @@
 <template>
   <hr class="border-light">
-  <div class="d-flex justify-content-start position-relative">
+
+  <div class="contanier-xxl h-100">
+    <div class="row h-100 justify-content-between">
+      <div class="col-2 nav flex-column nav-pills overflow-auto" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <button v-for="button in buttonsToInstructions" :class="'nav-link mb-2' + (button.isActive ? ' active' : '')"
+          id="v-pills-home-tab" data-bs-toggle="pill" :data-bs-target=button.href type="button" role="tab"
+          aria-controls="v-pills-home" aria-selected="true">
+
+          <span class="d-flex flex-column align-items-start">
+            <span class="fs-4 fw-bolder">{{ button.title }}</span>
+            <span class="fs-9 text-start">{{ button.text }}</span>
+          </span>
+
+        </button>
+      </div>
+      <div class="tab-content col-10" id="v-pills-tabContent">
+        <div v-for="instruction in instructions"
+          :class="'tab-pane fade show' + (instruction.isActive ? ' show active' : '')" :id=instruction.id role="tabpanel"
+          aria-labelledby="v-pills-home-tab">
+
+          <div class="container-fluid h-100">
+            <div class="row h-100">
+              <div class="container-fluid">
+                <div class="row h-100">
+                  <div class="col-4 d-flex flex-column text-white p-5 h-100">
+                    <h4 class="text-white fw-bolder text-center mb-1">{{ instruction.title }}</h4>
+                    <hr class="border-light">
+                    <p class="" v-for="p in instruction.text">{{ p }}</p>
+                  </div>
+                  <div class="d-flex col-8 justify-content-end">
+                    <img style="max-width: 90%; " alt="" :src=instruction.img />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="d-flex justify-content-start position-relative">
     <ul class="col-3 nav nav-tabs nav-pills border-0 me-5 mb-3 mb-md-0 fs-6 d-flex justify-content-center">
       <li class="w-75 nav-item me-0 mb-md-2" v-for="button in buttonsToInstructions">
         <a :class="'nav-link btn btn-flex btn-active-light-secondary' + (button.isActive ? ' active' : '')" data-bs-toggle="tab" :href=button.href>
-          <!-- <span class="svg-icon svg-icon-2"><svg>...</svg></span> -->
           <span class="d-flex flex-column align-items-start">
             <span class="fs-4 fw-bolder">{{ button.title }}</span>
             <span class="fs-9 text-start">{{ button.text }}</span>
@@ -31,7 +71,7 @@
         <h3 class="border border-dark p-10">Скриншот 3</h3>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script setup>
