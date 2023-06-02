@@ -1,90 +1,57 @@
 <template>
-  <hr class="border-light">
-
   <div class="contanier-xxl h-100">
-    <div class="row h-100 justify-content-between">
-      <div class="col-2 nav flex-column nav-pills overflow-auto" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-        <button v-for="button in buttonsToInstructions" :class="'nav-link mb-2' + (button.isActive ? ' active' : '')"
+    <div class="d-flex flex-column h-100 justify-content-start">
+      <div class="ms-10 nav nav-pills overflow-auto" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <button v-for="button in buttonsToInstructions"
+          :class="'btn btn-outline btn-outline-dashed btn-outline-info me-2' + (button.isActive ? ' active' : '')"
           id="v-pills-home-tab" data-bs-toggle="pill" :data-bs-target=button.href type="button" role="tab"
           aria-controls="v-pills-home" aria-selected="true">
 
           <span class="d-flex flex-column align-items-start">
             <span class="fs-4 fw-bolder">{{ button.title }}</span>
-            <span class="fs-9 text-start">{{ button.text }}</span>
+            <!-- <span class="fs-9 text-start">{{ button.text }}</span> -->
           </span>
-
         </button>
       </div>
-      <div class="tab-content col-10" id="v-pills-tabContent">
+      <div class="tab-content mt-20" id="v-pills-tabContent">
         <div v-for="instruction in instructions"
           :class="'tab-pane fade show' + (instruction.isActive ? ' show active' : '')" :id=instruction.id role="tabpanel"
           aria-labelledby="v-pills-home-tab">
 
           <div class="container-fluid h-100">
             <div class="row h-100">
-              <div class="container-fluid">
-                <div class="row h-100">
-                  <div class="col-4 d-flex flex-column text-white p-5 h-100">
-                    <h4 class="text-white fw-bolder text-center mb-1">{{ instruction.title }}</h4>
-                    <hr class="border-light">
-                    <p class="" v-for="p in instruction.text">{{ p }}</p>
-                  </div>
-                  <div class="d-flex col-8 justify-content-end">
-                    <img style="max-width: 90%; " alt="" :src=instruction.img />
-                  </div>
-                </div>
+
+              <div class="col-6 d-flex flex-column justify-content-around text-white p-5 h-100">
+               <div>
+                <h4 class="text-white fw-bolder text-start mb-4 fs-1">{{ instruction.title }}</h4>
+                <p class="fs-5" v-for="p in instruction.text">{{ p }}</p>
+               </div>
+               <UiButtonToServise class="mt-5 align-self-center">Продолжить в сервисе</UiButtonToServise>
               </div>
+
+              <div class="d-flex col-6 justify-content-center">
+                <img style="max-width: 700px; " alt="" :src=instruction.img />
+              </div>
+
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- <div class="d-flex justify-content-start position-relative">
-    <ul class="col-3 nav nav-tabs nav-pills border-0 me-5 mb-3 mb-md-0 fs-6 d-flex justify-content-center">
-      <li class="w-75 nav-item me-0 mb-md-2" v-for="button in buttonsToInstructions">
-        <a :class="'nav-link btn btn-flex btn-active-light-secondary' + (button.isActive ? ' active' : '')" data-bs-toggle="tab" :href=button.href>
-          <span class="d-flex flex-column align-items-start">
-            <span class="fs-4 fw-bolder">{{ button.title }}</span>
-            <span class="fs-9 text-start">{{ button.text }}</span>
-          </span>
-        </a>
-      </li>
-    </ul>
-
-    <div class="col-9 mt-10">
-      <div :class="'position-absolute tab-pane fade' + (instruction.isActive ? ' show active' : '')" :id=instruction.id role="tabpanel"
-        v-for="instruction in instructions">
-        <div class="d-flex w-100">
-          <div class="d-flex col-3 flex-column text-white border rounded border-secondary p-5">
-            <h1 class="text-white fw-bolder text-center mb-5">{{ instruction.title }}</h1>
-            <p class="fs-5" v-for="p in instruction.text">{{ p }}</p>
-          </div>
-          <div class="d-flex col-6 ms-5">
-            <img style="max-width: 90%; " alt="" :src=instruction.img />
-          </div>
-        </div>
-      </div>
-      <div class="col-5 position-absolute bg-light tab-pane fade top-50" style="left: 50%;" id="kt_vtab_pane_13"
-        role="tabpanel">
-        <h3 class="border border-dark p-10">Скриншот 3</h3>
-      </div>
-    </div>
-  </div> -->
 </template>
 
 <script setup>
 
 const buttonsToInstructions = [
-  {href: '#kt_vtab_pane_11', title: 'Шаг 1', text: 'Регистрация', isActive: true},
-  {href: '#kt_vtab_pane_12', title: 'Шаг 2', text: 'Создание заказа'},
-  {href: '#kt_vtab_pane_13', title: 'Шаг 3', text: ''},
-  {href: '#kt_vtab_pane_14', title: 'Шаг 4', text: 'Заключение договора с нашим веб-сервисом'},
-  {href: '#kt_vtab_pane_15', title: 'Шаг 5', text: 'Назначение менеджера заказа'},
-  {href: '#kt_vtab_pane_16', title: 'Шаг 6', text: 'Подбор исполнителя'},
-  {href: '#kt_vtab_pane_17', title: 'Шаг 7', text: 'Выполнение работы'},
-  {href: '#kt_vtab_pane_18', title: 'Шаг 8', text: 'Прием работы'},
+  { href: '#kt_vtab_pane_11', title: 'Шаг 1', text: 'Регистрация', isActive: true },
+  { href: '#kt_vtab_pane_12', title: 'Шаг 2', text: 'Создание заказа' },
+  { href: '#kt_vtab_pane_13', title: 'Шаг 3', text: '' },
+  { href: '#kt_vtab_pane_14', title: 'Шаг 4', text: 'Заключение договора с нашим веб-сервисом' },
+  { href: '#kt_vtab_pane_15', title: 'Шаг 5', text: 'Назначение менеджера заказа' },
+  { href: '#kt_vtab_pane_16', title: 'Шаг 6', text: 'Подбор исполнителя' },
+  { href: '#kt_vtab_pane_17', title: 'Шаг 7', text: 'Выполнение работы' },
+  { href: '#kt_vtab_pane_18', title: 'Шаг 8', text: 'Прием работы' },
 ]
 
 const instructions = [
@@ -132,15 +99,15 @@ const instructions = [
   },
   {
     id: 'kt_vtab_pane_17', title: 'Выполнение работы', text: [
-    'После принятия работы инженером-экологом, начинается работа по сбору всех необходимых исходных сведений посредством почты или социальных месенджеров',
-    'Все уведомления о смене этапа работы будут приходить Вам автоматически',
-    'Посмотреть на какой стадии находится проект,  вы сможете в личном кабинете',
+      'После принятия работы инженером-экологом, начинается работа по сбору всех необходимых исходных сведений посредством почты или социальных месенджеров',
+      'Все уведомления о смене этапа работы будут приходить Вам автоматически',
+      'Посмотреть на какой стадии находится проект,  вы сможете в личном кабинете',
     ], img: '',
   },
   {
-      id: 'kt_vtab_pane_18', title: 'Прием работы', text: [
+    id: 'kt_vtab_pane_18', title: 'Прием работы', text: [
       'После проведения расчётов /составления описания/ согласования итоговый пакет документов будет направлен удобным способом',
-      ], img: '',
-    }
+    ], img: '',
+  }
 ]
 </script>

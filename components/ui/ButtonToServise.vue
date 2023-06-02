@@ -1,6 +1,6 @@
 <template>
 
-<a href="https://service.free-eco.ru"><button class="bn632-hover bn20">
+<a href="/"><button class="bn632-hover bn20">
   
   <slot></slot>
 </button></a>

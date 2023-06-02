@@ -12,10 +12,8 @@
     <!-- <BlocksProjects /> -->
     <BlocksWorkScheme />
     <LazyBlocksTopFreelancers />
-    <hr>
     <!-- <BlocksTeam /> -->
     <BlocksTeamTest />
-    <hr>
     <BlocksPartners />
     <RegionsOffer />
     <RegionsFooter />

@@ -16,7 +16,8 @@
                             <!--end::Title-->
                             <!--begin::Text-->
                             <span class="fw-normal fs-4 text-gray-700">Напишите нам!
-                            <a href="https://keenthemes.com/support" class="text-white opacity-50 text-hover-primary">support@free-eco.com</a></span>
+                                <a href="https://keenthemes.com/support"
+                                    class="text-white opacity-50 text-hover-primary">support@free-eco.com</a></span>
                             <!--end::Text-->
                         </div>
                         <!--end::Block-->
@@ -39,7 +40,8 @@
                                 <h4 class="fw-bolder text-gray-400 mb-6">Дополнительно о FreeEco</h4>
                                 <!--end::Subtitle-->
                                 <!--begin::Link-->
-                                <a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Часто задаваемые вопросы</a>
+                                <a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Часто задаваемые
+                                    вопросы</a>
                                 <!--end::Link-->
                                 <!--begin::Link-->
                                 <a href="#" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Документы</a>
@@ -84,6 +86,10 @@
                                     <img src="/media/svg/brand-logos/instagram-2-1.svg" class="h-20px me-2" alt="" />
                                     <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Instagram</span>
                                 </a>
+                                <div>
+                                    <p class="text-white opacity-50 text-hover-primary fs-5 mt-2">support@free-eco.ru</p><br>
+                                    <p class="text-white opacity-50 text-hover-primary fs-5">89969134171</p>
+                                </div>
                                 <!--end::Link-->
                             </div>
                             <!--end::Links-->
@@ -104,7 +110,7 @@
                 <div class="d-flex flex-column flex-md-row flex-stack py-7 py-lg-10">
                     <!--begin::Copyright-->
                     <div class="d-flex align-items-center order-2 order-md-1">
-                        <WidgetsLogo variant="dark"/>
+                        <WidgetsLogo variant="dark" />
                         <!--begin::Logo image-->
                         <span class="mx-5 fs-6 fw-bold text-gray-600 pt-1" href="#">© 2023 FREEECO Inc.</span>
                         <!--end::Logo image-->
@@ -134,7 +140,7 @@
 </template>
 
 <script lang="ts">
-    export default {
-        name: 'Footer'
-    }
+export default {
+    name: 'Footer'
+}
 </script>

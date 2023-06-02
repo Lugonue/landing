@@ -11,6 +11,3 @@ build
 node_modules
 # System files
 *.log
-
-
-*.swp
