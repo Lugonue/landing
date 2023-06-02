@@ -1,6 +1,6 @@
 <template>
 
-<a href="/"><button class="bn632-hover bn20">
+<a href="https://service.free-eco.ru"><button class="bn632-hover bn20">
   
   <slot></slot>
 </button></a>
@@ -20,7 +20,6 @@
   border: none;
   background-size: 300% 100%;
   border-radius: 50px;
-  moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
@@ -28,7 +27,6 @@
 
 .bn632-hover:hover {
   background-position: 100% 0;
-  moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
