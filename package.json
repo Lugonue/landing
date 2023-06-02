@@ -19,6 +19,7 @@
     "bootstrap": "^5.2.2",
     "sass": "^1.56.0",
     "sass-loader": "^13.1.0",
-    "yandex-metrika-module-nuxt3": "^1.5.3"
+    "yandex-metrika-module-nuxt3": "^1.5.3",
+    "yarn": "^1.22.19"
   }
 }
