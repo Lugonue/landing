@@ -1,5 +1,5 @@
 <template>
-  <div class="contanier-xxl h-100">
+ <div class="flex-grow-1">
     <div class="d-flex flex-column h-100 justify-content-start">
       <div class="ms-10 nav nav-pills overflow-auto" id="v-pills-tab" role="tablist" aria-orientation="vertical">
         <button v-for="button in buttonsToInstructions"
@@ -13,20 +13,20 @@
           </span>
         </button>
       </div>
-      <div class="tab-content mt-20" id="v-pills-tabContent">
+      <div class="tab-content mt-20 flex-grow-1" id="v-pills-tabContent">
         <div v-for="instruction in instructions"
-          :class="'tab-pane fade show' + (instruction.isActive ? ' show active' : '')" :id=instruction.id role="tabpanel"
+          :class="'tab-pane h-100 fade show' + (instruction.isActive ? ' show active' : '')" :id=instruction.id role="tabpanel"
           aria-labelledby="v-pills-home-tab">
 
           <div class="container-fluid h-100">
             <div class="row h-100">
 
-              <div class="col-6 d-flex flex-column justify-content-around text-white p-5 h-100">
-               <div>
-                <h4 class="text-white fw-bolder text-start mb-4 fs-1">{{ instruction.title }}</h4>
-                <p class="fs-5" v-for="p in instruction.text">{{ p }}</p>
-               </div>
-               <UiButtonToServise class="mt-5 align-self-center">Продолжить в сервисе</UiButtonToServise>
+              <div class="col-6 d-flex flex-column justify-content-start text-white p-5 h-100">
+                <div class="">
+                  <h4 class="text-white fw-bolder text-start mb-4 fs-1">{{ instruction.title }}</h4>
+                  <p class="fs-5" v-for="p in instruction.text">{{ p }}</p>
+                </div>
+                <UiButtonToServise class="position-absolute translate-middle" style="top: 90%; left: 25%;">Продолжить в сервисе</UiButtonToServise>
               </div>
 
               <div class="d-flex col-6 justify-content-center">

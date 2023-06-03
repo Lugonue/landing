@@ -29,7 +29,7 @@
                 <UiButtonToServise class="position-absolute translate-middle" style="top: 90%; left: 25%;">Продолжить в сервисе</UiButtonToServise>
               </div>
 
-              <div class="d-flex col-6 justify-content-center">
+              <div class="d-flex col-6 col-sm-0 justify-content-center">
                 <img style="max-width: 700px; " alt="" :src=instruction.img />
               </div>
 
@@ -39,8 +39,6 @@
       </div>
     </div>
   </div>
-
-
 </template>
 
 <script setup>
