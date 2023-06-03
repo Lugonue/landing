@@ -1,9 +1,9 @@
 <template>
- <div class="flex-grow-1">
-    <div class="d-flex flex-column h-100 justify-content-start">
+ <div class="h-100 overflow-auto">
+    <div class="d-flex flex-column h-100 justify-content-start owerflow-auto">
       <div class="ms-10 nav nav-pills overflow-auto" id="v-pills-tab" role="tablist" aria-orientation="vertical">
         <button v-for="button in buttonsToInstructions"
-          :class="'btn btn-outline btn-outline-dashed btn-outline-info me-2' + (button.isActive ? ' active' : '')"
+          :class="'btn btn-outline btn-outline-dashed btn-outline-info me-2 mt-2' + (button.isActive ? ' active' : '')"
           id="v-pills-home-tab" data-bs-toggle="pill" :data-bs-target=button.href type="button" role="tab"
           aria-controls="v-pills-home" aria-selected="true">
 
@@ -13,7 +13,7 @@
           </span>
         </button>
       </div>
-      <div class="tab-content mt-20 flex-grow-1" id="v-pills-tabContent">
+      <div class="tab-content flex-grow-1" id="v-pills-tabContent">
         <div v-for="instruction in instructions"
           :class="'tab-pane h-100 fade show' + (instruction.isActive ? ' show active' : '')" :id=instruction.id role="tabpanel"
           aria-labelledby="v-pills-home-tab">
@@ -21,7 +21,7 @@
           <div class="container-fluid h-100">
             <div class="row h-100">
 
-              <div class="col-6 d-flex flex-column justify-content-start text-white p-5 h-100">
+              <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 d-flex flex-column justify-content-start text-white p-5 h-100">
                 <div class="">
                   <h4 class="text-white fw-bolder text-start mb-4 fs-1">{{ instruction.title }}</h4>
                   <p class="fs-5" v-for="p in instruction.text">{{ p }}</p>
@@ -29,8 +29,8 @@
                 <UiButtonToServise class="position-absolute translate-middle" style="top: 90%; left: 25%;">Продолжить в сервисе</UiButtonToServise>
               </div>
 
-              <div class="d-flex col-6 justify-content-center">
-                <img style="max-width: 700px; " alt="" :src=instruction.img />
+              <div class="d-flex col-12 col-lg-6 col-xl-6 col-xxl-6 justify-content-center">
+                <img style="max-width: 100%; " alt="" :src=instruction.img />
               </div>
 
             </div>
@@ -57,19 +57,15 @@ const buttonsToInstructions = [
 const instructions = [
   {
     id: 'kt_vtab_pane_11', title: 'Регистрация', text: [
-      'Войдите в веб-сервис нажав на любую кнопку «войти в сервис» на этой странице',
-      'Заполните форму, выберете свою роль и нажмите продолжить.',
-      'На указанную почту придёт уведомление, которое необходимо подтвердить'
+      'Войдите в веб-сервис нажав на любую кнопку «войти в сервис» на этой странице. Заполните форму, выберете свою роль и нажмите продолжить. На указанную почту придёт уведомление, которое необходимо подтвердить'
     ],
     img: '/media/instructions/customerInstr-1.png', isActive: true
   },
   {
     id: 'kt_vtab_pane_12', title: 'Создание заказа', text: [
-      'В правом верхнем углу нажмите создать заказ',
-      'Выберете необходимую работу, опишите объект, предпочитаемый способ связи и другие подробности.',
-      'Если известен объем финансирования укажите стоимость, но это не обязательно.',
+      'В правом верхнем углу нажмите создать заказ. Выберете необходимую работу, опишите объект, предпочитаемый способ связи и другие подробности. Если известен объем финансирования укажите стоимость, но это не обязательно.',
       'Каждую работу необходимо заносить как отдельный заказ.',
-    ], img: '/media/instructions/customerInstr-2.png'
+    ], img: ''
   },
   {
     id: 'kt_vtab_pane_13', title: 'Рассмотрение в этот же день', text: [
@@ -90,8 +86,7 @@ const instructions = [
   },
   {
     id: 'kt_vtab_pane_16', title: 'Подбор исполнителя', text: [
-      'Менеджер производит релевантный подбор специалиста внутри сервиса',
-      'Учитываются следующие факторы:',
+      'Менеджер производит релевантный подбор специалиста внутри сервиса, Учитываются следующие факторы:',
       'углубленный профиль;',
       'опыт работы в данном регионе;',
       'достаточность временных ресурсов для выполнения задачи;',

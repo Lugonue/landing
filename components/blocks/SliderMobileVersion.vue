@@ -1,6 +1,9 @@
 <template >
-    <div class="w-100 h-100 bg-dark " style="height: 100vh;">
-        <h1 class="text-light" style="margin: auto, auto;">фриланс-биржа FreeEco</h1>
+    <div class=" bg-dark " style="height: 100vh;">
+        <div class="d-flex flex-column h-100 justify-content-center align-items-center">
+            <h1 class="text-light " style="margin: auto, auto;">Фриланс-биржа FreeEco</h1>
+        </div>
+        
         
     </div>
 </template>
