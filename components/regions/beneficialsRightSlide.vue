@@ -13,7 +13,7 @@
         <div class="container-fluid overflow-hidden h-100">
           <div class="row h-100 flex-column justify-content-center align-items-center">
             <h1
-              class="w-100 rounded text-start mt-5 fs-1 text-gray-700">
+              class="w-100 rounded text-center mt-5 fs-1 text-gray-700">
               Преимущества для Исполнителя
             </h1>
             <section class="h-50 my-5">

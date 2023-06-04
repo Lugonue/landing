@@ -10,10 +10,10 @@
     <BlocksUniqueTradeOffer />
     <BlocksWorks />
     <!-- <BlocksProjects /> -->
-    <BlocksWorkScheme />
+    <BlocksWorkScheme @isDesctop="desctopVersion" />
     <LazyBlocksTopFreelancers />
     <!-- <BlocksTeam /> -->
-    <BlocksTeamTest />
+    <BlocksTeamBlock />
     <BlocksPartners />
     <RegionsOffer />
     <RegionsFooter />

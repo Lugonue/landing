@@ -1,13 +1,15 @@
 <template>
-  <div class="container-xl d-flex flex-column justify-content-center mt-20 mb-20 pb-10 pt-10 rounded" id="bg">
-    <h1 class="fs-2hx text-center fw-bolder mb-20">Топ фрилансеров</h1>
-    <div class="row flex-row justify-content-center overflow-auto" style="flex-wrap: nowrap;" >
-      <div v-for="freeLancer in freeLancers" class="col-lg-2 col-md-2 col-sm-4 col-3" id="anime">
-        <div class="card rounded" style="">
-          <img :src=freeLancer.img class="card-img-top rounded" alt="...">
-          <div class="card-body p-4 text-center">
-            <h5 class="card-title">{{ freeLancer.name }}</h5>
-            <p class="card-text">{{ freeLancer.spheres }}</p>
+  <div class="d-flex align-items-center justify-content-center" style="height: 80vh;">
+    <div class="container-xxl d-flex flex-column justify-content-center mt-20 mb-20 pb-10 pt-10 rounded" id="bg">
+      <h1 class="fs-2hx text-center fw-bolder mb-20">Топ фрилансеров</h1>
+      <div class="row flex-row justify-content-center overflow-auto" style="flex-wrap: nowrap;">
+        <div v-for="freeLancer in freeLancers" class="col-lg-2 col-md-2 col-sm-4 col-3" id="anime">
+          <div class="card rounded" style="">
+            <img :src=freeLancer.img class="card-img-top rounded" alt="...">
+            <div class="card-body p-4 text-center">
+              <h5 class="card-title">{{ freeLancer.name }}</h5>
+              <p class="card-text">{{ freeLancer.spheres }}</p>
+            </div>
           </div>
         </div>
       </div>

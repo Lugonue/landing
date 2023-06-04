@@ -87,8 +87,8 @@
                                     <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Instagram</span>
                                 </a>
                                 <div>
-                                    <p class="text-white opacity-50 text-hover-primary fs-5 mt-2">support@free-eco.ru</p><br>
-                                    <p class="text-white opacity-50 text-hover-primary fs-5">89969134171</p>
+                                    <p class="text-white opacity-50 text-hover-primary fs-7 mb-0">Контактный номер:</p>
+                                    <p class="text-white opacity-50 text-hover-primary fs-5">+7(996)-913-41-71</p>
                                 </div>
                                 <!--end::Link-->
                             </div>

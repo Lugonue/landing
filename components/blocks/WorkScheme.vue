@@ -1,4 +1,11 @@
 <script setup>
+const props = defineProps({
+  desctopVersion: {
+    type: Boolean,
+    default: false,
+  },
+})
+console.log(props.desctopVersion);
 const state = ref('');
 state.value = {
   customer: true,
@@ -46,11 +53,11 @@ const changeShow = (description) => {
         </li>
       </ul>
     </div>
-    <div class="row overflow-auto" style="height: 80vh;">
+    <div class="overflow-auto" style="min-height: 80vh;">
       <!-- Инструкция для заказчика -->
-      <RegionsHowItWorksCustomer class="overflow-auto h-100" v-if="state.customer" />
+      <RegionsHowItWorksCustomer class="" v-if="state.customer" />
       <!-- Инструкция для Исполнителя -->
-      <RegionsHowItWorksPerformer class="overflow-auto h-100" v-if="state.executor" />
+      <RegionsHowItWorksPerformer class="h-100" v-if="state.executor" />
     </div>
 
 

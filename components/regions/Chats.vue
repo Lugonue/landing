@@ -41,7 +41,7 @@ onMounted(() => {
 .push-notification {
   width: 70%;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
