@@ -25,7 +25,7 @@ const companies = [
 </script>
 <style scoped>
 #bg {
-  margin: 100px auto 200px;
+  margin: 15vh 0;
   /* background: linear-gradient(45deg,rgb(239, 201, 239) 10%, rgb(228,230,2391) 40%, rgb(255, 255, 255) 50%); */
 }
 

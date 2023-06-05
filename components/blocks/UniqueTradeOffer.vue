@@ -74,7 +74,8 @@
 
 <style scoped>
 #UniqueTradeOffer {
-  background: no-repeat url('/media/bg-2-block.PNG');
+  margin: 15vh 0;
+  background: no-repeat url('/media/bg-2-block.png');
   background-size: 100%;
   /* background: linear-gradient(45deg,rgb(253, 252, 252) 10%, rgb(228,230,239) 40%, rgb(239, 201, 239) 50%); */
 }
@@ -85,7 +86,7 @@
   }
 
   #UniqueTradeOffer>div>div {
-    margin-bottom: 50px !important;
+    margin-bottom: 50px;
   }
 }
 </style>

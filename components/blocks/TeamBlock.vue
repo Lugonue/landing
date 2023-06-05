@@ -21,26 +21,26 @@ const statButn = [
 
 </script>
 <template>
-  <div class="container-xxl" style="min-height: 90vh;">
+  <div class="container-xxl bbg-light" id="mainTeamBlock">
     <!-- <h1 class="fs-2hx text-center w-100 fw-bolder mb-20">Наша команда</h1> -->
-    <div class="w-100 h-100 d-flex " id="mainTeamBlock">
-      <div class="row h-100 justify-content-center align-items-center">
-        <div class="col-12 col-lg-6 col-xl-6 col-xxl-6">
+    <div class="w-100 h-100 d-flex" >
+      <div class="d-flex h-100 justify-content-center align-items-center">
+        <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 h-100">
           <h2 class="display-6 mb-5">Оцифровываем <span class="before">экологию</span> с 2016</h2>
-          <h4 class="">Веренков Евгений - основатель:</h4>
-          <p class="fs-2 lh-lg p-3">
+          <h2 class="fs-3">Веренков Евгений - основатель:</h2>
+          <p class="fs-2 lh-sm p-3 ps-0">
             "Мы заметили, что компании ищут ответственного инженера-эколога.
             И главное — это взаимопонимание и работа до конца. <br>
             Мы спрограммировали такой сервис чтобы собрать самых топовых
             специалистов, оценивая их подход, а компаниям было легко контролировать работы. <br>
             Наша миссия - показать, что экологическая документация может быть не дорогой, удобной и быстрой"
           </p>
-          <div class="d-flex mt-5">
+          <div class="d-flex mt-auto">
             <div
-              class="btn btn-flex flex-column align-items-center btn-outline btn-outline-dashed btn-outline-dark btn-active-light-dark me-2"
+              class="btn btn-flex flex-column align-items-start btn-outline btn-outline-dashed btn-outline-dark btn-active-light-dark me-2"
               v-for="btn in statButn">
-              <span class="badge bg-light text-dark">{{ btn.data }}</span>
-              <span class="fw-bolder">{{ btn.name }}</span>
+              <span class="fs-2 fw-bolder text-dark">{{ btn.data }}</span>
+              <span class="fw-bolder text-muted">{{ btn.name }}</span>
             </div>
           </div>
         </div>
@@ -83,5 +83,6 @@ const statButn = [
   
 } */
 #mainTeamBlock {
-  margin: 100px auto 100px;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
 }</style>

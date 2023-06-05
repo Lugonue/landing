@@ -16,7 +16,7 @@
                             <!--end::Title-->
                             <!--begin::Text-->
                             <span class="fw-normal fs-4 text-gray-700">Напишите нам!
-                                <a href="https://keenthemes.com/support"
+                                <a href="mailto:support@free-eco.com"
                                     class="text-white opacity-50 text-hover-primary">support@free-eco.com</a></span>
                             <!--end::Text-->
                         </div>
@@ -88,7 +88,7 @@
                                 </a>
                                 <div>
                                     <p class="text-white opacity-50 text-hover-primary fs-7 mb-0">Контактный номер:</p>
-                                    <p class="text-white opacity-50 text-hover-primary fs-5">+7(996)-913-41-71</p>
+                                    <p class="text-white opacity-50 text-hover-primary fs-5"><a href="tel:+79969134171">+79969134171</a></p>
                                 </div>
                                 <!--end::Link-->
                             </div>

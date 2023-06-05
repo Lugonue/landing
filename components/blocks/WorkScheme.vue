@@ -66,7 +66,7 @@ const changeShow = (description) => {
 
 <style scoped>
 #main {
-  margin-top: 10rem;
+  margin-top: 15vh 0;
   background: rgb(26, 24, 58);
   border-radius: 150px 0 50px 0;
 
