@@ -29,21 +29,21 @@
                             <!--begin::Menu item-->
                             <div class="menu-item">
                                 <!--begin::Menu link-->
-                                <a class="menu-link nav-link btn btn-outline btn-outline-dashed btn-outline-dark btn-active-light-dark fw-bolder" href="#kt_body" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Полный анализ</a>
+                                <a class="menu-link nav-link btn btn-outline btn-outline-dashed btn-outline-dark btn-active-light-dark fw-bolder" href="https://service.free-eco.ru" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Полный анализ</a>
                                 <!--end::Menu link-->
                             </div>
                             <!--end::Menu item-->
                             <!--begin::Menu item-->
                             <div class="menu-item">
                                 <!--begin::Menu link-->
-                                <a class="menu-link nav-link py-3 px-4 px-xxl-6 fw-bolder" href="#how-it-works" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Сделать заказ</a>
+                                <a class="menu-link nav-link py-3 px-4 px-xxl-6 fw-bolder" href="https://service.free-eco.ru" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Сделать заказ</a>
                                 <!--end::Menu link-->
                             </div>
                             <!--end::Menu item-->
                             <!--begin::Menu item-->
                             <div class="menu-item">
                                 <!--begin::Menu link-->
-                                <a class="menu-link nav-link py-3 px-4 px-xxl-6 fw-bolder" href="#achievements" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Стать исполнителем</a>
+                                <a class="menu-link nav-link py-3 px-4 px-xxl-6 fw-bolder" href="https://service.free-eco.ru" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Стать исполнителем</a>
                                 <!--end::Menu link-->
                             </div>
                             <!--end::Menu item-->
