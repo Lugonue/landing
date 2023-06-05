@@ -5,7 +5,7 @@ const props = defineProps({
     default: false,
   },
 })
-console.log(props.desctopVersion);
+
 const state = ref('');
 state.value = {
   customer: true,
