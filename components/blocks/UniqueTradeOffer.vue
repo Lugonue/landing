@@ -1,7 +1,7 @@
 <template>
-  <div class="container-fluid" id="UniqueTradeOffer">
+  <div class="container-fluid py-20" id="UniqueTradeOffer">
     <!-- <section class="w-100 h-100 position-absolute" style="background: url('/media/bg-2-block.PNG');"></section> -->
-    <div class="container-xl d-flex flex-column justify-content-around mb-20 mt-20 p-10 rounded fs-4">
+    <div class="container-xxl d-flex flex-column justify-content-around mb-20 mt-20 p-10 rounded fs-4">
       <div class="row justify-content-between mt-10 mb-20">
         <div class="col-md-5 col-sm-6">
           <div class="">
@@ -74,19 +74,21 @@
 
 <style scoped>
 #UniqueTradeOffer {
-  margin: 15vh 0;
   background: no-repeat url('/media/bg-2-block.png');
   background-size: 100%;
+  background-position: 100%;
   /* background: linear-gradient(45deg,rgb(253, 252, 252) 10%, rgb(228,230,239) 40%, rgb(239, 201, 239) 50%); */
 }
 
 @media screen and (max-width: 1000px) {
   #UniqueTradeOffer {
     background: none;
+    /* margin: 0 ; */
   }
 
   #UniqueTradeOffer>div>div {
     margin-bottom: 50px;
   }
 }
+
 </style>

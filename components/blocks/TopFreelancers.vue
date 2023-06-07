@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex align-items-center justify-content-center" style="height: 80vh;">
-    <div class="container-xxl d-flex flex-column justify-content-center mt-20 mb-20 pb-10 pt-10 rounded" id="bg">
+    <div class="container-xxl d-flex flex-column justify-content-center mt-20 mb-20 pb-10 pt-10 rounded">
       <h1 class="fs-2hx text-center fw-bolder mb-20">Топ фрилансеров</h1>
       <div class="row flex-row justify-content-center overflow-auto" style="flex-wrap: nowrap;">
         <div v-for="freeLancer in freeLancers" class="col-lg-2 col-md-2 col-sm-4 col-3" id="anime">
@@ -33,10 +33,6 @@ const freeLancers = [
 </script>
 
 <style scoped>
-/* #bg {
-  background: linear-gradient(45deg, rgb(253, 252, 252) 10%, rgb(228, 230, 239) 40%, rgb(239, 201, 239) 50%);
-} */
-
 #anime {
   animation: leftright 6s infinite alternate ease-in-out;
 }

@@ -1,42 +1,77 @@
 <template>
   <div class="d-flex h-100" style="min-height: 80vh">
     <div class="d-flex flex-column justify-content-start">
-      <div class="ms-10 nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-        <button v-for="button in buttonsToInstructions"
-          :class="'btn btn-outline btn-outline-dashed btn-outline-info me-2 mt-2' + (button.isActive ? ' active' : '')"
-          id="v-pills-home-tab" data-bs-toggle="pill" :data-bs-target=button.href type="button" role="tab"
-          aria-controls="v-pills-home" aria-selected="true">
-
+      <div
+        class="nav nav-pills"
+        id="v-pills-tab"
+        role="tablist"
+        aria-orientation="vertical"
+      >
+        <button
+          v-for="button in buttonsToInstructions"
+          :class="
+            'btn btn-outline btn-outline-dashed btn-outline-info me-2 mt-2' +
+            (button.isActive ? ' active' : '')
+          "
+          id="v-pills-home-tab"
+          data-bs-toggle="pill"
+          :data-bs-target="button.href"
+          type="button"
+          role="tab"
+          aria-controls="v-pills-home"
+          aria-selected="true"
+        >
           <span class="d-flex flex-column align-items-start">
             <span class="fs-4 fw-bolder">{{ button.title }}</span>
             <!-- <span class="fs-9 text-start">{{ button.text }}</span> -->
           </span>
         </button>
       </div>
-      <div class="tab-content flex-grow-1 h-100" id="v-pills-tabContent">
-        <div v-for="instruction in instructions"
-          :class="'tab-pane h-100 fade show' + (instruction.isActive ? ' show active' : '')" :id=instruction.id
-          role="tabpanel" aria-labelledby="v-pills-home-tab">
-
-          <div class="container-fluid h-100">
-            <div class="row h-100">
-              <div
-                class="col-12 col-lg-6 col-xl-6 col-xxl-6 d-flex flex-column justify-content-start text-white p-5 h-100">
-                <div class="position-relative" style="padding: 5% 0px 5% 0px; min-height: 50%; min-width: 100%;">
-                  <h4 class="text-white fw-bolder text-start mb-4 fs-1">{{ instruction.title }}</h4>
+      <div class="tab-content" id="v-pills-tabContent">
+        <div
+          v-for="instruction in instructions"
+          :class="
+            'tab-pane h-100 fade show' +
+            (instruction.isActive ? ' show active' : '')
+          "
+          :id="instruction.id"
+          role="tabpanel"
+          aria-labelledby="v-pills-home-tab"
+        >
+          <div class="h-100 p-0">
+            <div class="row mb-5 mt-5">
+              <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 text-white h-100 d-flex flex-column justify-content-between ">
+                <div
+                  class="position-relative"
+                  style="
+                    padding: 5% 0px 5% 0px;
+                    min-height: 50%;
+                    min-width: 100%;
+                  "
+                >
+                  <h4 class="text-white fw-bolder text-start mb-4 fs-1">
+                    {{ instruction.title }}
+                  </h4>
                   <p class="fs-5" v-for="p in instruction.text">{{ p }}</p>
-                  <UiButtonToServise class="position-absolute translate-middle" style="top: 100%; left: 50%;">Продолжить в
-                    сервисе</UiButtonToServise>
                 </div>
-
-              </div>
-
-              <div class="d-flex col-12 col-lg-6 col-xl-6 col-xxl-6 justify-content-center align-items-center">
-                <div class="d-flex w-100 h-auto" style="padding: 10% 20px 10% 20px;">
-                  <img style="max-width: 80%; height: auto; " alt="" :src=instruction.img />
+                <div class="d-flex justify-content-center mt-auto">
+                  <UiButtonToServise>Продолжить в сервисе</UiButtonToServise>
                 </div>
               </div>
 
+              <div
+                class="d-flex col-12 col-lg-8 col-xl-8 col-xxl-8 justify-content-center align-items-center"
+              >
+                <div
+                  class="d-flex w-100 h-auto justify-content-center align-items-center"
+                >
+                  <img
+                    style="max-width: 75%; height: auto"
+                    alt=""
+                    :src="instruction.img"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
