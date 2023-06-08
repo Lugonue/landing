@@ -54,7 +54,7 @@
 
 <style scoped>
 #card {
-  height: 15vw;
+  height: 10vw;
   overflow: hidden;
   
 }
