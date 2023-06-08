@@ -22,9 +22,8 @@ const changeShow = (description) => {
 </script>
 <template>
   <div
-    class="container-fluid px-lg-20 py-lg-20 py-5 position-relative"
+    class="container-fluid px-lg-20 py-lg-20 py-5 position-relative my-20"
     id="main"
-    style=""
   >
     <div class="row justify-content-between">
       <div
@@ -69,18 +68,17 @@ const changeShow = (description) => {
         </li>
       </ul>
     </div>
-    <div class="" style="min-height: 80vh">
+    <div class="">
       <!-- Инструкция для заказчика -->
       <RegionsHowItWorksCustomer class="" v-if="state.customer" />
       <!-- Инструкция для Исполнителя -->
-      <RegionsHowItWorksPerformer class="h-100" v-if="state.executor" />
+      <RegionsHowItWorksPerformer class="" v-if="state.executor" />
     </div>
   </div>
 </template>
 
 <style scoped>
 #main {
-  margin-top: 15vh 0;
   background: rgb(26, 24, 58);
   border-radius: 0 200px 0 200px;
 }

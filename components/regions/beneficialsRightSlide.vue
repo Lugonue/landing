@@ -24,13 +24,13 @@
         </div>
       </div>
       <div
-        class="col-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8 h-100 d-flex justify-content-end align-items-end"
+        class="col-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7 h-100 d-flex justify-content-center align-items-center"
       >
         <div class="container-fluid overflow-hidden">
           <div
             class="row flex-column justify-content-center align-items-center"
           >
-            <section class="mb-10">
+            <section class="h-50 mb-10">
               <RegionsCardInSliderExecutor />
             </section>
             <div v-if="hideImg" class="text-center mt-4">

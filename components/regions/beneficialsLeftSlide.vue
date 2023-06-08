@@ -3,13 +3,13 @@
     <h1 class="rounded text-center mt-5 text-gray-800 position-absolute">
       Преимущества для Заказчика
     </h1>
-    <div class="row justify-content-end align-items-end h-100">
-      <div class="col-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8 h-100 d-flex justify-content-end">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 h-100 d-flex justify-content-end">
         <div class=" overflow-hidden d-flex justify-content-end">
           <div
             class="row flex-column justify-content-center align-items-center"
           >
-            <section class="h-50 my-5">
+            <section class="h-50 mb-10">
               <RegionsCardsInSliderCustomer />
             </section>
             <div v-if="hideImg" class="text-center mt-4">

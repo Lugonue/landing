@@ -1,13 +1,13 @@
 <template>
   <div class="d-flex flex-wrap w-100 h-100">
-    <div class="col-sm-12 col-md-12 col-lg-5 ">
+    <div class="col-5">
       <div class="rounded shadow-sm p-4 m-3 d-flex flex-column justify-content-center align-items-center"
         style="background-color: rgb(166,52,75);" id="card">
         <h1 class="text-white">Возможность уйти на фриланс</h1>
         <p class="text-white">Выполняйте больше работ, получайте хороший рейтинг и станьте нашим постоянным разработчиком</p>
       </div>
     </div>
-    <div class="col-sm-12 col-md-12 col-lg-8 col-xl-7 d-flex ">
+    <div class="col-7 d-flex">
       <div class="col-6">
         <div class="rounded shadow-sm p-6 m-3 d-flex flex-column justify-content-center align-items-center"
           style="background: rgb(192,255,162);" id="card">
@@ -23,7 +23,7 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 d-flex ">
+    <div class="col-7 d-flex ">
       <div class="col-6">
         <div class="text-white shadow-sm rounded-pill p-6 m-3 d-flex flex-column justify-content-center align-items-center"
           style="background: rgba(26,2,30,255);" id="card">
@@ -39,7 +39,7 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-12 col-md-12 col-lg-5 ">
+    <div class="col-5">
       <div class="rounded p-4 shadow-sm  m-3 d-flex flex-column justify-content-center align-items-center"
         style="background-color: rgb(166,159,53);" id="card">
         <h1 class="">Сосредоточьтесь на проекте</h1>
@@ -55,7 +55,7 @@
 <style scoped>
 
 #card {
-  height: 150px;
+  height: 15vw;
   overflow: hidden;
 }
 
