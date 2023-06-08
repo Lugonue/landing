@@ -1,22 +1,36 @@
 <template>
-  <div class="container-fluid h-100">
-    <div class="row justify-content-center align-items-center h-100 ">
+  <div class="container-fluid h-100 position-ralative">
+    <h1 class="text-center position-absolute text-gray-800">
+      Преимущества для Исполнителя
+    </h1>
+    <div class="row justify-content-center align-items-center h-100">
       <div class="col-4 h-100" id="mobile">
-        <div v-if="hideImg" class="d-flex align-items-end justify-content-center" style="height: 100vh">
-          <img style="height: 80%;" src="/media/header-component-img/statik-slider/Background-img-right-slide.png" alt="">
+        <div
+          v-if="hideImg"
+          class="d-flex align-items-end justify-content-center"
+          style="height: 100vh"
+        >
+          <img
+            style="height: 80%"
+            src="/media/header-component-img/statik-slider/Background-img-right-slide.png"
+            alt=""
+          />
         </div>
-        <div v-else class="d-flex align-items-center justify-content-center h-100">
+        <div
+          v-else
+          class="d-flex align-items-center justify-content-center h-100"
+        >
           <UiButtonToServise>Войти в сервис</UiButtonToServise>
         </div>
       </div>
-      <div class="col-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8 h-100">
-        <div class="container-fluid overflow-hidden h-100">
-          <div class="row h-100 flex-column justify-content-center align-items-center">
-            <h1
-              class="w-100 rounded text-center mt-5 fs-1 text-gray-700">
-              Преимущества для Исполнителя
-            </h1>
-            <section class="h-50 my-5">
+      <div
+        class="col-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8 h-100 d-flex justify-content-end align-items-end"
+      >
+        <div class="container-fluid overflow-hidden">
+          <div
+            class="row flex-column justify-content-center align-items-center"
+          >
+            <section class="mb-10">
               <RegionsCardInSliderExecutor />
             </section>
             <div v-if="hideImg" class="text-center mt-4">
@@ -28,15 +42,17 @@
     </div>
   </div>
 </template>
-  
-<script setup>
 
-const hideImg = ref(true)
+<script setup>
+const hideImg = ref(true);
 
 onMounted(() => {
   hideImg.value = window.innerWidth > 1200;
-  window.addEventListener('resize', () => hideImg.value = window.innerWidth > 1200)
-})
+  window.addEventListener(
+    "resize",
+    () => (hideImg.value = window.innerWidth > 1200)
+  );
+});
 
 // const data = [
 //   { id: 1, title: 'Опыт', body: 'полный анализ деятельности от ТОП-овых специалистов' },
@@ -47,18 +63,28 @@ onMounted(() => {
 //   { id: 6, title: 'Постоянно на связи', body: 'Менеджер на связи 25/8' },
 // ]
 </script>
-  
+
 <style scoped>
 * {
   animation: ani 2s forwards;
 }
 
-#bg {
-  background: radial-gradient(farthest-side at 55% 45%, rgb(207, 212, 212) 10%, rgb(245, 248, 250) 80%);
-
+h1 {
+  font-size: 2vw;
+  top: 12%;
+  left: 20%;
 }
 
-@media screen and (max-width: 1500px) {}
+#bg {
+  background: radial-gradient(
+    farthest-side at 55% 45%,
+    rgb(207, 212, 212) 10%,
+    rgb(245, 248, 250) 80%
+  );
+}
+
+@media screen and (max-width: 1500px) {
+}
 
 @keyframes ani {
   from {
