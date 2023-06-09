@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flex-wrap w-100 h-100">
+  <div class="d-flex flex-wrap">
     <div class="col-5">
       <div class="rounded shadow-sm p-4 m-3 d-flex flex-column justify-content-center align-items-center"
         style="background-color: rgb(166,52,75);" id="card">
@@ -54,7 +54,7 @@
 
 <style scoped>
 #card {
-  height: 10vw;
+  height: 9vw;
   overflow: hidden;
   
 }
@@ -64,13 +64,13 @@
 }
 
 h1 {
-  font-size: 1vw;
+  font-size: 0.9vw;
   font-weight: 800;
   color: rgb(48, 25, 51);
 }
 
 p {
-  font-size: 0.7vw;
+  font-size: 0.6vw;
   color: rgb(52, 23, 60);
 }
 

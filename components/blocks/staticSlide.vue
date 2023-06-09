@@ -27,11 +27,9 @@
         </template>
 
         <!-- left slide benefitials -->
-        <template v-if="statusSlide === 'fullLeft'">
-          <div class="w-100 h-100">
+          <div class="w-100 h-100"  v-if="statusSlide === 'fullLeft'">
             <RegionsBeneficialsLeftSlide />
           </div>
-        </template>
       </div>
 
       <!-- Start rigth slide -->

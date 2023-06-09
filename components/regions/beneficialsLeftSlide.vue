@@ -1,44 +1,35 @@
 <template>
-  <div class="customBg w-100 h-100">
-    <div
-      class="container-fluid h-100 position-relative"
-      style="margin-top: 100px"
-    >
-      <h1 class="rounded text-center mt-5 text-gray-800">
+  <div class="container-fluid h-100 bg-none" style="width: 100vw; height: 100vh;">
+    <div class="d-flex flex-column  align-items-center h-100">
+      <h1 class="rounded text-center text-gray-800" style="margin-top: 100px;">
         Преимущества для Заказчика
       </h1>
-      <div class="row justify-content-center align-items-center h-100">
-        <div
-          class="col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 h-100 d-flex justify-content-end"
-        >
-          <div class="overflow-hidden d-flex justify-content-end">
+      <div class="d-flex h-100">
+        <div class="col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 flex-grow-2 flex-stretch">
             <div
-              class="row flex-column justify-content-center align-items-center"
+              class="d-flex flex-column justify-content-around align-items-center h-100 "
             >
-              <section class="h-50 mb-10">
                 <RegionsCardsInSliderCustomer />
-              </section>
-              <div v-if="hideImg" class="text-center mt-4">
+              <div v-if="hideImg" class="">
                 <UiButtonToServise>Войти в сервис</UiButtonToServise>
               </div>
             </div>
-          </div>
         </div>
 
-        <div class="col-5 h-100 text-end" id="mobile">
+        <div class="col-5 text-end h-100" id="mobile">
           <div
             v-if="hideImg"
             class="d-flex align-items-end justify-content-end h-100 w-100"
           >
             <img
-              style="height: 85%"
+              style="max-height: 80vh"
               src="/media/header-component-img/statik-slider/Background-img-left-slide1.png"
               alt=""
             />
           </div>
           <div
             v-else
-            class="d-flex align-items-center justify-content-center h-100"
+            class="d-flex align-items-center justify-content-center h-100 w-100"
           >
             <UiButtonToServise>Войти в сервис</UiButtonToServise>
           </div>

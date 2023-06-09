@@ -1,38 +1,35 @@
 <template>
-  <div class="container-fluid h-100 position-ralative">
-    <h1 class="text-center position-absolute text-gray-800">
-      Преимущества для Исполнителя
-    </h1>
-    <div class="row justify-content-center align-items-center h-100">
-      <div class="col-4 h-100" id="mobile">
-        <div
-          v-if="hideImg"
-          class="d-flex align-items-end justify-content-center"
-          style="height: 100vh"
-        >
-          <img
-            style="height: 80%"
-            src="/media/header-component-img/statik-slider/Background-img-right-slide.png"
-            alt=""
-          />
+  <div class="container-fluid h-100" style="width: 100vw; height: 100vh">
+    <div class="d-flex flex-column justify-content-evenly align-items-center h-100">
+      <h1 class="text-center text-gray-800" style="margin-top: 100px;">
+        Преимущества для Исполнителя
+      </h1>
+      <div class="d-flex align-self-center">
+        <div class="col-5" id="mobile">
+          <div
+            v-if="hideImg"
+            class="d-flex align-items-end justify-content-center h-100"
+          >
+            <img
+              style="max-height: 80vh"
+              src="/media/header-component-img/statik-slider/Background-img-right-slide.png"
+              alt=""
+            />
+          </div>
+          <div
+            v-else
+            class="d-flex align-items-center justify-content-center h-100"
+          >
+            <UiButtonToServise>Войти в сервис</UiButtonToServise>
+          </div>
         </div>
         <div
-          v-else
-          class="d-flex align-items-center justify-content-center h-100"
+          class="col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 d-flex justify-content-start align-items-start flex-stretch"
         >
-          <UiButtonToServise>Войти в сервис</UiButtonToServise>
-        </div>
-      </div>
-      <div
-        class="col-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7 h-100 d-flex justify-content-center align-items-center"
-      >
-        <div class="container-fluid overflow-hidden">
           <div
             class="row flex-column justify-content-center align-items-center"
           >
-            <section class="h-50 mb-10">
               <RegionsCardInSliderExecutor />
-            </section>
             <div v-if="hideImg" class="text-center mt-4">
               <UiButtonToServise>Войти в сервис</UiButtonToServise>
             </div>
