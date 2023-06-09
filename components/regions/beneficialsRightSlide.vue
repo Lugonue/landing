@@ -27,7 +27,7 @@
           class="col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 d-flex justify-content-start align-items-start flex-stretch"
         >
           <div
-            class="row flex-column justify-content-center align-items-center"
+            class="row flex-column justify-content-around align-items-center h-100"
           >
               <RegionsCardInSliderExecutor />
             <div v-if="hideImg" class="text-center mt-4">
