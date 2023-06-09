@@ -1,8 +1,8 @@
 <template>
   <!--begin::Footer Section-->
-  <footer class="mb-0" id="contacts">
+  <footer class="mb-0" >
     <!--begin::Wrapper-->
-    <div class="bg-dark pt-20">
+    <div class="bg-dark pt-20" id="contacts">
       <!--begin::Container-->
       <div class="container">
         <!--begin::Row-->
@@ -26,7 +26,11 @@
               <br />
               <span class="fw-normal fs-4 text-gray-700"
                 >Контактный номер:
-                <a href="tel:+79969134171">+79969134171</a></span
+                <a
+                  class="text-white opacity-50 text-hover-primary"
+                  href="tel:+79969134171"
+                  >+79969134171</a
+                ></span
               >
 
               <!--end::Text-->
@@ -99,11 +103,7 @@
                 <!--end::Subtitle-->
                 <!--begin::Link-->
                 <a href="#" class="mb-4">
-                  <img
-                    src="/media/footer/vk.png"
-                    class="h-20px me-2"
-                    alt=""
-                  />
+                  <img src="/media/footer/vk.png" class="h-20px me-2" alt="" />
                   <span
                     class="text-white opacity-50 text-hover-primary fs-5 mb-6"
                     >VK</span
@@ -190,7 +190,10 @@
                             <a href="https://keenthemes.com/support" target="_blank" class="menu-link px-2">Support</a>
                         </li> -->
             <li class="menu-item">
-              <a href="https://service.free-eco.ru/privacy-policy" target="_blank" class="menu-link px-2"
+              <a
+                href="https://service.free-eco.ru/privacy-policy"
+                target="_blank"
+                class="menu-link px-2"
                 >Политика конфиденциальности</a
               >
             </li>

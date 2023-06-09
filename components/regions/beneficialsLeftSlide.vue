@@ -1,40 +1,47 @@
 <template>
-  <div class="container-fluid h-100 customBg position-relative">
-    <h1 class="rounded text-center mt-5 text-gray-800 position-absolute">
-      Преимущества для Заказчика
-    </h1>
-    <div class="row justify-content-center align-items-center h-100">
-      <div class="col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 h-100 d-flex justify-content-end">
-        <div class=" overflow-hidden d-flex justify-content-end">
-          <div
-            class="row flex-column justify-content-center align-items-center"
-          >
-            <section class="h-50 mb-10">
-              <RegionsCardsInSliderCustomer />
-            </section>
-            <div v-if="hideImg" class="text-center mt-4">
-              <UiButtonToServise>Войти в сервис</UiButtonToServise>
+  <div class="customBg w-100 h-100">
+    <div
+      class="container-fluid h-100 position-relative"
+      style="margin-top: 100px"
+    >
+      <h1 class="rounded text-center mt-5 text-gray-800">
+        Преимущества для Заказчика
+      </h1>
+      <div class="row justify-content-center align-items-center h-100">
+        <div
+          class="col-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 h-100 d-flex justify-content-end"
+        >
+          <div class="overflow-hidden d-flex justify-content-end">
+            <div
+              class="row flex-column justify-content-center align-items-center"
+            >
+              <section class="h-50 mb-10">
+                <RegionsCardsInSliderCustomer />
+              </section>
+              <div v-if="hideImg" class="text-center mt-4">
+                <UiButtonToServise>Войти в сервис</UiButtonToServise>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-4 h-100" id="mobile">
-        <div
-          v-if="hideImg"
-          class="d-flex align-items-end justify-content-start h-100"
-        >
-          <img
-            style="height: 85%"
-            src="/media/header-component-img/statik-slider/Background-img-left-slide1.png"
-            alt=""
-          />
-        </div>
-        <div
-          v-else
-          class="d-flex align-items-center justify-content-center h-100"
-        >
-          <UiButtonToServise>Войти в сервис</UiButtonToServise>
+        <div class="col-5 h-100 text-end" id="mobile">
+          <div
+            v-if="hideImg"
+            class="d-flex align-items-end justify-content-end h-100 w-100"
+          >
+            <img
+              style="height: 85%"
+              src="/media/header-component-img/statik-slider/Background-img-left-slide1.png"
+              alt=""
+            />
+          </div>
+          <div
+            v-else
+            class="d-flex align-items-center justify-content-center h-100"
+          >
+            <UiButtonToServise>Войти в сервис</UiButtonToServise>
+          </div>
         </div>
       </div>
     </div>

@@ -32,7 +32,7 @@ const changeShow = (description) => {
         <h1 class="display-3 text-white text-start pb-1">
           Как это работает?
         </h1>
-        <h3 class="text-white text-start fw-lighter fst-italic mb-10">
+        <h3 class="text-white text-start fw-lighter mb-10">
           Пошаговая инструкция работы в сервисе:
         </h3>
       </div>

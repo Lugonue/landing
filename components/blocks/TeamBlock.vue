@@ -21,7 +21,7 @@ const statButn = [
 
 </script>
 <template>
-  <div class="container-fluid bg-light pb-20 pt-20 custom">
+  <div class="container-fluid bg-light pb-20 pt-20 custom" id="about-us">
     <!-- <h1 class="fs-2hx text-center w-100 fw-bolder mb-20">Наша команда</h1> -->
     <div class="container-xxl" >
       <div class="d-flex h-100 justify-content-center align-items-center flex-wrap" style="align-items: stretch;">

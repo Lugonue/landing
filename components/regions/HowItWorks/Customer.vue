@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex h-100" style="min-height: 80vh">
+  <div class="d-flex h-100">
     <div class="d-flex flex-column justify-content-start">
       <div
         class="nav nav-pills"
@@ -70,7 +70,8 @@
                   target="_blank" 
                   :href="uri">
                   <img 
-                    style="max-width: 75%; height: auto"
+                  class="border rounded"
+                    style="max-width: 80%; height: auto"
                     alt=""
                     :src="uri"
                   />

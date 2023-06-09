@@ -1,36 +1,31 @@
 <template>
-  <div class="container-fluid py-20" id="UniqueTradeOffer">
+  <div class="container-fluid py-20 px-0" id="UniqueTradeOffer">
     <!-- <section class="w-100 h-100 position-absolute" style="background: url('/media/bg-2-block.PNG');"></section> -->
-    <div class="container-xxl d-flex flex-column justify-content-around mb-20 mt-20 p-10 rounded fs-4">
-      <div class="row justify-content-between mt-10 mb-20">
-        <div class="col-md-5 col-sm-6">
-          <div class="">
+    <div class="container-xxl d-flex flex-column justify-content-around">
+      <div class="row justify-content-between my-20">
+        <div class="col-xs-12 col-md-6 col-sm-12">
             <p class=" fs-1 text-black fw-bolder">Сервис для бизнеса<br> и инженеров-экологов</p>
             <p class="">Наша фриланс биржа открывает доступ к удаленным
               инженерам-экологам. Самые топовые разработчики имеют
               представление о сотнях компаний и знают, что им нужно.
               А это соответствие экологическому законодательству и
               приобретение лояльности клиентов. Инженеры-экологи могут
-              присоединиться к нашей компании, начать развиваться и зарабатывать</p>
-          </div>
+              присоединиться к нашей компании, начать развиваться и зарабатывать
+            </p>
         </div>
-        <div class="col-md-5 col-sm-6 d-flex justify-content-center">
-          <div class="">
-            <div class=" d-flex " style="max-width: 300px;">
-              <img style="max-width: 100%;" src="/media/2block.png" alt="">
-            </div>
+        <div class="col-xs-12 col-md-6 col-sm-12">
+          <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+            <img style="max-width: 60%;" src="/media/2block.png" alt=""/>
           </div>
         </div>
       </div>
-      <div class="row justify-content-between mb-20">
-        <div class="col-lg-5 mb-5">
-          <div class="d-flex justify-content-center">
-            <div class=" d-flex " style="max-width: 350px;">
-              <img style="max-width: 100%;" src="/media/ESG.png" alt="">
-            </div>
+      <div class="row justify-content-between my-20">
+        <div class="col-xs-12 col-md-6 col-sm-12">
+          <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+              <img style="max-width: 60%;" src="/media/ESG.png" alt="Экологический тренд">
           </div>
         </div>
-        <div class="col-lg-5 d-flex">
+        <div class="col-xs-12 col-md-6 col-sm-12 pt-5">
           <div class="">
             <p class="fs-1 text-black fw-bolder">Для чего нужны экологические
               работы</p>
@@ -44,8 +39,8 @@
           </div>
         </div>
       </div>
-      <div class="row justify-content-between mb-20">
-        <div class="col-lg-5">
+      <div class="row justify-content-between my-20">
+        <div class="col-xs-12 col-md-6 col-sm-12">
           <div class="">
             <p class="fs-1 text-black fw-bolder">Это не совсем обычная
               фриланс-биржа</p>
@@ -57,11 +52,9 @@
               присоединиться к нашей компании, начать развиваться и зарабатывать</p>
           </div>
         </div>
-        <div class="col-lg-5 d-flex justify-content-center">
-          <div class="">
-            <div class=" d-flex " style="max-width: 300px;">
-              <img style="max-width: 100%;" src="/media/scroll.png" alt="">
-            </div>
+        <div class="col-xs-12 col-md-6 col-sm-12">
+          <div class="d-flex w-100 h-100 align-items-center justify-content-end">
+              <img style="max-width: 60%;" src="/media/scroll.png" alt="">
           </div>
         </div>
       </div>
@@ -73,17 +66,32 @@
 </template>
 
 <style scoped>
+
+p {
+  font-size: 1.3rem;
+}
+
 #UniqueTradeOffer {
+  position: relative;
+  z-index: 1;
+  background: none;
+}
+#UniqueTradeOffer::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 5%;
+  width: 100%;
+  height: 100%;
   background: no-repeat url('/media/bg-2-block.png');
   background-size: 100%;
   background-position: 100%;
-  /* background: linear-gradient(45deg,rgb(253, 252, 252) 10%, rgb(228,230,239) 40%, rgb(239, 201, 239) 50%); */
+  rotate: -3deg;
 }
 
 @media screen and (max-width: 1000px) {
-  #UniqueTradeOffer {
-    background: none;
-    /* margin: 0 ; */
+  #UniqueTradeOffer::before {
+    display: none;
   }
 
   #UniqueTradeOffer>div>div {

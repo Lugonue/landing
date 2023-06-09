@@ -78,8 +78,8 @@ onMounted(() => {
 
 
 #containerForChats {
-  padding-top: 60px;
-  max-height: 90vh; 
+  margin-top: 100px !important;
+  max-height: calc(100% - 100px); 
   overflow: scroll;
   max-width: 25%;
   margin-top: 2%;
