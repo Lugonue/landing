@@ -98,46 +98,46 @@
                 <h4 class="text-gray-400 mb-6">Контакты</h4>
                 <!--end::Subtitle-->
                 <!--begin::Link-->
-                <a href="#" class="mb-6">
+                <a href="#" class="mb-4">
                   <img
-                    src="/media/svg/brand-logos/facebook-4.svg"
+                    src="/media/footer/vk.png"
                     class="h-20px me-2"
                     alt=""
                   />
                   <span
                     class="text-white opacity-50 text-hover-primary fs-5 mb-6"
-                    >Facebook</span
+                    >VK</span
                   >
                 </a>
                 <!--end::Link-->
                 <!--begin::Link-->
-                <a href="#" class="mb-6">
+                <a href="#" class="mb-4">
                   <img
-                    src="/media/svg/brand-logos/github.svg"
+                    src="/media/footer/icons8-youtube-48.png"
                     class="h-20px me-2"
                     alt=""
                   />
                   <span
                     class="text-white opacity-50 text-hover-primary fs-5 mb-6"
-                    >Github</span
+                    >YouTube</span
                   >
                 </a>
                 <!--end::Link-->
                 <!--begin::Link-->
-                <a href="#" class="mb-6">
+                <a href="#" class="mb-4">
                   <img
-                    src="/media/svg/brand-logos/twitter.svg"
+                    src="/media/footer/icons8-telegram-48.png"
                     class="h-20px me-2"
                     alt=""
                   />
                   <span
                     class="text-white opacity-50 text-hover-primary fs-5 mb-6"
-                    >Twitter</span
+                    >Telegram</span
                   >
                 </a>
-                <a href="#" class="mb-6">
+                <a href="#" class="mb-4">
                   <img
-                    src="/media/svg/brand-logos/instagram-2-1.svg"
+                    src="/media/footer/icons8-instagram-48.png"
                     class="h-20px me-2"
                     alt=""
                   />
@@ -190,7 +190,7 @@
                             <a href="https://keenthemes.com/support" target="_blank" class="menu-link px-2">Support</a>
                         </li> -->
             <li class="menu-item">
-              <a href="" target="_blank" class="menu-link px-2"
+              <a href="https://service.free-eco.ru/privacy-policy" target="_blank" class="menu-link px-2"
                 >Политика конфиденциальности</a
               >
             </li>
