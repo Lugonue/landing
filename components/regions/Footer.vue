@@ -52,23 +52,24 @@
               <!--begin::Links-->
               <div class="d-flex flex-column me-20">
                 <!--begin::Subtitle-->
-                <h4 class="fw-bolder text-gray-400 mb-6">
+                <UiButtonToServise>В сервис</UiButtonToServise>
+                <!-- <h4 class="fw-bolder text-gray-400 mb-6">
                   Дополнительно о FreeEco
-                </h4>
+                </h4> -->
                 <!--end::Subtitle-->
                 <!--begin::Link-->
-                <a
+                <!-- <a
                   href="#"
                   class="text-white opacity-50 text-hover-primary fs-5 mb-6"
                   >Часто задаваемые вопросы</a
-                >
+                > -->
                 <!--end::Link-->
                 <!--begin::Link-->
-                <a
+                <!-- <a
                   href="#"
                   class="text-white opacity-50 text-hover-primary fs-5 mb-6"
                   >Документы</a
-                >
+                > -->
                 <!--end::Link-->
                 <!--begin::Link-->
                 <a
@@ -102,7 +103,7 @@
                 <h4 class="text-gray-400 mb-6">Контакты</h4>
                 <!--end::Subtitle-->
                 <!--begin::Link-->
-                <a href="#" class="mb-4">
+                <a href="https://vk.com/ecological_project" class="mb-4">
                   <img src="/media/footer/vk.png" class="h-20px me-2" alt="" />
                   <span
                     class="text-white opacity-50 text-hover-primary fs-5 mb-6"
@@ -111,7 +112,7 @@
                 </a>
                 <!--end::Link-->
                 <!--begin::Link-->
-                <a href="#" class="mb-4">
+                <a href="https://www.youtube.com/channel/UCAcrH9MKd2QneC7woOnYMoA" class="mb-4">
                   <img
                     src="/media/footer/icons8-youtube-48.png"
                     class="h-20px me-2"
@@ -124,7 +125,7 @@
                 </a>
                 <!--end::Link-->
                 <!--begin::Link-->
-                <a href="#" class="mb-4">
+                <a href="https://t.me/EcoProjects_Bot" class="mb-4">
                   <img
                     src="/media/footer/icons8-telegram-48.png"
                     class="h-20px me-2"
@@ -133,17 +134,6 @@
                   <span
                     class="text-white opacity-50 text-hover-primary fs-5 mb-6"
                     >Telegram</span
-                  >
-                </a>
-                <a href="#" class="mb-4">
-                  <img
-                    src="/media/footer/icons8-instagram-48.png"
-                    class="h-20px me-2"
-                    alt=""
-                  />
-                  <span
-                    class="text-white opacity-50 text-hover-primary fs-5 mb-6"
-                    >Instagram</span
                   >
                 </a>
                 <div>

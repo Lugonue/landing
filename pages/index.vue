@@ -11,8 +11,7 @@
     <BlocksWorks />
     <!-- <BlocksProjects /> -->
     <BlocksWorkScheme @isDesctop="desctopVersion" />
-    <!-- <LazyBlocksTopFreelancers /> -->
-    <!-- <BlocksTeam /> -->
+    <BlocksTopFreelancers />
     <BlocksTeamBlock />
     <BlocksPartners />
     <RegionsOffer />
