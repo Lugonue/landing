@@ -1,14 +1,30 @@
+<script setup>
+// for example
+const freeLancers = [
+  { name: 'Евгений Андреев', spheres: 'Biodiversity', img: '/media/top-freelancers/1.jpg' },
+  { name: 'Евгений Веренков', spheres: 'Habitat fragmentation', img: '/media/top-freelancers/2.jpg' },
+  { name: 'Ирина Соболева', spheres: 'Ecosystem services', img: '/media/top-freelancers/3.jpg' },
+  { name: 'Марина Пилипенко', spheres: 'Ecosystem services', img: '/media/top-freelancers/4.jpg' },
+  { name: 'Юлия Куперман', spheres: 'Ecological succession', img: '/media/top-freelancers/5.jpg' },
+  { name: 'Константин Попко', spheres: 'Restoration ecology', img: '/media/top-freelancers/6.jpg' },
+]
+
+</script>
+
+
 <template>
   <div class="d-flex align-items-center justify-content-center" style="height: 80vh;">
     <div class="container-xxl d-flex flex-column justify-content-center mt-20 mb-20 pb-10 pt-10 rounded">
       <h1 class="fs-2hx text-center fw-bolder mb-20">Топ фрилансеров</h1>
-      <div class="row flex-row justify-content-center overflow-auto" style="flex-wrap: nowrap;">
-        <div v-for="freeLancer in freeLancers" class="col-lg-2 col-md-2 col-sm-4 col-3" id="anime">
-          <div class="card rounded" style="">
-            <img :src=freeLancer.img class="card-img-top rounded" alt="...">
+      <div class="d-flex justify-content-center overflow-auto" style="flex-wrap: nowrap;">
+        <div v-for="freeLancer in freeLancers" class=""  id="scroll-animation">
+          <div class="card rounded" style="" >
+            <div class="img-freelancers mx-5">
+              <img :src=freeLancer.img class="rounded" :alt="freeLancer.spheres">
+            </div>
+            
             <div class="card-body p-4 text-center">
               <h5 class="card-title">{{ freeLancer.name }}</h5>
-              <p class="card-text">{{ freeLancer.spheres }}</p>
             </div>
           </div>
         </div>
@@ -17,37 +33,36 @@
   </div>
 </template>
 
-<script setup>
-// for example
-const freeLancers = [
-  { name: 'Avery', spheres: 'Biodiversity', img: '/media/avatars/150-6.jpg' },
-  { name: 'Wesley', spheres: 'Habitat fragmentation', img: '/media/avatars/150-8.jpg' },
-  { name: 'Jade', spheres: 'Ecosystem services', img: '/media/avatars/150-9.jpg' },
-  { name: 'Maxine', spheres: 'Ecosystem services', img: '/media/avatars/150-10.jpg' },
-  { name: 'Penelope', spheres: 'Ecological succession', img: '/media/avatars/150-11.jpg' },
-  { name: 'Donovan', spheres: 'Restoration ecology', img: '/media/avatars/150-12.jpg' },
-  { name: 'Hector', spheres: 'Urban ecology', img: '/media/avatars/150-13.jpg' },
-  { name: 'Phoenix', spheres: 'Urban ecology', img: '/media/avatars/150-15.jpg' },
-  { name: 'Marina', spheres: 'Urban ecology', img: '/media/avatars/150-14.jpg' },
-]
-</script>
+
 
 <style scoped>
-#anime {
+
+#scroll-animation {
   animation: leftright 6s infinite alternate ease-in-out;
+}
+.img-freelancers {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+
+}
+.img-freelancers img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @keyframes leftright {
 
   0%,
-  20% {
+  10% {
     transform: translateX(0%);
     left: 0%;
   }
 
-  80%,
+  90%,
   100% {
-    transform: translateX(-100%);
+    transform: translateX(100%);
     left: 100%;
   }
 }

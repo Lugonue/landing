@@ -1,5 +1,5 @@
 <script setup>
-const { data: spheres, pending, error } = useFetch('https://api.free-eco.ru/api/v1/works/spheres');
+const { data: spheres, pending } = useFetch('http://api.free-eco.ru/api/v1/works/spheres');
 
 const isActive = (id) => id === 1;
 const isActiveWork = (id) => [1, 2, 3, 4, 16, 5, 10].includes(id);
@@ -38,29 +38,29 @@ const isActiveWork = (id) => [1, 2, 3, 4, 16, 5, 10].includes(id);
                         <div class="col-lg-6 col-sm-12 d-flex flex-column ">
                           <div class="rounded p-4 bg-white shadow-xs mb-3 position-relative">
                             <h3 class="">Описание </h3>
-                            <p class=" ">{{ work.description }} </p>
+                            <p class="pb-3">{{ work.description }} </p>
                             <i class="fa-duotone fa-comment position-absolute"></i>
                           </div>
                           <div class="rounded p-4 bg-white shadow-xs mb-3 position-relative">
                             <h3 class=" ">Основания в законе</h3>
-                            <p class="">{{ work.grounds }}</p>
+                            <p class="pb-3">{{ work.grounds }}</p>
                             <i class="fa-duotone fa-gavel"></i>
                           </div>
                           <div class="rounded p-4 bg-white shadow-xs mb-3 position-relative">
                             <h3 class="">Штраф за невыполнение</h3>
-                            <p class="">{{ work.penalties }}</p>
+                            <p class="pb-3">{{ work.penalties }}</p>
                             <i class="fa-duotone fa-user-police-tie text-gray-400"></i>
                           </div>
                         </div>
                         <div class="col-lg-6 col-sm-12 d-flex flex-column">
                           <div class="rounded p-4 bg-white shadow-xs mb-3 position-relative">
                             <h3 class="">На кого распространяется действие закона?</h3>
-                            <p class="">{{ work.who_needs_it }}</p>
+                            <p class="pb-3">{{ work.who_needs_it }}</p>
                             <i class="fa-duotone fa-book-section"></i>
                           </div>
                           <div class="rounded p-4 bg-white shadow-xs mb-3 position-relative">
                             <h3 class="">Срок разработки</h3>
-                            <p class=" ">{{ work.lead_time }}</p>
+                            <p class="pb-3">{{ work.lead_time }}</p>
                             <i class="fa-duotone fa-timer"></i>
                           </div>
                         </div>
