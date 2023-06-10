@@ -90,7 +90,7 @@ export default defineNuxtConfig({
         // Keys within public, will be also exposed to the client-side
         public: {
             apiSecret: process.env.API_SECRET || '123456789',
-            apiURL: process.env.API_URL || '/api/',
+            apiURL: (process.env.NODE_ENV == 'development' ? process.env.API_URL_DEV : process.env.API_URL) || '/api/',
         }
     },
 

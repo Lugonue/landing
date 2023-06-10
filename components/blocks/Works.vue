@@ -1,5 +1,5 @@
 <script setup>
-const { data: spheres, pending } = useFetch('http://api.free-eco.ru/api/v1/works/spheres');
+const { data: spheres, pending, error } = useFetch('https://api.free-eco.ru/api/v1/works/spheres');
 
 const isActive = (id) => id === 1;
 const isActiveWork = (id) => [1, 2, 3, 4, 16, 5, 10].includes(id);
@@ -7,8 +7,7 @@ const isActiveWork = (id) => [1, 2, 3, 4, 16, 5, 10].includes(id);
 
 </script>
 <template>
-  <div class="container-xl d-flex justify-content-center rounded shadow-lg my-20"
-     id="bg">
+  <div class="container-xl d-flex justify-content-center rounded shadow-lg my-20" id="bg" v-if="!error">
     <section class="col-lg-12" v-if="!pending">
       <h1 class="fs-2hx text-center my-5 p-5">Поиск работ</h1>
       <div class="d-flex flex-row justify-content-start ps-10" id="mobile">
