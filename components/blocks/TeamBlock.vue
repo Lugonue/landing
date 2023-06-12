@@ -21,11 +21,11 @@ const statButn = [
 
 </script>
 <template>
-  <div class="container-fluid bg-light pb-20 pt-20 custom" id="about-us">
+  <div class="container-fluid bg-light pb-20 pt-20 custom" id="about-us" style="height: 80vh;">
     <!-- <h1 class="fs-2hx text-center w-100 fw-bolder mb-20">Наша команда</h1> -->
-    <div class="container-xxl" >
-      <div class="d-flex h-100 justify-content-center align-items-center flex-wrap" style="align-items: stretch;">
-        <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 h-100">
+    <div class="container-xxl h-100" >
+      <div class="d-flex h-100 justify-content-center align-items-center">
+        <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 d-flex flex-column justify-content-center align-items-start h-100">
           <h2 class="display-6 mb-5">Оцифровываем <span class="before">экологию</span> с 2016</h2>
           <h2 class="fs-3">Веренков Евгений - основатель:</h2>
           <p class="fs-2 lh-sm p-3 ps-0">
