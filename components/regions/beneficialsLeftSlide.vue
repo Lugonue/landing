@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid h-100 bg-none" style="width: 100vw; height: 100vh;">
+  <div class="container-fluid h-100 customBg" style="width: 100vw; height: 100vh;">
     <div class="d-flex flex-column  align-items-center h-100">
       <h1 class="rounded text-center text-gray-800" style="margin-top: 100px;">
         Преимущества для Заказчика
@@ -79,7 +79,7 @@ h1 {
   z-index: 2;
   background: radial-gradient(
     farthest-corner at 15% 25%,
-    rgb(208, 233, 233, 0.6) 1%,
+    rgb(208, 233, 233, 0.7) 20%,
     rgb(218, 139, 209) 80%
   );
 }

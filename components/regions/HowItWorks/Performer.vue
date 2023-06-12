@@ -10,7 +10,7 @@
         <button
           v-for="button in buttonsToInstructions"
           :class="
-            'btn btn-outline btn-outline-dashed btn-outline-info me-2 mt-2' +
+            'btn btn-outline btn-outline-dashed btn-outline-secondary me-2 mt-2' +
             (button.isActive ? ' active' : '')
           "
           id="v-pills-home-tab"

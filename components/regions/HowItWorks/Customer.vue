@@ -40,7 +40,7 @@
         >
           <div class="h-100 p-0">
             <div class="row mb-5 mt-5">
-              <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 text-white h-100 d-flex flex-column justify-content-between ">
+              <div class="col-12 col-lg-4 col-xl-4 col-xxl-4 text-white h-100 d-flex flex-column justify-content-between">
                 <div
                   class="position-relative"
                   style="

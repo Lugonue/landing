@@ -1,5 +1,6 @@
 <script setup>
 
+
 const scrollTo = (id) => {
   document.querySelector(id).scrollIntoView({ behavior: "smooth", block: "start" });
 }
@@ -32,26 +33,21 @@ const landingMenu = [
 ]
 
 const actionMenu = [
-  {
-    id: 1,
-    title: 'Полный анализ',
-    link: 'https://service.free-eco.ru/',
-    target: '_blank',
-    emphasize: true,
-  },
+  
   {
     id: 2,
     title: 'Сделать заказ',
     link: 'https://service.free-eco.ru/',
     target: '_blank',
-    emphasize: false,
+    emphasize: true,
   },
   {
     id: 3,
-    title: 'Сделать заказ',
+    title: 'Стать исполнителем',
     link: 'https://service.free-eco.ru/',
     target: '_blank',
-    emphasize: false,
+    emphasize: true,
+
   },
 ]
 
@@ -96,11 +92,12 @@ const actionMenu = [
             data-kt-drawer-width="200px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_landing_menu_toggle"
             data-kt-swapper="true" data-kt-swapper-mode="prepend"
             data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav_wrapper'}">
+
             <!--begin::Menu-->
 
             <nav
               class="menu menu-column flex-nowrap menu-rounded menu-lg-row menu-title-gray-700 menu-state-title-primary nav nav-flush fs-5 fw-bold"
-              id="kt_landing_menu">
+              id="kt_landing_menu" data-kt-menu="true" >
               <!--begin::Menu item-->
               <div class="menu-item" v-for="item in landingMenu" :key="item.id">
                 <!--begin::Menu link-->
@@ -112,8 +109,9 @@ const actionMenu = [
             <!--end::Menu-->
           </div>
         </div>
+
         <!--begin::Menu wrapper-->
-        <div class="d-lg-block" id="kt_landing_menu_toggle">
+        <div class="d-block" id="kt_landing_menu_toggle">
           <div class="d-lg-block p-5 p-lg-0" data-kt-drawer="true" data-kt-drawer-name="landing-menu"
             data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true"
             data-kt-drawer-width="200px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_landing_menu_toggle"
@@ -125,9 +123,9 @@ const actionMenu = [
               class="menu menu-column flex-nowrap menu-rounded menu-lg-row menu-title-gray-700 menu-state-title-primary nav nav-flush fs-5 fw-bold"
               id="kt_landing_menu">
 
-              <div class="menu-item" v-for="item in actionMenu" :key="item.id">
+              <div class="menu-item ms-2" v-for="item in actionMenu" :key="item.id">
                 <NuxtLink
-                  :class="`menu-link nav-link ${item.emphasize ? 'btn btn-outline btn-outline-dashed btn-outline-dark btn-active-light-dark' : 'py-3 px-4 px-xxl-6'} fw-bolder`"
+                  :class="`menu-link nav-link ${item.emphasize ? 'btn btn-outline btn-outline-dashed btn-outline-dark btn-active-light-dark' : 'py-3 px-4 px-xxl-6 '} fw-bolder`"
                   :to="item.link" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true" :target="item.target">
                   {{ item.title }}
                 </NuxtLink>
