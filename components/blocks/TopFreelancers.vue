@@ -13,8 +13,8 @@ const freeLancers = [
 
 
 <template>
-  <div class="d-flex align-items-center justify-content-center" style="height: 80vh;">
-    <div class="container-xxl d-flex flex-column justify-content-center mt-20 mb-20 pb-10 pt-10 rounded">
+  <div class="d-flex align-items-center justify-content-center mt-20 mb-20" style="height: 60vh;">
+    <div class="container-xxl d-flex flex-column justify-content-center">
       <h1 class="fs-2hx text-center fw-bolder mb-20">Топ фрилансеров</h1>
       <div class="d-flex justify-content-center overflow-auto" style="flex-wrap: nowrap;">
         <div v-for="freeLancer in freeLancers" class=""  id="scroll-animation">
