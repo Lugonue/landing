@@ -1,46 +1,53 @@
 <script setup>
 
-const statButn = [
+const statWorkers = [
   {
-    name: 'экологов',
-    data: '50+',
+    title: 'Инженеров-экологов',
+    count: '50+',
   },
   {
-    name: 'менеджера',
-    data: '3',
+    title: 'Менеджеров',
+    count: '3',
   },
   {
-    name: 'аудитор',
-    data: '1',
+    title: 'Аудиторов',
+    count: '1',
   },
   {
-    name: 'разработчиков',
-    data: '5',
+    title: 'Разработчиков',
+    count: '5',
   }
 ]
 
 </script>
 <template>
-  <div class="container-fluid bg-light pb-20 pt-20 custom" id="about-us">
+  <section class="container-fluid bg-light pb-20 pt-20 custom" id="about-us">
     <!-- <h1 class="fs-2hx text-center w-100 fw-bolder mb-20">Наша команда</h1> -->
-    <div class="container-xxl" >
+    <div class="container-xxl">
       <div class="d-flex h-100 justify-content-center align-items-center flex-wrap" style="align-items: stretch;">
         <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 h-100">
-          <h2 class="display-6 mb-5">Оцифровываем <span class="before">экологию</span> с 2016</h2>
-          <h2 class="fs-3">Веренков Евгений - основатель:</h2>
-          <p class="fs-2 lh-sm p-3 ps-0">
-            "Мы заметили, что компании ищут ответственного инженера-эколога.
-            И главное — это взаимопонимание и работа до конца. <br>
-            Мы спрограммировали такой сервис чтобы собрать самых топовых
-            специалистов, оценивая их подход, а компаниям было легко контролировать работы. <br>
-            Наша миссия - показать, что экологическая документация может быть не дорогой, удобной и быстрой"
-          </p>
+          <h1 class="display-6 mb-6">Оцифровываем
+            <span class="position-relative">
+              экологию
+              <img class="w-100 position-absolute bottom-0 left-0 mb-n2" src="/media/misc/hero-home-title-underline.svg"
+                alt="" style="left: 0;" />
+            </span> с 2016
+          </h1>
+          <div class="pt-5">
+            <h2 class="fs-3">Веренков Евгений - основатель:</h2>
+            <p class="text-gray-600 fs-4 lh-2 fw-semibold pb-5 pb-lg-8 ">
+              "Мы заметили, что компании ищут ответственного инженера-эколога.
+              И главное — это взаимопонимание и работа до конца. <br>
+              Мы спрограммировали такой сервис чтобы собрать самых топовых
+              специалистов, оценивая их подход, а компаниям было легко контролировать работы. <br>
+              Наша миссия - показать, что экологическая документация может быть не дорогой, удобной и быстрой"
+            </p>
+          </div>
           <div class="d-flex mt-auto">
-            <div
-              class="btn btn-flex flex-column align-items-start btn-outline btn-outline-dashed btn-outline-dark btn-active-light-dark me-2"
-              v-for="btn in statButn">
-              <span class="fs-2 fw-bolder text-dark">{{ btn.data }}</span>
-              <span class="fw-bolder text-muted">{{ btn.name }}</span>
+            <div class="border-gray-500 border-dashed rounded min-w-100px py-2 px-4 me-3" v-for="stat in statWorkers"
+              style="border-width: 1px;">
+              <div class="fs-2 text-gray-800 fw-bolder">{{ stat.count }}</div>
+              <div class="fw-semibold fs-7 text-gray-500">{{ stat.title }}</div>
             </div>
           </div>
         </div>
@@ -52,7 +59,7 @@ const statButn = [
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
