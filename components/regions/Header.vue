@@ -19,12 +19,6 @@ const landingMenu = [
     target: ''
   },
   {
-    id: 3,
-    title: 'О нас',
-    link: '#about-us',
-    target: ''
-  },
-  {
     id: 4,
     title: 'Контакты',
     link: '#contacts',

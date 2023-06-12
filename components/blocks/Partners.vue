@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid d-flex flex-column justify-content-center pb-10 pt-10 rounded" id="bg">
+  <div class="container-fluid d-flex flex-column justify-content-center pb-10 pt-10 rounded" id="partners">
     <div class="container-fluid">
       <h1 class="fs-2hx fw-bolder text-center mb-10">Наши партнеры</h1>
     <div class="row flex-row justify-content-center align-items-center overflow-auto " style="flex-wrap: nowrap;">
@@ -24,7 +24,7 @@ const companies = [
 ]
 </script>
 <style scoped>
-#bg {
+#partners {
   margin: 15vh 0;
   /* background: linear-gradient(45deg,rgb(239, 201, 239) 10%, rgb(228,230,2391) 40%, rgb(255, 255, 255) 50%); */
 }
