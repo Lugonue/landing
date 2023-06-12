@@ -7,7 +7,7 @@ const isActiveWork = (id) => [1, 2, 3, 4, 16, 5, 10].includes(id);
 
 </script>
 <template>
-  <div class="container-xl d-flex justify-content-center rounded shadow-lg my-20" id="bg" v-if="!error">
+  <div class="container-xl d-flex justify-content-center rounded shadow-lg my-20" id="works" v-if="!error">
     <section class="col-lg-12" v-if="!pending">
       <h1 class="fs-2hx text-center my-5 p-5">Поиск работ</h1>
       <div class="d-flex flex-row justify-content-start ps-10" id="mobile">
@@ -82,7 +82,7 @@ const isActiveWork = (id) => [1, 2, 3, 4, 16, 5, 10].includes(id);
 
 
 <style scoped>
-#bg {
+#works {
   background-color: #f2f3f5;
 }
 

@@ -23,7 +23,7 @@ const changeShow = (description) => {
 <template>
   <div
     class="container-fluid px-lg-20 py-lg-20 py-5 position-relative my-20"
-    id="main"
+    id="how_work"
   >
     <div class="row justify-content-between">
       <div
@@ -78,8 +78,10 @@ const changeShow = (description) => {
 </template>
 
 <style scoped>
-#main {
+
+#how_work {
   background: rgb(26, 24, 58);
-  border-radius: 0 200px 0 200px;
+  /* border-radius: 0 200px 0 200px; */
 }
+
 </style>
