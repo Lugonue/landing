@@ -1,5 +1,5 @@
 <template >
-    <div class="custom_bg " style="height: 100vh;">
+    <div class="custom_bg " style="height: ;">
         
         
     </div>

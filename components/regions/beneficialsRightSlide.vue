@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid h-100" style="width: 100vw; height: 100vh">
+  <div class="container-fluid h-100 bg" style="width: 100vw; height: 100vh">
     <div class="d-flex flex-column justify-content-evenly align-items-center h-100">
       <h1 class="text-center text-gray-800" style="margin-top: 100px;">
         Преимущества для Исполнителя
@@ -72,9 +72,9 @@ h1 {
   left: 20%;
 }
 
-#bg {
+.bg {
   background: radial-gradient(
-    farthest-side at 55% 45%,
+    farthest-side at 70% 45%,
     rgb(207, 212, 212) 10%,
     rgb(245, 248, 250) 80%
   );

@@ -3,8 +3,8 @@
     <div class="col-5">
       <div class="rounded shadow-sm p-4 m-3 d-flex flex-column justify-content-center align-items-center"
         style="background-color: rgb(166,52,75);" id="card">
-        <h1 class="">Все задачи в одном месте</h1>
-        <p class="">В личном кабинете вы сможете смотреть какие проводятся работы и сколько осталось до их окончания</p>
+        <h1 class="text-white">Все задачи в одном месте</h1>
+        <p class="text-white">В личном кабинете вы сможете смотреть какие проводятся работы и сколько осталось до их окончания</p>
       </div>
     </div>
     <div class="col-7 d-flex ">
@@ -42,8 +42,8 @@
     <div class="col-5">
       <div class="rounded p-4 m-3 d-flex flex-column justify-content-center align-items-center"
         style="background-color: rgb(166,159,53);" id="card">
-        <h1 class="">Минимум рисков</h1>
-        <p class="">Договор заключается с нашей компанией, мы назначим исполнителя в день обращения, а выполнение работы - это наша ответственность</p>
+        <h1 class="text-white">Минимум рисков</h1>
+        <p class="text-white">Договор заключается с нашей компанией, мы назначим исполнителя в день обращения, а выполнение работы - это наша ответственность</p>
       </div>
     </div>
   </div>
@@ -53,6 +53,8 @@
 </script>
 
 <style scoped>
+
+
 #card {
   height: 9vw;
   overflow: hidden;

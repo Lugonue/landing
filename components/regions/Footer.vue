@@ -39,7 +39,7 @@ const servicesLinks = [
   },
   {
     id: 2,
-    title: 'Экоаудит бизнеса',
+    title: 'Экоаудит бизнеса (чат-бот)',
     link: 'https://t.me/business_environment_bot',
     target: '_blank'
   },

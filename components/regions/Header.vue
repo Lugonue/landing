@@ -8,7 +8,7 @@ const scrollTo = (id) => {
 const landingMenu = [
   {
     id: 1,
-    title: 'О Сервисе',
+    title: 'О cервисе',
     link: '#about',
     target: ''
   },

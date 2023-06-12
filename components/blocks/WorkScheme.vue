@@ -82,7 +82,7 @@ const changeShow = (description) => {
 #how_work {
   margin: 15vh 0;
   background: rgb(26, 24, 58);
-  /* border-radius: 0 200px 0 200px; */
+  border-radius: 0 200px 0 200px;
 }
 
 </style>

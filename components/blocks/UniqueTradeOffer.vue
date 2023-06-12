@@ -107,6 +107,7 @@ p {
   background: no-repeat url("/media/bg-2-block.png");
   background-size: 100%;
   background-position: 100%;
+  opacity: 0.7;
 }
 
 @media screen and (max-width: 1000px) {

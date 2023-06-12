@@ -43,8 +43,8 @@ const statWorkers = [
               Наша миссия - показать, что экологическая документация может быть не дорогой, удобной и быстрой"
             </p>
           </div>
-          <div class="d-flex mt-auto">
-            <div class="border-gray-500 border-dashed rounded min-w-100px py-2 px-4 me-3" v-for="stat in statWorkers"
+          <div class="d-flex flex-wrap mt-auto">
+            <div class="border-gray-500 border-dashed rounded min-w-100px py-2 px-4 me-3 mb-3" v-for="stat in statWorkers"
               style="border-width: 1px;">
               <div class="fs-2 text-gray-800 fw-bolder">{{ stat.count }}</div>
               <div class="fw-semibold fs-7 text-gray-500">{{ stat.title }}</div>
