@@ -1,10 +1,8 @@
 <template>
+  <a href="https://service.free-eco.ru/"><button class="bn632-hover bn20">
 
-<a href="https://service.free-eco.ru/"><button class="bn632-hover bn20">
-  
-  <slot></slot>
-</button></a>
-
+      <slot></slot>
+    </button></a>
 </template>
 
 <style scoped>
@@ -14,9 +12,8 @@
   font-weight: 600;
   color: #fff;
   cursor: pointer;
-  margin: 20px;
   height: 55px;
-  text-align:center;
+  text-align: center;
   border: none;
   background-size: 300% 100%;
   border-radius: 50px;
@@ -37,13 +34,11 @@
 }
 
 .bn632-hover.bn20 {
-  background-image: linear-gradient(
-    to right,
-    #667eea,
-    #764ba2,
-    #6b8dd6,
-    #8e37d7
-  );
+  background-image: linear-gradient(to right,
+      #667eea,
+      #764ba2,
+      #6b8dd6,
+      #8e37d7);
   box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
 }
 </style>
