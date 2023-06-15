@@ -23,6 +23,8 @@ const changeShow = (description) => {
   state.value[description] = !state.value[description]
 }
 
+
+
 </script>
 <style scoped>
 #how_work {
@@ -71,7 +73,7 @@ const changeShow = (description) => {
       </ul>
     </div>
     <template v-if="state.customer">
-      <WidgetsHowWorkSteps :steps="customerSteps" />
+      <WidgetsHowWorkSteps :steps="customerSteps"  />
     </template>
     <template v-if="state.executor">
       <WidgetsHowWorkSteps :steps="executorSteps" />

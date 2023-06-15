@@ -5,6 +5,17 @@ const props = defineProps({
         requared: true
     }
 })
+
+const modalState = ref({ // состояние модального окна для просмотра скринов инструкций
+  show: false,
+  imgSrc: "",
+})
+
+const togleModal = (imgSrc) => {
+  modalState.value.show = !modalState.value.show
+  modalState.value.imgSrc = imgSrc ?? ""
+}
+
 </script>
 <style lang="scss">
 .teq {
@@ -48,14 +59,14 @@ const props = defineProps({
                                     <template v-if="step.images.length > 1">
                                         <div v-for="(image, i) in step.images" class="position-absolute"
                                             :style="`border-radius: 1.8rem; top: ${0 + i * 70}px; left: ${0 + i * 200}px; box-shadow: 0 0.1rem 0.75rem 0.25rem rgba(0, 0, 0, 0.05);`">
-                                            <img :src="image" class="mh-400px mw-100" style="border-radius: 1.8rem;" />
+                                            <img :src="image" @click="togleModal(image)" class="mh-400px mw-100" style="border-radius: 1.8rem;" />
                                         </div>
                                     </template>
 
                                     <template v-else>
                                         <div v-if="step.images.length" v-for="image in step.images" class=""
                                             :style="`border-radius: 1.8rem; box-shadow: 0 0.1rem 0.75rem 0.25rem rgba(0, 0, 0, 0.05);`">
-                                            <img :src="image" class="mh-500px mw-100" style="border-radius: 1.8rem;" />
+                                            <img :src="image" @click="togleModal(image)" class="mh-500px mw-100" style="border-radius: 1.8rem;" />
                                         </div>
                                     </template>
 
@@ -69,4 +80,5 @@ const props = defineProps({
         </div>
 
     </div>
+    <UiModalWindow v-if="modalState.show" :imgSrc="modalState.imgSrc" @closeModal="togleModal" />
 </template>
