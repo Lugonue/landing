@@ -52,7 +52,7 @@
           </div>
         </div>
       </div>
-      <div class="row justify-content-between mb-20 flex-wrap-reverse">
+      <div class="row justify-content-between mb-20 flex-wrap-reverse my-5">
         <div class="col-xs-12 col-md-6 col-sm-12">
           <div class="">
             <h3 class="display-6 px-sm-5">

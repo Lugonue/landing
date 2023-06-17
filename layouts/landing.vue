@@ -27,7 +27,7 @@
 	filter: blur(1rem);
 }
 
-/* #app {
+#app {
 	font-family: 'Poppins', 'Arial', serif;
-} */
+}
 </style>

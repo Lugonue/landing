@@ -20,8 +20,10 @@
 </template>
 
 <script setup>
+
 const desctopVersion = ref(true);
-onMounted(() => {
+
+onBeforeMount(() => {
   desctopVersion.value = window.innerWidth > 1000;
   window.addEventListener('resize', () => desctopVersion.value = window.innerWidth > 1000)
 })
