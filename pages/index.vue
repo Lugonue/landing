@@ -3,8 +3,8 @@
     <div class="mb-0" id="home">
       <div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom">
         <RegionsHeader />
-        <BlocksStaticSlide v-if="desctopVersion" />
-        <BlocksSliderMobileVersion v-else />
+        <BlocksStaticSlide />
+        <BlocksSliderMobileVersion /> 
       </div>
     </div>
     <BlocksUniqueTradeOffer />
@@ -20,13 +20,6 @@
 </template>
 
 <script setup>
-
-const desctopVersion = ref(true);
-
-onBeforeMount(() => {
-  desctopVersion.value = window.innerWidth > 1000;
-  window.addEventListener('resize', () => desctopVersion.value = window.innerWidth > 1000)
-})
 
 definePageMeta({
   title: 'FreeEco | Экологическая фриланс-биржа',
