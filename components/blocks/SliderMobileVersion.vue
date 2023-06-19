@@ -17,8 +17,8 @@
             </div>
 
             <div class="d-flex justify-content-end align-items-center flex-column">
-                <div class="d-flex rounded bg-white w-75 p-3 my-2 shadow-sm" v-for="chat in chatsManager"
-                    style="height: 120px;" :key="chat.id">
+                <div class="d-flex rounded bg-white align-items-center w-75 p-1 my-2 shadow-sm" v-for="chat in chatsManager"
+                    :key="chat.id">
                     <div class="avatar me-3">
                         <img style="height: 60px; border-radius: 50%;" src='/media/avatars/45646546.png' alt="User Avatar">
                     </div>
@@ -40,8 +40,8 @@
                 <img style="" src="/media/mobile/customerTitile.png" alt="">
             </div>
 
-            <div v-for="chat in chatsCustomer" class="d-flex rounded bg-white w-100 p-2 m-2 shadow-sm"
-                style="height: 120px;" :key="chat.id">
+            <div v-for="chat in chatsCustomer" class="d-flex rounded bg-white w-100 p-2 m-2 shadow-sm align-items-center"
+                :key="chat.id">
                 <div class="avatar  me-3">
                     <img style="height: 60px; border-radius: 50%;" src='/media/avatars/chat-face.jpg' alt="User Avatar">
                 </div>
@@ -55,12 +55,12 @@
             </div>
 
         </div>
-        <div class="d-flex h-50 mt-6 pe-5 ms-20 flex-column justify-content-center">
+        <div class="d-flex h-50 mt-6 pe-5 pb-10 ms-20 flex-column justify-content-center">
             <div class="d-flex justify-content-center mb-2">
                 <img style="" src="media/mobile/execTitile.png" alt="">
             </div>
 
-            <div v-for="chat in chatsExec" class="d-flex rounded bg-white w-100 p-2 m-2 shadow-sm" style="height: 120px;"
+            <div v-for="chat in chatsExec" class="d-flex rounded bg-white w-100 p-2 m-2 shadow-sm align-items-center" style="height: 120px;"
                 :key="chat.id">
                 <div class="avatar me-3">
                     <img style="height: 60px; border-radius: 50%;" src='/media/avatars/chat-face-2.png' alt="User Avatar">
@@ -103,30 +103,30 @@ const chatsManager = [
     },
     {
         id: 2,
-        body: 'На freeeco зарегистрированы инженеры-экологи, которые решают задачи компаний.',
+        body: 'На FREEECO зарегистрированы инженеры-экологи, которые решают задачи компаний',
     },
     {
         id: 3,
-        body: 'Войдите в веб-сервис и оформите заказ. Мы проведём анализ, составим договор, назначим специалиста и он приступит к работе.',
+        body: 'Войдите в веб-сервис и оформите заказ. Мы проведём анализ, составим договор, назначим специалиста и он приступит к работе',
     },
     {
         id: 4,
-        body: 'А если вы исполнитель, то войдите в веб-сервис, заполните профиль и ожидайте новых заказов.',
+        body: 'А если вы исполнитель, то войдите в веб-сервис, заполните профиль и ожидайте новых заказов',
     }
 ]
 
 const chatsCustomer = [
     {
         id: 1,
-        body: 'Все риски на компании FREECO. Выполнение специалистом работы лежит их области ответственности'
+        body: 'Все риски принимает на себя компания FREECO. Выполнение специалистом работы лежит в их области ответственности'
     },
     {
         id: 2,
-        body: 'Полный анализ деятельности от спецов, менеджер на связи 24/7. В личном кабинете можно следить за этапами'
+        body: 'В личном кабинете можно следить за этапами прохождения проекта'
     },
     {
         id: 3,
-        body: 'Плюс работа по договору Автоматическое оповещение этапов на почту и назначение исполнителя за сутки'
+        body: 'Работа по договору и назначение исполнителя за сутки'
     }
 ]
 
@@ -141,7 +141,7 @@ const chatsExec = [
     },
     {
         id: 3,
-        body: 'Минимум рисков, так как платит Freeco. Легко сосредоточиться на проектах и не отвлекаться на общение с клиентом'
+        body: 'Минимум рисков, так как платит FREEECO. Легко сосредоточиться на проектах и не отвлекаться на общение с клиентом'
     }
 ]
 
@@ -154,7 +154,7 @@ const chatsExec = [
 
  .custom_bg1 {
      background:
-         linear-gradient(-45deg, rgb(255, 255, 255) 50%, rgb(209, 121, 206)50%);
+         linear-gradient(-45deg, rgb(207, 212, 212, 0.5) 50%, rgb(209, 121, 206)50%);
 
  }
 
@@ -219,6 +219,6 @@ const chatsExec = [
  }
 
  p {
-     font-size: calc(12px + 8 * (100vw - 320px) / 880) !important;
+     font-size: calc(11px + 8 * (100vw - 320px) / 880) !important;
  }
 </style>
