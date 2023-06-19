@@ -1,14 +1,14 @@
 <template >
-    <div class="custom_bg d-lg-none" style="height: 100vh;">
+    <div class="custom_bg d-lg-none">
 
-        <div class="d-flex w-100 h-100 justify-content-between align-items-center flex-column pb-10 position-absolute"
+        <div class="d-flex w-100 h-100 justify-content-between align-items-center flex-column pb-10 overflow-auto"
             style="z-index: 3;">
 
             <div class="d-flex align-items-center justify-content-center" style="margin-top: 100px;">
                 <img src="/media/mobile/mobile-title.png" alt="">
             </div>
 
-            <div class="d-flex w-50 h-25 position-relative fw-bolder">
+            <div class="d-flex w-50 position-relative fw-bolder" style="min-height: 100px;">
                 <span class="items">ООС</span>
                 <span class="items">НДВ</span>
                 <span class="items">СЗЗ</span>
@@ -37,8 +37,8 @@
 
         </div>
     </div>
-    <div class="custom_bg1 d-lg-none" style="height: 100vh;">
-        <div class="d-flex  w-75 h-50 flex-column justify-content-center">
+    <div class="custom_bg1 d-lg-none">
+        <div class="d-flex h-50 flex-column justify-content-center overflow-auto pe-20">
             <div class="d-flex justify-content-center">
                 <img style="" src="/media/mobile/customerTitile.png" alt="">
             </div>
@@ -61,7 +61,7 @@
             </div>
 
         </div>
-        <div class="d-flex h-50 mt-6 pe-5 ms-20 flex-column justify-content-center">
+        <div class="d-flex h-50 mt-6 pe-5 ms-20 flex-column justify-content-center overflow-auto">
             <div class="d-flex justify-content-center mb-2">
                 <img style="" src="media/mobile/execTitile.png" alt="">
             </div>
@@ -155,7 +155,8 @@ const chatsExec = [
 ]
 
 </script>
-<style scoped>  .custom_bg {
+<style scoped> 
+ .custom_bg {
       position: relative;
       background:
           linear-gradient(45deg, rgb(209, 121, 206) 50%, #ffffff 50%);
@@ -180,12 +181,12 @@ const chatsExec = [
       background-size: 40%;
       background-position: top 20% right 0%;
       background-repeat: no-repeat;
-      z-index: 1;
+      z-index: -1;
   }
 
   .items {
       position: absolute;
-      z-index: -1;
+      z-index: 0;
       font-size: 2rem;
       color: #ffffff;
       border-radius: 10px;
