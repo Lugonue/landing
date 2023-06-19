@@ -17,11 +17,15 @@
             </div>
 
             <div class="d-flex justify-content-end align-items-center flex-column">
-                <div class="d-flex rounded bg-white w-75 p-3 my-2 shadow-sm" v-for="chat in chatsManager" :key="chat.id">
+                <div 
+                class="d-flex rounded bg-white w-75 p-3 my-2 shadow-sm"
+                v-for="chat in chatsManager" 
+                style="height: 120px;"
+                :key="chat.id">
                     <div class="avatar me-3">
                         <img style="width: 100px; border-radius: 50%;" src='/media/avatars/45646546.png' alt="User Avatar">
                     </div>
-                    <div class="">
+                    <div class="overflow-auto">
                         <h6 class="fs-5 mb-1">{{ chatTitle.manager.name }} <span class="text-gray-600">{{
                             chatTitle.manager.title
                         }}</span>
@@ -34,7 +38,7 @@
         </div>
     </div>
     <div class="custom_bg1 d-lg-none" style="height: 100vh;">
-        <div class="d-flex  w-75 h-50 pe-20 flex-column justify-content-center">
+        <div class="d-flex  w-75 h-50 flex-column justify-content-center">
             <div class="d-flex justify-content-center">
                 <img style="" src="/media/mobile/customerTitile.png" alt="">
             </div>
@@ -42,11 +46,12 @@
             <div 
             v-for="chat in chatsCustomer"
             class="d-flex rounded bg-white w-100 p-2 m-2 shadow-sm" 
+            style="height: 120px;"
             :key="chat.id">
                 <div class="avatar  me-3">
                     <img style="width: 100px; border-radius: 50%;" src='/media/avatars/chat-face.jpg' alt="User Avatar">
                 </div>
-                <div class="">
+                <div class="overflow-auto">
                     <h6 class="fs-5 mb-1">{{ chatTitle.customer.name }} <span class="text-gray-600">{{
                         chatTitle.customer.title
                     }}</span>
@@ -56,7 +61,7 @@
             </div>
 
         </div>
-        <div class="d-flex h-50 ps-20 pe-5 ms-20 flex-column justify-content-center">
+        <div class="d-flex h-50 mt-6 pe-5 ms-20 flex-column justify-content-center">
             <div class="d-flex justify-content-center mb-2">
                 <img style="" src="media/mobile/execTitile.png" alt="">
             </div>
@@ -64,6 +69,7 @@
             <div 
             v-for="chat in chatsExec"
             class="d-flex rounded bg-white w-100 p-2 m-2 shadow-sm" 
+            style="height: 120px;"
             :key="chat.id">
                 <div class="avatar  me-3">
                     <img style="width: 100px; border-radius: 50%;" src='/media/avatars/chat-face-2.png' alt="User Avatar">
@@ -179,6 +185,7 @@ const chatsExec = [
 
   .items {
       position: absolute;
+      z-index: -1;
       font-size: 2rem;
       color: #ffffff;
       border-radius: 10px;
