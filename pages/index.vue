@@ -10,7 +10,7 @@
     <BlocksUniqueTradeOffer />
     <BlocksWorks />
     <!-- <BlocksProjects /> -->
-    <BlocksWorkScheme @isDesctop="desctopVersion" />
+    <BlocksWorkScheme />
     <BlocksTopFreelancers />
     <BlocksTeamBlock />
     <BlocksPartners />
