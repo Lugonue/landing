@@ -65,10 +65,10 @@ const actionMenu = [
         <div class="d-flex align-items-center flex-equal">
           <!--begin::Mobile menu toggle-->
           <div class="dropdown">
-            <button class="btn btn-icon btn-active-color-primary me-3 d-flex d-lg-none dropdown-toggle" type="button"
+            <button class="btn btn-icon btn-active-color-primary me-3 d-flex d-lg-none" type="button"
               id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
               <span class="svg-icon svg-icon-2hx">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" fill="none">
                   <path d="M21 7H3C2.4 7 2 6.6 2 6V4C2 3.4 2.4 3 3 3H21C21.6 3 22 3.4 22 4V6C22 6.6 21.6 7 21 7Z"
                     fill="black"></path>
                   <path opacity="0.3"

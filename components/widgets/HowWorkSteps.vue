@@ -17,9 +17,14 @@ const togleModal = (imgSrc) => {
 }
 
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .teq {
     color: red;
+}
+
+img:hover {
+    cursor: pointer;
+    border: 2px solid rgb(215, 215, 215);
 }
 </style>
 <template>

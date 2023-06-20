@@ -18,7 +18,7 @@ const props = defineProps({
 
 </script>
 <style scoped>
-.modal-container{
+.modal-container {
     z-index: 3;
     display: flex;
     justify-content: center;
@@ -29,15 +29,20 @@ const props = defineProps({
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    
+
 }
 
 .modal-frame {
     margin-top: 100px;
     max-height: 80%;
-    overflow: auto;
+    height: auto;
+    overflow: hidden;
     position: relative;
     background-color: white;
     border-radius: 20px;
+}
+
+img {
+    max-height: 100%;
 }
 </style>
