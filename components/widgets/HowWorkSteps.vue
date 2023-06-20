@@ -16,6 +16,14 @@ const togleModal = (imgSrc) => {
   modalState.value.imgSrc = imgSrc ?? ""
 }
 
+onUpdated(() => {
+    if (modalState.value.show) {
+        document.body.classList.add('overflow-hidden')
+    } else {
+        document.body.classList.remove('overflow-hidden')
+    }
+})
+
 </script>
 <style lang="scss" scoped>
 .teq {
