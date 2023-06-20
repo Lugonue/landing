@@ -57,7 +57,7 @@
         </div>
         <div class="d-flex h-50 mt-6 pe-5 pb-10 ms-20 flex-column justify-content-center">
             <div class="d-flex justify-content-center mb-2">
-                <img style="" src="media/mobile/execTitile.png" alt="">
+                <img style="" src="/media/mobile/execTitile.png" alt="">
             </div>
 
             <div v-for="chat in chatsExec" class="d-flex rounded bg-white w-100 p-2 m-2 shadow-sm align-items-center" style="height: 120px;"

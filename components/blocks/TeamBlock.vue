@@ -83,8 +83,4 @@ const statWorkers = [
   background-color: #1bc50f;
 
 }
-
-.custom {
-  /* border-radius: 150px 0; */
-}
 </style>

@@ -7,7 +7,7 @@
       <template v-if="statusSlide.length === 0">
         <RegionsChats />
       </template>
-      
+
       <!-- Start left Slide -->
       <div class="split left">
         <i class="fa-solid fa-chevron-right d-none opacity-0" id="fa-chevron-right"></i>
@@ -27,9 +27,9 @@
         </template>
 
         <!-- left slide benefitials -->
-          <div class="w-100 h-100"  v-if="statusSlide === 'fullLeft'">
-            <RegionsBeneficialsLeftSlide />
-          </div>
+        <div class="w-100 h-100" v-if="statusSlide === 'fullLeft'">
+          <RegionsBeneficialsLeftSlide />
+        </div>
       </div>
 
       <!-- Start rigth slide -->
