@@ -35,6 +35,7 @@ const props = defineProps({
 .modal-frame {
     margin-top: 100px;
     max-height: 80%;
+    max-width: 80%;
     height: auto;
     overflow: hidden;
     position: relative;
@@ -44,5 +45,6 @@ const props = defineProps({
 
 img {
     max-height: 100%;
+    max-width: 100%;
 }
 </style>

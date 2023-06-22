@@ -7,13 +7,13 @@ const props = defineProps({
 })
 
 const modalState = ref({ // состояние модального окна для просмотра скринов инструкций
-  show: false,
-  imgSrc: "",
+    show: false,
+    imgSrc: "",
 })
 
 const togleModal = (imgSrc) => {
-  modalState.value.show = !modalState.value.show
-  modalState.value.imgSrc = imgSrc ?? ""
+    modalState.value.show = !modalState.value.show
+    modalState.value.imgSrc = imgSrc ?? ""
 }
 
 onUpdated(() => {
@@ -36,7 +36,7 @@ img:hover {
 }
 </style>
 <template>
-    <div class="pb-20">
+    <div class="pb-md-20">
 
         <div class="nav nav-pills" role="tablist" aria-orientation="vertical">
             <a v-for="step in steps"
@@ -64,22 +64,25 @@ img:hover {
                             </div>
                         </div>
 
-                        <div class="col-12 col-xl-7 col-xxl-6 d-none d-md-block mt-md-20 mt-xl-0">
+                        <div class="col-12 col-xl-6 col-xxl-5 d-md-block mt-20 mt-xl-0">
                             <div class="min-h-400px pb-10">
 
                                 <div class="position-relative">
 
                                     <template v-if="step.images.length > 1">
                                         <div v-for="(image, i) in step.images" class="position-absolute"
-                                            :style="`border-radius: 1.8rem; top: ${0 + i * 70}px; left: ${0 + i * 200}px; box-shadow: 0 0.1rem 0.75rem 0.25rem rgba(0, 0, 0, 0.05);`">
-                                            <img :src="image" @click="togleModal(image)" class="mh-400px mw-100" style="border-radius: 1.8rem;" />
+                                            :style="`border-radius: 1.8rem; top: ${0 + i * 70}px; left: ${0 + i * 100}px; box-shadow: 0 0.1rem 0.75rem 0.25rem rgba(0, 0, 0, 0.05);`">
+                                            <img :src="image" @click="togleModal(image)" class="mh-400px mw-100"
+                                                style="border-radius: 1.8rem;" />
                                         </div>
                                     </template>
 
                                     <template v-else>
-                                        <div v-if="step.images.length" v-for="image in step.images" class=""
+                                        <div v-if="step.images.length" v-for="image in step.images"
+                                            class="position-absolute"
                                             :style="`border-radius: 1.8rem; box-shadow: 0 0.1rem 0.75rem 0.25rem rgba(0, 0, 0, 0.05);`">
-                                            <img :src="image" @click="togleModal(image)" class="mh-500px mw-100" style="border-radius: 1.8rem;" />
+                                            <img :src="image" @click="togleModal(image)" class="mh-450px mw-100"
+                                                style="border-radius: 1.8rem;" />
                                         </div>
                                     </template>
 

@@ -8,8 +8,8 @@ const executorSteps = [
             'Далее заполните форму, выберете свою роль и нажмите продолжить.'
         ],
         images: [
-            '/media/how-it-works/customer/login.png',
-            '/media/how-it-works/customer/registration.png',
+            '/media/how-it-works/login.png',
+            '/media/how-it-works/registration.png',
         ]
     },
     {
@@ -19,7 +19,7 @@ const executorSteps = [
             'Перейдите в раздел «основная информация» и заполните данные о типах работ, городе выполнения, выберете способ получения уведомлений о новых заказах и т.д.',
         ],
         images: [
-
+            '/media/how-it-works/executor/qualification.png',
         ]
     },
     {
@@ -29,7 +29,7 @@ const executorSteps = [
             'Администратор свяжется с вами удобным способом для подтверждения всех занесенных данных и верификации аккаунта.',
         ],
         images: [
-
+            '/media/how-it-works/executor/verif.webp',
         ]
     },
     {
@@ -41,7 +41,8 @@ const executorSteps = [
             'Больше информации можно будет получить от менеджера и уже с ним оформить итоговое решение.'
         ],
         images: [
-
+            '/media/how-it-works/executor/search_executor.png',
+            '/media/how-it-works/executor/order_assigned.png',
         ]
     },
     {
@@ -49,11 +50,11 @@ const executorSteps = [
         title: 'Подбор исполнителя',
         description: [
             'Мы прикрепляем к проекту нашего менеджера. Все вопросы необходимо задавать ему.',
-            'Посмотреть его контакты можно внутри заказа «контакты менеджера», но он и так с вами свяжется.',
+            'Посмотреть его контакты можно внутри заказа, нажав на иконку менеджера, но он и так с вами свяжется.',
             'При принятии заказа несколькими исполнителями, менеджером будет выбран релевантный участник по итогу диалогов.',
         ],
         images: [
-
+            '/media/how-it-works/executor/manager.png',
         ]
     },
     {
@@ -65,17 +66,18 @@ const executorSteps = [
             'При выполнении работы меняйте этапность проекта. Она автоматически уведомит заказчика, а также менеджера о переходе на следующую ступень. Поменять этап можно внутри заказа кнопкой «сменить этап».',
         ],
         images: [
-
+            '/media/how-it-works/executor/stages.png',
         ]
     },
     {
         id: 7,
         title: 'Передача работы',
         description: [
-            'При согласовании работы со всеми участниками, менеджер закрывает заказ и он попадает в раздел "выполненные".',
+            'При согласовании работы со всеми участниками, менеджер закрывает заказ и он попадает в раздел "Мои заказы/Завершённые".',
         ],
         images: [
-
+            '/media/how-it-works/executor/order_agreement.png',
+            '/media/how-it-works/executor/orders_completed.png',
         ]
     },
     {
@@ -85,7 +87,8 @@ const executorSteps = [
             'По итогу выполненных работ назначается рейтинг заказчиком и менеджером, который в дальнейшем влияет на решения для исполнения.',
         ],
         images: [
-
+            '/media/how-it-works/executor/profile_rating.png',
+            '/media/how-it-works/executor/ratings.png',
         ]
     },
 

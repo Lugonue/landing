@@ -8,8 +8,8 @@ const customerSteps = [
             'Далее заполните форму, выберете свою роль и нажмите продолжить.'
         ],
         images: [
-            '/media/how-it-works/customer/login.png',
-            '/media/how-it-works/customer/registration.png',
+            '/media/how-it-works/login.png',
+            '/media/how-it-works/registration.png',
         ]
     },
     {
@@ -20,8 +20,8 @@ const customerSteps = [
             'Каждую работу необходимо заносить как отдельный заказ.',
         ],
         images: [
-            '/media/how-it-works/customer/create_order_2.png',
-            '/media/how-it-works/customer/create_order_form_2.png',
+            '/media/how-it-works/customer/create_order.png',
+            '/media/how-it-works/customer/create_order_form.png',
         ]
     },
     {
@@ -54,7 +54,8 @@ const customerSteps = [
             'Весь контакт у Вас будет происходить именно с ним.'
         ],
         images: [
-            '/media/how-it-works/customer/manager.png'
+            '/media/how-it-works/customer/manager.png',
+            '/media/how-it-works/customer/manager2.png'
         ]
     },
     {
@@ -65,7 +66,7 @@ const customerSteps = [
         ],
         images: [
             '/media/how-it-works/customer/waiting_executors.png',
-            '/media/how-it-works/customer/mail2.png'
+            '/media/how-it-works/customer/mail.png'
         ]
     },
     {
@@ -76,7 +77,7 @@ const customerSteps = [
             'Посмотреть на какой стадии находится проект, вы сможете в личном кабинете.'
         ],
         images: [
-            '/media/how-it-works/customer/process_order2.png',
+            '/media/how-it-works/customer/process_order.png',
         ]
     },
     {
