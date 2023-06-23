@@ -1,5 +1,5 @@
 <template>
-  <div id="box" class="d-none d-lg-block">
+  <div id="slider" class="d-none d-lg-block">
     <span id="start"></span>
     <div :class="'main ' + statusSlide" id="main">
       <!-- chats start  -->

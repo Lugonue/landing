@@ -23,5 +23,6 @@ const props = defineProps({
             </span>
         </div>
     </NuxtLink>
-    <!--end::Logo image-->
+    <!--end::Logo-->
+    
 </template>

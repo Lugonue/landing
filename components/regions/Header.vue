@@ -45,7 +45,9 @@ const actionMenu = [
   },
 ]
 
-
+// onMounted(() => {
+//   let ordinataCounter = ref(window.scrollY);
+// })
 
 </script>
 <template>
@@ -78,18 +80,17 @@ const actionMenu = [
               </span>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <NuxtLink v-for="item in landingMenu" 
-              class="dropdown-item fs-2 p-4"
-              @click="scrollTo(item.link)"
-              :to="item.link" :key="item.id">{{ item.title }}</Nuxtlink>
-              <NuxtLink v-for ="item in actionMenu"
-               class="dropdown-item fs-2 p-4" 
-              :to="item.link" 
-              :key="item.id">{{ item.title }}</NuxtLink>
+              <NuxtLink v-for="item in landingMenu" class="dropdown-item fs-2 p-4" @click="scrollTo(item.link)"
+                :to="item.link" :key="item.id">{{ item.title }}</Nuxtlink>
+              <NuxtLink v-for="item in actionMenu" class="dropdown-item fs-2 p-4" :to="item.link" :key="item.id">{{
+                item.title }}</NuxtLink>
             </ul>
           </div>
           <!--end::Mobile menu toggle-->
-          <WidgetsLogo />
+          <WidgetsLogo @click="scrollTo('#slider')" />
+          <!-- begin::text-header -->
+          <WidgetsTextHeader />
+          <!-- end::text-header -->
         </div>
         <!--end::Logo-->
         <div class="d-lg-block" id="kt_landing_menu_toggle">
@@ -142,4 +143,9 @@ const actionMenu = [
     </div>
     <!--end::Container-->
   </div>
+  
+  <!-- <div class="position-fixed bottom-0 end-0 z-index-5">
+    
+    <WidgetsScrollTop @click="scrollTo('#slider')" v-if="ordinataCounter > 100" />    // доделать появление после прокрутки
+  </div> -->
 </template>
