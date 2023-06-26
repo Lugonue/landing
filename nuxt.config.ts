@@ -91,6 +91,7 @@ export default defineNuxtConfig({
         public: {
             apiSecret: process.env.API_SECRET || '123456789',
             apiURL: (process.env.NODE_ENV == 'development' ? process.env.API_URL_DEV : process.env.API_URL) || '/api/',
+            google_analytics_id: 'G-RL73XDVP6V',
         }
     },
 
