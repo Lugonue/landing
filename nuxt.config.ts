@@ -51,8 +51,13 @@ export default defineNuxtConfig({
                 useCDN: false,
                 consoleLog: false,
             }
-        ]
+        ],
+        'nuxt-gtag'
     ],
+
+    gtag: {
+        id: 'G-RL73XDVP6V'
+    },
 
     plugins: [
         { src: '~/plugins/helpers/index.ts' },
