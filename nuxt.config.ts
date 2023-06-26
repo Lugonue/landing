@@ -56,7 +56,8 @@ export default defineNuxtConfig({
     ],
 
     gtag: {
-        id: 'G-RL73XDVP6V'
+        id: 'G-5Z0ZCWZJLS' //dev
+        // id: 'G-V9MW2FE2LP'  // prod 
     },
 
     plugins: [
