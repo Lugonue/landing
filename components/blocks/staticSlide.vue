@@ -109,7 +109,7 @@ const startCondition = () => statusSlide.value = '';
 
 .split.right {
   right: 0;
-  background-image: radial-gradient(to left, #DAD9D9, #F4F4F4);
+  background-image: radial-gradient(#DAD9D9, #F4F4F4);
   transition: 1s;
 }
 

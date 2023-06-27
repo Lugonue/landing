@@ -1,7 +1,7 @@
 <template>
 	<div class="d-flex flex-column flex-root bg-white" id="app">
 		<slot />
-		<WidgetsScrollTop />
+		<!-- <WidgetsScrollTop /> -->
 	</div>
 </template>
 

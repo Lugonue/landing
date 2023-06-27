@@ -51,8 +51,9 @@ const actionMenu = [
 
 </script>
 <template>
-  <div class="landing-header" data-kt-sticky="true" data-kt-sticky-name="landing-header"
+  <div class="landing-header " data-kt-sticky="true" data-kt-sticky-name="landing-header"
     data-kt-sticky-offset="{default: '200px', lg: '300px'}" style="
+      height: 100px;
       animation-duration: 2.3s;
       position: absolute;
       top: 0;
@@ -64,7 +65,7 @@ const actionMenu = [
       <!--begin::Wrapper-->
       <div class="d-flex align-items-center justify-content-between fc-white">
         <!--begin::Logo-->
-        <div class="d-flex align-items-center flex-equal">
+        <div class="d-flex align-items-center flex-equal flex-wrap">
           <!--begin::Mobile menu toggle-->
           <div class="dropdown">
             <button class="btn btn-icon btn-active-color-primary me-3 d-flex d-lg-none" type="button"
@@ -87,7 +88,7 @@ const actionMenu = [
             </ul>
           </div>
           <!--end::Mobile menu toggle-->
-          <WidgetsLogo @click="scrollTo('#slider')" />
+          <WidgetsLogo @click="scrollTo('#slider')" class="mb-2" />
           <!-- begin::text-header -->
           <WidgetsTextHeader />
           <!-- end::text-header -->
@@ -106,7 +107,7 @@ const actionMenu = [
               <!--begin::Menu item-->
               <div class="menu-item" v-for="item in landingMenu" :key="item.id">
                 <!--begin::Menu link-->
-                <a class="menu-link nav-link py-3 px-4 px-xxl-6 fw-bolder" data-kt-scroll-toggle="true"
+                <a class="menu-link nav-link py-3 px-4 px-md-1 px-lg-1 px-xl-2 px-xxl-4 fw-bolder fs-md-6" data-kt-scroll-toggle="true"
                   data-kt-drawer-dismiss="true" @click="scrollTo(item.link)">{{ item.title }}</a>
                 <!--end::Menu link-->
               </div>
@@ -128,7 +129,7 @@ const actionMenu = [
 
               <div class="menu-item ms-2" v-for="item in actionMenu" :key="item.id">
                 <NuxtLink
-                  :class="`menu-link nav-link ${item.emphasize ? 'btn btn-outline btn-outline-dashed btn-outline-dark btn-active-light-dark' : 'py-3 px-4 px-xxl-6 '} fw-bolder`"
+                  :class="`menu-link nav-link ${item.emphasize ? 'btn btn-outline btn-outline-dashed btn-outline-dark btn-active-light-dark' : 'py-3 px-4 px-xxl-6 '} fw-bolder fs-md-6`"
                   :to="item.link" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true" :target="item.target">
                   {{ item.title }}
                 </NuxtLink>
