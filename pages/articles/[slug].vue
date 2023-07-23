@@ -43,7 +43,7 @@ const imageURL = storageURL + data.value.data.media[0].original_url;
           <!--SVG file not found: icons/duotune/finance/fin006.svgFolder.svg-->
           <!--end::Icon-->
           <!--begin::Label-->
-          <span class="fw-bolder text-gray-400">Announcements</span>
+          <span class="fw-bolder text-gray-400">Статья</span>
           <!--begin::Label-->
         </div>
         <!--end::Item-->
@@ -64,7 +64,7 @@ const imageURL = storageURL + data.value.data.media[0].original_url;
           <!--end::Svg Icon-->
           <!--end::Icon-->
           <!--begin::Label-->
-          <span class="fw-bolder text-gray-400">24 Comments</span>
+          <span class="fw-bolder text-gray-400">Comments</span>
           <!--end::Label-->
         </div>
         <!--end::Item-->
@@ -82,8 +82,8 @@ const imageURL = storageURL + data.value.data.media[0].original_url;
         <!--end::Image-->
         <!--begin::Links-->
         <div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-          <a href="https://free-eco.ru/#about-us" class="btn btn-primary">About Us</a>
-          <a href="https://service.free-eco.ru/" class="btn btn-light-primary ms-3">Join Us</a>
+          <a href="https://free-eco.ru/#about-us" class="btn btn-info">О нас</a>
+          <a href="https://service.free-eco.ru/" class="btn btn-light-info ms-3">Присоединиться</a>
         </div>
         <!--end::Links-->
       </div>
@@ -91,12 +91,12 @@ const imageURL = storageURL + data.value.data.media[0].original_url;
     </div>
     <!--end::Wrapper-->
     <!--begin::Description-->
-    <div class="fs-5 fw-bold text-gray-700">
+    <div class="fs-5 fw-bold text-gray-700 mb-10">
       <!--begin::Text-->
 
       <!-- <UiEditorJS body="data.data.body" />  не работает, нужен перезапуск контейнера-->
 
-      <div class="mb-3" v-for="block in data.data.body.blocks" :key="block.id">
+      <div class="mb-4" v-for="block in data.data.body.blocks" :key="block.id">
         <p  v-if="block.type === 'paragraph'"><span v-html="block.data.text"></span></p>
         <h2 v-if="block.type === 'header'" >{{ block.data.text }}</h2>
         <ul v-if="block.type === 'list'" >
@@ -121,8 +121,7 @@ const imageURL = storageURL + data.value.data.media[0].original_url;
         <!--end::Avatar-->
         <!--begin::Info-->
         <div class="mb-0">
-          <a href="../../demo3/dist/pages/profile/overview.html" class="text-gray-700 fw-bolder text-hover-primary">Jane
-            Johnson</a>
+          <a href="../../demo3/dist/pages/profile/overview.html" class="text-gray-700 fw-bolder text-hover-info">Autor</a>
           <span class="text-gray-400 fs-7 fw-bold d-block mt-1">Co-founder</span>
         </div>
         <!--end::Info-->
@@ -130,10 +129,8 @@ const imageURL = storageURL + data.value.data.media[0].original_url;
       <!--end::Section-->
       <!--begin::Text-->
       <div class="mb-0 fs-6">
-        <div class="text-muted fw-bold lh-lg mb-2">First, a disclaimer – the entire process of writing a blog post often
-          takes more than a couple of hours, even if you can type eighty words per minute and your writing skills are
-          sharp writing a blog post often takes more than a couple.</div>
-        <a href="../../demo3/dist/pages/profile/overview.html" class="fw-bold link-primary">Author’s Profile</a>
+        <div class="text-muted fw-bold lh-lg mb-2">description</div>
+        <a href="../../demo3/dist/pages/profile/overview.html" class="fw-bold link-primary">Профиль автора на FreeEco</a>
       </div>
       <!--end::Text-->
     </div>
@@ -157,5 +154,7 @@ const imageURL = storageURL + data.value.data.media[0].original_url;
       <!--end::Icon-->
     </div>
   </div>
-
+  <pre>
+    {{ data }}
+  </pre>
 </template>
