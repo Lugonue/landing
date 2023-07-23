@@ -16,6 +16,10 @@ const statWorkers = [
   {
     title: 'Разработчиков',
     count: '5',
+  },
+  {
+    title: 'Юристов',
+    count: '1',
   }
 ]
 
