@@ -1,8 +1,7 @@
 
 
-
 export const useQuery = async (request: string, method = 'GET', opts?: any) => {
-  const config = useRuntimeConfig()
+    const config = useRuntimeConfig()
 
   return await useFetch(request, {
     baseURL: config.public.apiURL,
