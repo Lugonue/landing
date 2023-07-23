@@ -15,7 +15,8 @@ export default defineNuxtConfig({
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
                 { hid: 'description', name: 'description', content: 'Первая фриланс-биржа экологических проектов для бизнеса' },
                 { name: 'format-detection', content: 'telephone=no' },
-                { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+                { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+                { name: 'robots', content: process.env.NODE_ENV === 'development' ? 'noindex' : 'all' }
             ],
             link: [
                 { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -56,7 +57,7 @@ export default defineNuxtConfig({
     ],
 
     gtag: {
-        id: 'G-V9MW2FE2LP'  
+        id: 'G-V9MW2FE2LP'
     },
 
     plugins: [
@@ -96,6 +97,7 @@ export default defineNuxtConfig({
         public: {
             apiSecret: process.env.API_SECRET || '123456789',
             apiURL: (process.env.NODE_ENV == 'development' ? process.env.API_URL_DEV : process.env.API_URL) || '/api/',
+            storageURL: (process.env.NODE_ENV == 'development' ? process.env.STORAGE_URL_DEV : process.env.STORAGE_URL) || '/storage/',
             google_analytics_id: 'G-RL73XDVP6V',
         }
     },

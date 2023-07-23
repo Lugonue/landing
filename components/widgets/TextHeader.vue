@@ -16,7 +16,7 @@ onMounted(() => {
 <template>
     <!--begin::Logo image-->
     <NuxtLink to="https://service.free-eco.ru/">
-        <div :class="'rounded-pill ms-2 p-2 text-gray-800 fw-boldest pe-5 fs-md-2 fs-lg-6 ' + gradient">
+        <div :class="'rounded-pill ms-2 p-2 text-gray-800 d-none d-md-block fw-boldest pe-5 fs-md-2 fs-lg-6 ' + gradient">
             Первая фриланс-биржа экологических работ 
         </div>
     </NuxtLink>

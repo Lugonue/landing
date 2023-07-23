@@ -1,5 +1,5 @@
 <script setup>
-const { data: spheres, pending, error } = useFetch('https://api.free-eco.ru/api/v1/works/spheres');
+const { data: spheres, pending, error } = await useQuery(`works/spheres`);
 
 const isActive = (id) => id === 1;
 const isActiveWork = (id) => [1, 2, 3, 4, 16, 5, 10].includes(id);

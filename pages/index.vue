@@ -12,6 +12,7 @@
     <!-- <BlocksProjects /> -->
     <BlocksWorkScheme />
     <BlocksTopFreelancers />
+    <BlocksArticles />
     <BlocksTeamBlock />
     <BlocksPartners />
     <RegionsOffer />

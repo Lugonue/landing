@@ -7,7 +7,7 @@
         <div class="fs-2x fs-lg-3qx fw-bolder text-white mb-2">Проще один раз сделать</div>
         <!--end::Title-->
         <!--begin::Description-->
-        <div class="fs-6 fs-lg-5 text-white fw-bolder opacity-75">Freeco - лёгкий первый шаг к современному бизнесу</div>
+        <div class="fs-6 fs-lg-5 text-white fw-bolder opacity-75">FreeEco - лёгкий первый шаг к современному бизнесу</div>
         <!--end::Description-->
       </div>
       <!--end::Content-->
