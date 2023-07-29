@@ -1,19 +1,30 @@
 
 <script setup>
+
 const route = useRoute();
 const slug = route.params.slug
-const { data } = await useQuery('articles/'+ slug + '/show');
+const { data } = await useQuery('articles/' + slug + '/show');
 
 
 
 const config = useRuntimeConfig();
 const storageURL = config.public.storageURL;
 const imageURL = storageURL + data.value.data.media[0].original_url;
+
+console.log(data)
+
+definePageMeta({
+  title: 'FreeEco | Экологическая фриланс-биржа',
+  subTitle: '',
+  description: '',
+  layout: 'article',
+})
+
 </script>
 
 <template>
-<!--begin::Post content-->
-<div class="my-17 container-xxl">
+  <!--begin::Post content-->
+  <div class="my-17 mt-20 pt-10 container-xxl">
     <!--begin::Wrapper-->
     <div class="mb-8">
       <!--begin::Info-->
@@ -21,19 +32,10 @@ const imageURL = storageURL + data.value.data.media[0].original_url;
         <!--begin::Item-->
         <div class="me-9 my-1">
           <!--begin::Icon-->
-          <!--begin::Svg Icon | path: icons/duotune/general/gen025.svg-->
-          <span class="svg-icon svg-icon-primary svg-icon-2 me-1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <rect x="2" y="2" width="9" height="9" rx="2" fill="black"></rect>
-              <rect opacity="0.3" x="13" y="2" width="9" height="9" rx="2" fill="black"></rect>
-              <rect opacity="0.3" x="13" y="13" width="9" height="9" rx="2" fill="black"></rect>
-              <rect opacity="0.3" x="2" y="13" width="9" height="9" rx="2" fill="black"></rect>
-            </svg>
-          </span>
-          <!--end::Svg Icon-->
+          <img style=" height: 20px;" class="me-1" src="/media/icons/duotune/icons8-date-64.png" alt="">
           <!--end::Icon-->
           <!--begin::Label-->
-          <span class="fw-bolder text-gray-400">{{ data.data.published_at }}</span>
+          <span class="fw-bolder text-gray-400">{{ data.data.published_at.split(' ')[0] }}</span>
           <!--end::Label-->
         </div>
         <!--end::Item-->
@@ -42,37 +44,16 @@ const imageURL = storageURL + data.value.data.media[0].original_url;
           <!--begin::Icon-->
           <!--SVG file not found: icons/duotune/finance/fin006.svgFolder.svg-->
           <!--end::Icon-->
-          <!--begin::Label-->
-          <span class="fw-bolder text-gray-400">Статья</span>
-          <!--begin::Label-->
         </div>
         <!--end::Item-->
         <!--begin::Item-->
-        <div class="my-1">
-          <!--begin::Icon-->
-          <!--begin::Svg Icon | path: icons/duotune/communication/com003.svg-->
-          <span class="svg-icon svg-icon-primary svg-icon-2 me-1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path opacity="0.3"
-                d="M2 4V16C2 16.6 2.4 17 3 17H13L16.6 20.6C17.1 21.1 18 20.8 18 20V17H21C21.6 17 22 16.6 22 16V4C22 3.4 21.6 3 21 3H3C2.4 3 2 3.4 2 4Z"
-                fill="black"></path>
-              <path
-                d="M18 9H6C5.4 9 5 8.6 5 8C5 7.4 5.4 7 6 7H18C18.6 7 19 7.4 19 8C19 8.6 18.6 9 18 9ZM16 12C16 11.4 15.6 11 15 11H6C5.4 11 5 11.4 5 12C5 12.6 5.4 13 6 13H15C15.6 13 16 12.6 16 12Z"
-                fill="black"></path>
-            </svg>
-          </span>
-          <!--end::Svg Icon-->
-          <!--end::Icon-->
-          <!--begin::Label-->
-          <span class="fw-bolder text-gray-400">Comments</span>
-          <!--end::Label-->
-        </div>
         <!--end::Item-->
       </div>
       <!--end::Info-->
       <!--begin::Title-->
       <h1 class="text-dark text-hover-info fs-1 fw-bolder my-1"> {{ data.data.description }}
-        <span class="fw-bolder text-muted fs-5 ps-1">5 mins read</span></h1>
+        <span class="fw-bolder text-muted fs-5 ps-1">{{data.meta.read_time.speed.minutes }} мин </span>
+      </h1>
       <!--end::Title-->
       <!--begin::Container-->
       <div class="overlay mt-8">
@@ -93,49 +74,13 @@ const imageURL = storageURL + data.value.data.media[0].original_url;
     <!--begin::Description-->
     <div class="fs-5 fw-bold text-gray-700 mb-10">
       <!--begin::Text-->
-
-      <!-- <UiEditorJS body="data.data.body" />  не работает, нужен перезапуск контейнера-->
-
-      <div class="mb-4" v-for="block in data.data.body.blocks" :key="block.id">
-        <p  v-if="block.type === 'paragraph'"><span v-html="block.data.text"></span></p>
-        <h2 v-if="block.type === 'header'" >{{ block.data.text }}</h2>
-        <ul v-if="block.type === 'list'" >
-          <li class="ms-2 my-3" v-for="item in block.data.items">
-            <span v-html="item"></span>
-          </li>
-        </ul>
-      </div>
+      <UiEditorJS :body="data.data.body" />
 
       <!--end::Text-->
-      
+
     </div>
-    <!--end::Description-->
-    <!--begin::Block-->
-    <div class="d-flex align-items-center border-dashed card-rounded p-5 p-lg-10 mb-14">
-      <!--begin::Section-->
-      <div class="text-center flex-shrink-0 me-7 me-lg-13">
-        <!--begin::Avatar-->
-        <div class="symbol symbol-70px symbol-circle mb-2">
-          <img src="" class="" alt="">
-        </div>
-        <!--end::Avatar-->
-        <!--begin::Info-->
-        <div class="mb-0">
-          <a href="../../demo3/dist/pages/profile/overview.html" class="text-gray-700 fw-bolder text-hover-info">Autor</a>
-          <span class="text-gray-400 fs-7 fw-bold d-block mt-1">Co-founder</span>
-        </div>
-        <!--end::Info-->
-      </div>
-      <!--end::Section-->
-      <!--begin::Text-->
-      <div class="mb-0 fs-6">
-        <div class="text-muted fw-bold lh-lg mb-2">description</div>
-        <a href="../../demo3/dist/pages/profile/overview.html" class="fw-bold link-primary">Профиль автора на FreeEco</a>
-      </div>
-      <!--end::Text-->
-    </div>
-    <!--end::Block-->
-    <!--begin::Icons-->
+
+
     <div class="d-flex flex-center">
       <!--begin::Icon-->
       <a href="#" class="mx-4">
@@ -154,7 +99,4 @@ const imageURL = storageURL + data.value.data.media[0].original_url;
       <!--end::Icon-->
     </div>
   </div>
-  <pre>
-    {{ data }}
-  </pre>
 </template>

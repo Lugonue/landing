@@ -22,9 +22,7 @@ const textAlign = (tunes) => {
 </script>
 <template>
     <div v-if="body?.blocks?.length" class="pb-5">
-        !!!!!
         <template v-for="block in body.blocks">
-
             <div v-if="block.type == 'image'" class="border my-4">
                 <img class="d-flex img-fluid mx-auto p-3" :src="block.data.file.url" :alt="block.data.caption" />
                 <small v-if="block.data.caption" class="d-flex font-monospace text-muted justify-content-center">{{

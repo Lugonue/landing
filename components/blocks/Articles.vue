@@ -52,16 +52,13 @@ const storageURL = config.public.storageURL;
               <NuxtLink class=" fs-4 text-dark fw-bolder text-hover-info text-dark lh-base" :to="'/articles/' + article.slug">{{ article.title }}
               </NuxtLink>
               <!--end::Title-->
-              <!--begin::Text-->
-              <!-- <div class="fw-bold fs-5 text-gray-600 text-dark mt-3 mb-5">часть текста?</div> -->
-              <!--end::Text-->
               <!--begin::Content-->
               <div class="fs-6 fw-bolder mt-5">
                 <!--begin::Author-->
-                <a href="../../demo3/dist/apps/projects/users.html" class="text-gray-700 text-hover-primary">Autor</a>
+                <!-- <a href="../../demo3/dist/apps/projects/users.html" class="text-gray-700 text-hover-primary">Autor</a> -->
                 <!--end::Author-->
                 <!--begin::Date-->
-                <span class="ms-2 text-muted">{{ article.published_at }}</span>
+                <span class="ms-2 text-muted">{{ article.published_at.split(' ')[0] }}</span> 
                 <!--end::Date-->
               </div>
               <!--end::Content-->
@@ -72,6 +69,9 @@ const storageURL = config.public.storageURL;
         </div>
         <!--end::Col-->
       </div>
+    </div>
+    <div class="w-100 text-center">
+        <UiButtonToArticles> Все публикации </UiButtonToArticles>
     </div>
   </div>
 </template>
