@@ -34,7 +34,7 @@
       <div class="col-6">
         <div class="border shadow-sm border-dark rounded p-6 m-3 d-flex flex-column justify-content-center align-items-center"
           id="card">
-          <h1 class="text-start">Минимум рисков</h1>
+          <h1 class="text-center">Минимум рисков</h1>
           <p class="">Именно наша компания, а не заказчик платит за работу, даже если он отказался от неё</p>
         </div>
       </div>

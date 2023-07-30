@@ -3,8 +3,6 @@
 const { data: articles, pending } = await useQuery('articles/index');
 const dataArticles = articles.value.data;
 
-console.log( typeof dataArticles)
-
 const viewPartArticles = dataArticles.length >= 12 ? dataArticles.slice(0, 12) : dataArticles;
 
 const config = useRuntimeConfig();
@@ -21,7 +19,7 @@ definePageMeta({
 
 <template>
  <div class="container my-20 py-20" v-if="!pending">
-    <!-- <pre>{{ dataArticles }}</pre> -->
+    <pre>{{ articles.meta.pagination }}</pre>
     <div class="mb-19">
       <!--begin::Top-->
       <div class="text-center mb-12 ">
@@ -79,6 +77,6 @@ definePageMeta({
         <!--end::Col-->
       </div>
     </div>
-    <UiPagination :pagination="{last_page: 1}" />
+    <UiPagination :pagination="articles?.meta?.pagination" />
   </div>
 </template>
