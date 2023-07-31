@@ -1,13 +1,4 @@
 <script setup>
-
-const { data: articles, pending } = await useQuery('articles/index');
-const dataArticles = articles.value.data;
-
-const viewPartArticles = dataArticles.length >= 12 ? dataArticles.slice(0, 12) : dataArticles;
-
-const config = useRuntimeConfig();
-const storageURL = config.public.storageURL;
-
 definePageMeta({
   title: 'FreeEco | Экологическая фриланс-биржа',
   subTitle: '',
@@ -15,17 +6,21 @@ definePageMeta({
   layout: 'article',
 })
 
+const storageURL = useRuntimeConfig().public.storageURL;
+
+const { data: articles, pending } = await useIndexFetch('articles/index');
+
 </script>
 
 <template>
- <div class="container my-20 py-20" v-if="!pending">
-    <pre>{{ articles.meta.pagination }}</pre>
+  <div class="container my-20 py-20" v-if="!pending">
     <div class="mb-19">
       <!--begin::Top-->
       <div class="text-center mb-12 ">
         <!--begin::Title-->
-        <h3 >
-          <NuxtLink class="fs-2hx text-dark text-hover-info mb-5" to="/articles">Публикации</NuxtLink></h3>
+        <h3>
+          <NuxtLink class="fs-2hx text-dark text-hover-info mb-5" to="/articles">Публикации</NuxtLink>
+        </h3>
         <!--end::Title-->
         <!--begin::Text-->
         <div class="fs-5 text-muted fw-bold">
@@ -36,14 +31,15 @@ definePageMeta({
       <!--begin::Row-->
       <div class="row g-10">
         <!--begin::Col-->
-        <div class="col-md-4" v-for="article in viewPartArticles" key="article.id">
+        <div class="col-md-4" v-for="article in articles?.data" :key="article.id">
           <!--begin::Publications post-->
           <div class="card-xl-stretch me-md-6">
             <!--begin::Overlay-->
             <NuxtLink :to="'/articles/' + article.slug" class="d-block overlay mb-4" data-fslightbox="lightbox-hot-sales">
               <!--begin::Image-->
               <div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-175px"
-                :style="'background-image:' + 'url(' + storageURL + article.media[0].original_url + ')'">
+                :style="'background-image:' + 'url(' + storageURL + article.media?.at(0)?.original_url + ')'"
+                v-if="article.media?.at(0)?.original_url">
               </div>
               <!--end::Image-->
               <!--begin::Action-->
@@ -56,7 +52,8 @@ definePageMeta({
             <!--begin::Body-->
             <div class="m-0">
               <!--begin::Title-->
-              <NuxtLink class=" fs-4 text-dark fw-bolder text-hover-info text-dark lh-base" :to="'/articles/' + article.slug">{{ article.title }}
+              <NuxtLink class=" fs-4 text-dark fw-bolder text-hover-info text-dark lh-base"
+                :to="'/articles/' + article.slug">{{ article.title }}
               </NuxtLink>
               <!--end::Title-->
               <!--begin::Content-->
@@ -65,7 +62,7 @@ definePageMeta({
                 <!-- <a href="../../demo3/dist/apps/projects/users.html" class="text-gray-700 text-hover-primary">Autor</a> -->
                 <!--end::Author-->
                 <!--begin::Date-->
-                <span class="ms-2 text-muted">{{ article.published_at.split(' ')[0] }}</span> 
+                <span class="ms-2 text-muted">{{ article.published_at?.split(' ').at(0) }}</span>
                 <!--end::Date-->
               </div>
               <!--end::Content-->

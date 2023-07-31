@@ -6,13 +6,23 @@ const props = defineProps({
         type: [Object],
     }
 })
+
+const routeQuery = (query) => {
+    let result = [];
+    for (var param in query)
+        if (query[param]) {
+            result[param] = query[param]
+        }
+    return result;
+}
+
 const page = ref(route.query.page ? route.query.page : 1)
 const query = ref({})
 
 const setPage = (pageNumber) => {
     const route = useRoute()
     page.value = Number(pageNumber)
-    query.value = $helpers.data.routeQuery(route.query)
+    query.value = routeQuery(route.query)
     query.value.page = page.value
 
     return navigateTo({
