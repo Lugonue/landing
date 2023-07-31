@@ -80,7 +80,6 @@ definePageMeta({
 
     </div>
 
-
     <div class="d-flex flex-center">
       <!--begin::Icon-->
       <a href="#" class="mx-4">
