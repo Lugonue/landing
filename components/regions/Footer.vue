@@ -166,4 +166,5 @@ const footerLinks = [
     <!--end::Wrapper-->
   </footer>
   <!--end::Footer Section-->
+  <WidgetsScrollTop />
 </template>

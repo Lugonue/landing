@@ -5,7 +5,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   if (process.env.NODE_ENV !== "development") {
     nuxtApp.vueApp.use(VueGtag, {
       property: {
-        id: config.public.googleAnalyticsId,
+        id: process.env.NODE_ENV !== "development" ? config.public.googleAnalyticsId : '',
       },
     })
   }

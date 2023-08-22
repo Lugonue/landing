@@ -23,11 +23,11 @@ const textAlign = (tunes) => {
 <template>
     <div v-if="body?.blocks?.length" class="pb-5">
         <template v-for="block in body.blocks">
-            <div v-if="block.type == 'image'" class="border my-4">
-                <img class="d-flex img-fluid mx-auto p-3" :src="block.data.file.url" :alt="block.data.caption" />
-                <small v-if="block.data.caption" class="d-flex font-monospace text-muted justify-content-center">{{
-                    block.data.caption }}</small>
-            </div>
+            <figure v-if="block.type == 'image'" class="border card-rounded my-4 p-2">
+                <img class="d-flex img-fluid card-rounded mx-auto" :src="block.data.file.url" :alt="block.data.caption" />
+                <figcaption v-if="block.data.caption" class="d-flex font-monospace text-muted justify-content-center">{{
+                    block.data.caption }}</figcaption>
+            </figure>
 
             <p v-if="block.type == 'paragraph'" v-html="block.data.text" :class="textAlign(block.tunes)"></p>
 
@@ -53,8 +53,7 @@ const textAlign = (tunes) => {
 
             <hr v-if="block.type == 'delimiter'" />
 
-            <div v-if="block.type == 'link' && block.data.link"
-                style="border: 1px solid #ccc; border-radius: 0.42rem; padding: 1rem;">
+            <div v-if="block.type == 'link' && block.data.link" class="p-2 border card-rounded mt-5">
                 <a :href="block.data.link" target="_blank">{{ block.data.link }}</a>
                 <h4 v-if="block.data.meta?.title">{{ block.data.meta?.title }}</h4>
                 <p v-if="block.data.meta?.description">{{ block.data.meta?.description }}</p>

@@ -29,7 +29,7 @@ const statWorkers = [
     <!-- <h1 class="fs-2hx text-center w-100 fw-bolder mb-20">Наша команда</h1> -->
     <div class="container-xxl">
       <div class="d-flex h-100 justify-content-center align-items-center flex-wrap" style="align-items: stretch;">
-        <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 h-100">
+        <div class="col-12 col-lg-6 col-xl-6 col-xxl-7 h-100">
           <h1 class="display-6 mb-6">Оцифровываем
             <span class="position-relative">
               экологию
@@ -55,7 +55,7 @@ const statWorkers = [
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 p-10">
+        <div class="col-12 col-lg-6 col-xl-6 col-xxl-5 p-10">
           <div class="d-flex w-100 h-100 justify-content-center align-items-center">
             <img class="img-fluid" src="/media/team-photo.png" alt="">
           </div>

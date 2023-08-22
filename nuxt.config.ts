@@ -13,10 +13,20 @@ export default defineNuxtConfig({
             meta: [
                 { charset: 'utf-8' },
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-                { hid: 'description', name: 'description', content: 'Первая фриланс-биржа экологических проектов для бизнеса' },
                 { name: 'format-detection', content: 'telephone=no' },
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-                { name: 'robots', content: process.env.NODE_ENV === 'development' ? 'noindex' : 'all' },
+
+                { name: 'robots', content: process.env.NODE_ENV === 'development' ? 'none' : 'all' },
+                { name: 'yandex', content: process.env.NODE_ENV === 'development' ? 'none' : 'all' },
+                { name: 'googlebot', content: process.env.NODE_ENV === 'development' ? 'none' : 'all' },
+                { name: 'googlebot-news', content: process.env.NODE_ENV === 'development' ? 'none' : 'all' },
+
+                //{ hid: 'description', name: 'description', content: 'Первая фриланс-биржа экологических работ для бизнеса' },
+
+                { property: "og:locale", content: "ru" },
+                { property: "og:type", content: "website" },
+                { property: "og:site_name", content: "FreeEco | Экологическая фриланс-биржа" },
+
                 { name: "msapplication-TileColor", content: "#da532c" },
                 { name: "theme-color", content: "#ffffff" }
             ],
@@ -102,10 +112,15 @@ export default defineNuxtConfig({
 
         // Keys within public, will be also exposed to the client-side
         public: {
+            development: process.env.NODE_ENV == 'development' ? true : false,
             apiSecret: process.env.API_SECRET || '123456789',
             apiURL: (process.env.NODE_ENV == 'development' ? process.env.API_URL_DEV : process.env.API_URL) || '/api/',
             storageURL: (process.env.NODE_ENV == 'development' ? process.env.STORAGE_URL_DEV : process.env.STORAGE_URL) || '/storage/',
-            google_analytics_id: 'G-RL73XDVP6V',
+
+            appName: process.env.APP_NAME || '',
+            appDescription: process.env.APP_DESCRIPTION || '',
+
+            google_analytics_id: process.env.NODE_ENV == 'development' ? '' : 'G-RL73XDVP6V',
         }
     },
 

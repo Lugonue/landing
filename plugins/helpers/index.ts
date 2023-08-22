@@ -1,11 +1,11 @@
-import date from "./date.ts"
-import metrics from "./metrics.ts"
-import data from "./data.ts"
+import date from "./date"
+import data from "./data"
+import utils from "./utils"
 
 export default defineNuxtPlugin(() => {
-    return {
-      provide: {
-        helpers: {date, metrics, data}
-      }
+  return {
+    provide: {
+      helpers: { date, data, utils }
     }
+  }
 })

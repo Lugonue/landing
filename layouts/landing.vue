@@ -1,18 +1,17 @@
 <template>
 	<div class="d-flex flex-column flex-root bg-white" id="app">
 		<slot />
-		<!-- <WidgetsScrollTop /> -->
 	</div>
 </template>
 
 <script setup>
-    const route = useRoute()
-	useHead({
-        title: route.meta.title + (route.meta.subTitle ? " | " + route.meta.subTitle : ""),
-        meta: [
-            { name: 'description', content: route.meta.description ?? route.meta.title },
-        ]
-    })
+const route = useRoute()
+useHead({
+	title: route.meta.title + (route.meta.subTitle ? " | " + route.meta.subTitle : ""),
+	meta: [
+		{ name: 'description', content: route.meta.description ?? route.meta.title },
+	]
+})
 </script>
 
 <style>
