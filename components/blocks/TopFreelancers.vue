@@ -1,11 +1,11 @@
 <script setup>
 // for example
 const freeLancers = [
-  { name: 'Евгений Андреев', spheres: 'Biodiversity', img: '/media/top-freelancers/1.jpg' },
+  //{ name: 'Евгений Андреев', spheres: 'Biodiversity', img: '/media/top-freelancers/1.jpg' },
   { name: 'Евгений Веренков', spheres: 'Habitat fragmentation', img: '/media/top-freelancers/2.jpg' },
   { name: 'Ирина Соболева', spheres: 'Ecosystem services', img: '/media/top-freelancers/3.jpg' },
   { name: 'Марина Пилипенко', spheres: 'Ecosystem services', img: '/media/top-freelancers/4.jpg' },
-  { name: 'Юлия Куперман', spheres: 'Ecological succession', img: '/media/top-freelancers/5.jpg' },
+  { name: 'Юлия Кузнецова', spheres: 'Ecological succession', img: '/media/top-freelancers/5.jpg' },
   { name: 'Константин Попко', spheres: 'Restoration ecology', img: '/media/top-freelancers/6.jpg' },
 ]
 
