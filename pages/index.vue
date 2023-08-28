@@ -24,6 +24,7 @@ useSeoMeta({
     <BlocksTopFreelancers />
     <BlocksTeamBlock />
     <BlocksArticles />
+    <BlocksFAQ />
     <BlocksPartners />
     <RegionsOffer />
     <RegionsFooter />
