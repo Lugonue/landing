@@ -8,10 +8,10 @@
             <img src="/media/illustrations/dozzy-1/18.png" alt="" class="mw-100 mb-10 h-lg-450px" />
             <!--end::Illustration-->
             <!--begin::Message-->
-            <h1 class="fw-bold mb-10" style="color: #A3A3C7">Seems there is nothing here</h1>
+            <h1 class="fw-bold mb-10" style="color: #6d4479">Кажется, тут пусто...</h1>
             <!--end::Message-->
             <!--begin::Link-->
-            <a href="../../demo3/dist/index.html" class="btn btn-primary">Return Home</a>
+            <NuxtLink to="/" class="btn btn-info">Вернуться на главную</NuxtLink>
             <!--end::Link-->
         </div>
         <!--end::Authentication - 404 Page-->
@@ -23,6 +23,7 @@
 <script setup>
     useMeta({
         title: "404",
+        layout: "404",
         meta: [
             { name: "description", content: "404 | FreeEco"}
         ]
