@@ -1,9 +1,7 @@
 /node_modules
 /.nuxt
 .output/
-permissions
-build
-cmd
+bash-scripts/
 
 # Nuxt dev/build outputs
 .output

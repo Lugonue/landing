@@ -1,5 +1,0 @@
-#!/bin/bash
-
-echo "#landing restart"
-cd /var/www/.docker/server
-docker-compose restart landing
